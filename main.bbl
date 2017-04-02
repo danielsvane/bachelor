@@ -1,9 +1,20 @@
 \begin{thebibliography}{1}
 
+\bibitem{Engelen2016}
+W~Engelen, B~M~G Janssen, and M~Merkx.
+\newblock {DNA-based control of protein activity.}
+\newblock {\em Chemical communications (Cambridge, England)},
+  52(18):3598--3610, 2016.
+
 \bibitem{Peng2016}
 Yong Peng and Carlo~M Croce.
 \newblock {The role of MicroRNAs in human cancer}.
 \newblock {\em Signal Transduction and Targeted Therapy}, 1:15004, jan 2016.
+
+\bibitem{Seelig2006}
+Georg Seelig, David Soloveichik, David~Yu Zhang, and Erik Winfree.
+\newblock {Enzyme-Free Nucleic Acid Logic Circuits}.
+\newblock {\em Science}, 314(5805):1585--1588, 2006.
 
 \bibitem{Zhang2011}
 David~Yu Zhang and Georg Seelig.
