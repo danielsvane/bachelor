@@ -18,3 +18,18 @@ Logic circuits using DNA and RNA has many interesting applications in diagnostic
 \end{figure}
 
 The logic gates can be made using strand displacement \cite{Zhang2011}, where the outputs of one gate can be linked to the input of another by unique DNA or RNA sequences.
+
+\begin{figure}[h!]
+\centering
+\begin{tikzpicture}
+  \draw[<-](0,0.3) -- node[above] {a} (1,0.3);
+  \draw(1,0.3) -- node[above] {b} (3,0.3);
+  \draw(3,0.3) -- node[above] {c} (4,0.3);
+
+  \draw[<-](4,0.3) -- node[above] {d} (8,0.3);
+
+  \draw[->](1,0) -- (8,0);
+\end{tikzpicture}
+\label{}
+\caption{Example of logic circuit}
+\end{figure}
