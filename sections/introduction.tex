@@ -17,19 +17,33 @@ Logic circuits using DNA and RNA has many interesting applications in diagnostic
 \caption{Example of logic circuit}
 \end{figure}
 
-The logic gates can be made using strand displacement \cite{Zhang2011}, where the outputs of one gate can be linked to the input of another by unique DNA or RNA sequences.
+The logic gates can be made using strand displacement \cite{Zhang2011}, where the outputs of one gate can be linked to the input of another by unique DNA or RNA sequences. The strand displacement technique can for example be used to create an AND gate, as seen in figure \ref{example_and}.
 
 \begin{figure}[h!]
 \centering
+
+
 \begin{tikzpicture}
+
+
+\def\strand2{
+  \draw[<-](4,0.3) -- node[above] {d} (5.9,0.3);
+  \node[label=above:{e}] at (6,1) {};
+  \draw plot [smooth, tension=1] coordinates {(5.9, 0.3) (5.9, 0.4) (5.7, 0.7) (6, 1) (6.3, 0.7) (6.1, 0.4) (6.1, 0.3)};
+  \draw(6.1,0.3) -- node[above] {f} (8,0.3);
+}
+
   \draw[<-](0,0.3) -- node[above] {a} (1,0.3);
   \draw(1,0.3) -- node[above] {b} (3,0.3);
   \draw(3,0.3) -- node[above] {c} (4,0.3);
 
-  \draw[<-](4,0.3) -- node[above] {d} (8,0.3);
+  \strand2
 
-  \draw[->](1,0) -- (8,0);
+  \draw(1,0) -- node[below] {b*} (3,0);
+  \draw(3,0) -- node[below] {c*} (4,0);
+  \draw(4,0) -- node[below] {d*} (6,0);
+  \draw[->](6,0) -- node[below] {f*} (8,0);
 \end{tikzpicture}
-\label{}
+\label{example_and}
 \caption{Example of logic circuit}
 \end{figure}

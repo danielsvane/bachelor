@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex main"] 1491599796 "main.aux" "main.bbl" "main" 1491601315
+["bibtex main"] 1492009803 "main.aux" "main.bbl" "main" 1492009807
   "/usr/share/texmf-dist/bibtex/bst/base/plain.bst" 1479649821 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "main.aux" 1491601315 715 9de0a71ffab065960070cb2526ab988b ""
+  "main.aux" 1492009806 726 cd81521fe22884968c2049125db0440c ""
   "main.bcf" 0 -1 0 ""
   "references.bib" 1491167932 5714 dc5711f1bcf4568594859ce5438e765f ""
   (generated)
   "main.blg"
   "main.bbl"
-["pdflatex"] 1491601314 "main.tex" "main.pdf" "main" 1491601315
+["pdflatex"] 1492009803 "main.tex" "main.pdf" "main" 1492009807
   "/home/daniel/.texlive/texmf-var/fonts/pk/ljfour/public/cm/cmbx12.720pk" 1491130568 17912 4aad7ee58850a11a231711ee6e7a8963 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1479649810 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/share/texmf-dist/fonts/pk/ljfour/public/cm/dpi600/cmr10.pk" 1479649807 10892 c562fda04f99936b3380df8b485bf110 ""
@@ -132,11 +132,11 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1490814990 21233 86a8356fda6de65361ca80c11aac99e1 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1490814987 7252863 8a69f5cd3dbad1a594d505eade4c8ed4 ""
   "header.tex" 1491139789 52 f2f579cbfe13fb5219100b3f93affed6 ""
-  "main.aux" 1491601315 715 9de0a71ffab065960070cb2526ab988b ""
-  "main.bbl" 1491599796 809 07e732acdb4a3b56df6a473d30e94254 "bibtex main"
+  "main.aux" 1492009806 726 cd81521fe22884968c2049125db0440c ""
+  "main.bbl" 1492009803 809 07e732acdb4a3b56df6a473d30e94254 "bibtex main"
   "main.tex" 1491139092 249 743dba2a1dffa933941956185767eeb5 ""
-  "sections/introduction.tex" 1491601313 1589 0eb3e2967441220b8978b86e9b298dd7 ""
+  "sections/introduction.tex" 1492009799 2126 4a5cf84c9088c534733723a76ed461aa ""
   (generated)
-  "main.pdf"
-  "main.aux"
   "main.log"
+  "main.aux"
+  "main.pdf"
