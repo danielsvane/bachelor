@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex main"] 1492009803 "main.aux" "main.bbl" "main" 1492009807
+["bibtex main"] 1492013290 "main.aux" "main.bbl" "main" 1492013295
   "/usr/share/texmf-dist/bibtex/bst/base/plain.bst" 1479649821 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "main.aux" 1492009806 726 cd81521fe22884968c2049125db0440c ""
+  "main.aux" 1492013294 726 cd81521fe22884968c2049125db0440c ""
   "main.bcf" 0 -1 0 ""
   "references.bib" 1491167932 5714 dc5711f1bcf4568594859ce5438e765f ""
   (generated)
   "main.blg"
   "main.bbl"
-["pdflatex"] 1492009803 "main.tex" "main.pdf" "main" 1492009807
+["pdflatex"] 1492013290 "main.tex" "main.pdf" "main" 1492013295
   "/home/daniel/.texlive/texmf-var/fonts/pk/ljfour/public/cm/cmbx12.720pk" 1491130568 17912 4aad7ee58850a11a231711ee6e7a8963 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1479649810 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/share/texmf-dist/fonts/pk/ljfour/public/cm/dpi600/cmr10.pk" 1479649807 10892 c562fda04f99936b3380df8b485bf110 ""
@@ -105,6 +105,7 @@
   "/usr/share/texmf-dist/tex/latex/base/article.cls" 1479649819 19821 310da678527a7dfe2a02c88af38079b7 ""
   "/usr/share/texmf-dist/tex/latex/base/size10.clo" 1479649819 8292 e897c12e1e886ce77fe26afc5d470886 ""
   "/usr/share/texmf-dist/tex/latex/circuitikz/circuitikz.sty" 1479554966 8583 b815bd14cdd4e948795069f136b65f1b ""
+  "/usr/share/texmf-dist/tex/latex/environ/environ.sty" 1476971573 4378 f429f0da968c278653359293040a8f52 ""
   "/usr/share/texmf-dist/tex/latex/graphics-cfg/color.cfg" 1479649819 1213 620bba36b25224fa9b7e1ccb4ecb76fd ""
   "/usr/share/texmf-dist/tex/latex/graphics-cfg/graphics.cfg" 1479649819 1224 978390e9c2234eab29404bc21b268d1e ""
   "/usr/share/texmf-dist/tex/latex/graphics-def/pdftex.def" 1479649819 57848 020e44545ff7e21278b080e3175d3354 ""
@@ -127,16 +128,17 @@
   "/usr/share/texmf-dist/tex/latex/pgf/utilities/pgffor.sty" 1479649819 348 8927fde343487e003b01a4c2ca34073b ""
   "/usr/share/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty" 1479649819 274 4cad6e665cc93ac2ac979039a94fa1e1 ""
   "/usr/share/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty" 1479649819 325 2bcd023400636339210573e2b3ee298b ""
+  "/usr/share/texmf-dist/tex/latex/trimspaces/trimspaces.sty" 1476971572 1380 971a51b00a14503ddf754cab24c3f209 ""
   "/usr/share/texmf-dist/tex/latex/xcolor/xcolor.sty" 1479649818 55589 34128738f682d033422ca125f82e5d62 ""
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1479649825 31669 df537245012f3e5f05bdc55644b7a3df ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1490814990 21233 86a8356fda6de65361ca80c11aac99e1 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1490814987 7252863 8a69f5cd3dbad1a594d505eade4c8ed4 ""
-  "header.tex" 1491139789 52 f2f579cbfe13fb5219100b3f93affed6 ""
-  "main.aux" 1492009806 726 cd81521fe22884968c2049125db0440c ""
-  "main.bbl" 1492009803 809 07e732acdb4a3b56df6a473d30e94254 "bibtex main"
+  "header.tex" 1492013284 448 15994313257f797bbf44e4dd733ebc29 ""
+  "main.aux" 1492013294 726 cd81521fe22884968c2049125db0440c ""
+  "main.bbl" 1492013290 809 07e732acdb4a3b56df6a473d30e94254 "bibtex main"
   "main.tex" 1491139092 249 743dba2a1dffa933941956185767eeb5 ""
-  "sections/introduction.tex" 1492009799 2126 4a5cf84c9088c534733723a76ed461aa ""
+  "sections/introduction.tex" 1492013055 2488 506237abf736287a275fa4f4ca4b089a ""
   (generated)
   "main.log"
-  "main.aux"
   "main.pdf"
+  "main.aux"

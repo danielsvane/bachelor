@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2017.3.29)  12 APR 2017 15:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2017.3.29)  12 APR 2017 16:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -35,7 +35,7 @@ File: babel.def 2016/04/23 3.9r Babel common definitions
 \l@canadian = a dialect from \language\l@american 
 \l@australian = a dialect from \language\l@british 
 \l@newzealand = a dialect from \language\l@british 
-))) (/usr/share/texmf-dist/tex/latex/circuitikz/circuitikz.sty
+)) (/usr/share/texmf-dist/tex/latex/circuitikz/circuitikz.sty
 Package: circuitikz 2016/09/08{} The CircuiTikz circuit drawing package version 0.7
  (/usr/share/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (/usr/share/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (/usr/share/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
 \pgfutil@everybye=\toks14
@@ -270,7 +270,15 @@ File: pgflibraryarrows.code.tex 2013/09/23 v3.0.1a (rcs-revision 1.16)
 \pgfstartlinewidth=\dimen161
 \pgf@circ@Rlen=\dimen162
 ) (/usr/share/texmf-dist/tex/generic/circuitikz/pgfcircutils.tex)
-(/usr/share/texmf-dist/tex/generic/circuitikz/pgfcircmath.tex) (/usr/share/texmf-dist/tex/generic/circuitikz/pgfcircshapes.tex) (/usr/share/texmf-dist/tex/generic/circuitikz/pgfcircmonopoles.tex) (/usr/share/texmf-dist/tex/generic/circuitikz/pgfcircbipoles.tex) (/usr/share/texmf-dist/tex/generic/circuitikz/pgfcirctripoles.tex) (/usr/share/texmf-dist/tex/generic/circuitikz/pgfcircquadpoles.tex) (/usr/share/texmf-dist/tex/generic/circuitikz/pgfcirclabel.tex) (/usr/share/texmf-dist/tex/generic/circuitikz/pgfcircvoltage.tex) (/usr/share/texmf-dist/tex/generic/circuitikz/pgfcirccurrent.tex) (/usr/share/texmf-dist/tex/generic/circuitikz/pgfcircpath.tex)) (./main.aux)
+(/usr/share/texmf-dist/tex/generic/circuitikz/pgfcircmath.tex) (/usr/share/texmf-dist/tex/generic/circuitikz/pgfcircshapes.tex) (/usr/share/texmf-dist/tex/generic/circuitikz/pgfcircmonopoles.tex) (/usr/share/texmf-dist/tex/generic/circuitikz/pgfcircbipoles.tex) (/usr/share/texmf-dist/tex/generic/circuitikz/pgfcirctripoles.tex) (/usr/share/texmf-dist/tex/generic/circuitikz/pgfcircquadpoles.tex) (/usr/share/texmf-dist/tex/generic/circuitikz/pgfcirclabel.tex) (/usr/share/texmf-dist/tex/generic/circuitikz/pgfcircvoltage.tex) (/usr/share/texmf-dist/tex/generic/circuitikz/pgfcirccurrent.tex) (/usr/share/texmf-dist/tex/generic/circuitikz/pgfcircpath.tex)) (/usr/share/texmf-dist/tex/latex/environ/environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+ (/usr/share/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+)
+\@envbody=\toks27
+)
+\measure@tikzpicture=\box37
+) (./main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
@@ -289,15 +297,15 @@ LaTeX Font Info:    ... okay on input line 8.
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count108
 \scratchdimen=\dimen163
-\scratchbox=\box37
+\scratchbox=\box38
 \nofMPsegments=\count109
 \nofMParguments=\count110
-\everyMPshowfont=\toks27
+\everyMPshowfont=\toks28
 \MPscratchCnt=\count111
 \MPscratchDim=\dimen164
 \MPnumerator=\count112
 \makeMPintoPDFobject=\count113
-\everyMPtoPDFconversion=\toks28
+\everyMPtoPDFconversion=\toks29
 ) (/usr/share/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2016/05/21 v0.22 Utility functions of pdfTeX for LuaTeX (HO)
  (/usr/share/texmf-dist/tex/generic/oberdiek/ifluatex.sty
@@ -344,15 +352,15 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]) [2] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 18529 strings out of 493013
- 439151 string characters out of 6139317
- 569961 words of memory out of 5000000
- 21807 multiletter control sequences out of 15000+600000
+ 18610 strings out of 493013
+ 440702 string characters out of 6139317
+ 573172 words of memory out of 5000000
+ 21880 multiletter control sequences out of 15000+600000
  7626 words of font info for 27 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,8n,56p,670b,674s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 64i,9n,56p,670b,757s stack positions out of 5000i,500n,10000p,200000b,80000s
  </usr/share/texmf-dist/fonts/pk/ljfour/public/cm/dpi600/cmti10.pk> </usr/share/texmf-dist/fonts/pk/ljfour/public/cm/dpi600/cmr10.pk> </home/daniel/.texlive/texmf-var/fonts/pk/ljfour/public/cm/cmbx12.720pk> </usr/share/texmf-dist/fonts/pk/ljfour/public/cm/dpi600/cmr12.pk> </usr/share/texmf-dist/fonts/pk/ljfour/public/cm/dpi600/cmr17.pk>
-Output written on main.pdf (2 pages, 43971 bytes).
+Output written on main.pdf (2 pages, 44158 bytes).
 PDF statistics:
  167 PDF objects out of 1000 (max. 8388607)
  29 compressed objects within 1 object stream

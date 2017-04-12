@@ -23,27 +23,46 @@ The logic gates can be made using strand displacement \cite{Zhang2011}, where th
 \centering
 
 
-\begin{tikzpicture}
+\begin{scaletikzpicturetowidth}{\columnwidth}
+\begin{tikzpicture}[scale=\tikzscale]
 
 
-\def\strand2{
+\def\strandtwo{
   \draw[<-](4,0.3) -- node[above] {d} (5.9,0.3);
   \node[label=above:{e}] at (6,1) {};
   \draw plot [smooth, tension=1] coordinates {(5.9, 0.3) (5.9, 0.4) (5.7, 0.7) (6, 1) (6.3, 0.7) (6.1, 0.4) (6.1, 0.3)};
   \draw(6.1,0.3) -- node[above] {f} (8,0.3);
 }
 
+\def\strandone{
   \draw[<-](0,0.3) -- node[above] {a} (1,0.3);
   \draw(1,0.3) -- node[above] {b} (3,0.3);
   \draw(3,0.3) -- node[above] {c} (4,0.3);
+}
 
-  \strand2
-
+\def\strandthree{
   \draw(1,0) -- node[below] {b*} (3,0);
   \draw(3,0) -- node[below] {c*} (4,0);
   \draw(4,0) -- node[below] {d*} (6,0);
   \draw[->](6,0) -- node[below] {f*} (8,0);
+}
+
+\def\inputstrand(#1,#2){
+  \begin{scope}[shift={(#1,#2)}]
+    \draw[](0,0.3) -- node[below] {a} (1,0.3);
+    \draw(1,0.3) -- node[below] {b} (3,0.3);
+    \draw[->](3,0.3) -- node[below] {c} (4,0.3);
+  \end{scope}
+}
+
+\strandone
+\strandtwo
+\strandthree
+\inputstrand(10,0)
+
 \end{tikzpicture}
+\end{scaletikzpicturetowidth}
+
 \label{example_and}
 \caption{Example of logic circuit}
 \end{figure}

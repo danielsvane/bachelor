@@ -139,6 +139,10 @@ INPUT /usr/share/texmf-dist/tex/generic/circuitikz/pgfcirclabel.tex
 INPUT /usr/share/texmf-dist/tex/generic/circuitikz/pgfcircvoltage.tex
 INPUT /usr/share/texmf-dist/tex/generic/circuitikz/pgfcirccurrent.tex
 INPUT /usr/share/texmf-dist/tex/generic/circuitikz/pgfcircpath.tex
+INPUT /usr/share/texmf-dist/tex/latex/environ/environ.sty
+INPUT /usr/share/texmf-dist/tex/latex/environ/environ.sty
+INPUT /usr/share/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+INPUT /usr/share/texmf-dist/tex/latex/trimspaces/trimspaces.sty
 INPUT main.aux
 INPUT main.aux
 OUTPUT main.aux
