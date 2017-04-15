@@ -34,10 +34,12 @@ The logic gates can be made using strand displacement \cite{Zhang2011}, where th
   \draw(6.1,0.3) -- node[above] {f} (8,0.3);
 }
 
-\def\strandone{
-  \draw[<-](0,0.3) -- node[above] {a} (1,0.3);
-  \draw(1,0.3) -- node[above] {b} (3,0.3);
-  \draw(3,0.3) -- node[above] {c} (4,0.3);
+\def\strandone(#1,#2){
+  \begin{scope}[shift={(#1,#2)}]
+    \draw[<-](0,0.3) -- node[above] {a} (1,0.3);
+    \draw(1,0.3) -- node[above] {b} (3,0.3);
+    \draw(3,0.3) -- node[above] {c} (4,0.3);
+  \end{scope}
 }
 
 \def\strandthree{
@@ -49,16 +51,26 @@ The logic gates can be made using strand displacement \cite{Zhang2011}, where th
 
 \def\inputstrand(#1,#2){
   \begin{scope}[shift={(#1,#2)}]
-    \draw[](0,0.3) -- node[below] {a} (1,0.3);
-    \draw(1,0.3) -- node[below] {b} (3,0.3);
-    \draw[->](3,0.3) -- node[below] {c} (4,0.3);
+    \draw[](0,0.3) -- node[below] {a*} (1,0.3);
+    \draw(1,0.3) -- node[below] {b*} (3,0.3);
+    \draw[->](3,0.3) -- node[below] {c*} (4,0.3);
   \end{scope}
 }
 
-\strandone
+\strandone(0,0)
 \strandtwo
 \strandthree
-\inputstrand(10,0)
+
+\node at (9,0.2) {+};
+
+\inputstrand(10,-0.1)
+
+\draw[->](7, -1) -- (7, -3);
+\draw[->](7, -1) to [out=-90, in=0] (6, -2);
+\draw[->](8, -2) to [out=180, in=90] (7, -3);
+
+\strandone(0,-2)
+\inputstrand(0,-2.3)
 
 \end{tikzpicture}
 \end{scaletikzpicturetowidth}
