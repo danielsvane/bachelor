@@ -143,6 +143,8 @@ INPUT c:/texlive/2016/texmf-dist/tex/latex/environ/environ.sty
 INPUT c:/texlive/2016/texmf-dist/tex/latex/environ/environ.sty
 INPUT c:/texlive/2016/texmf-dist/tex/latex/trimspaces/trimspaces.sty
 INPUT c:/texlive/2016/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+INPUT c:/texlive/2016/texmf-dist/tex/latex/float/float.sty
+INPUT c:/texlive/2016/texmf-dist/tex/latex/float/float.sty
 INPUT main.aux
 INPUT main.aux
 OUTPUT main.aux
@@ -183,11 +185,15 @@ INPUT sections/introduction.tex
 INPUT sections/introduction.tex
 INPUT c:/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 INPUT c:/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+OUTPUT main.pdf
+INPUT c:/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map
+INPUT sections/logic_gates.tex
+INPUT sections/logic_gates.tex
+INPUT figures/and_gate.tex
+INPUT figures/and_gate.tex
 INPUT main.bbl
 INPUT main.bbl
 INPUT c:/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
-OUTPUT main.pdf
-INPUT c:/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT main.aux
 INPUT c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb

@@ -1,0 +1,16 @@
+\begin{tabular}{cccc}
+    \begin{circuitikz}[baseline=-0.7ex]
+        \draw (0,0) node[and port] (and1) {}
+        (and1.in 1) [anchor=east] node {A}
+        (and1.in 2) [anchor=east] node {B}
+        (and1.out) [anchor=west] node {O};
+    \end{circuitikz}
+    &
+    $\begin{array}{ccc}
+        A & B & O \\ \hline
+        0 & 0 & 0 \\
+        0 & 1 & 0 \\
+        1 & 0 & 0 \\
+        1 & 1 & 1 \\
+    \end{array}$
+\end{tabular}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2017.4.17)  17 APR 2017 20:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2017.4.17)  17 APR 2017 23:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -277,8 +277,15 @@ Package: environ 2014/05/04 v0.3 A new way to define environments
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 )
 \@envbody=\toks27
+) (c:/texlive/2016/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count108
+\float@exts=\toks28
+\float@box=\box37
+\@float@everytoks=\toks29
+\@floatcapt=\box38
 )
-\measure@tikzpicture=\box37
+\measure@tikzpicture=\box39
 ) (./main.aux)
 \openout1 = `main.aux'.
 
@@ -296,17 +303,17 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
 LaTeX Font Info:    ... okay on input line 8.
  ABD: EveryShipout initializing macros (c:/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count108
+\scratchcounter=\count109
 \scratchdimen=\dimen163
-\scratchbox=\box38
-\nofMPsegments=\count109
-\nofMParguments=\count110
-\everyMPshowfont=\toks28
-\MPscratchCnt=\count111
+\scratchbox=\box40
+\nofMPsegments=\count110
+\nofMParguments=\count111
+\everyMPshowfont=\toks30
+\MPscratchCnt=\count112
 \MPscratchDim=\dimen164
-\MPnumerator=\count112
-\makeMPintoPDFobject=\count113
-\everyMPtoPDFconversion=\toks29
+\MPnumerator=\count113
+\makeMPintoPDFobject=\count114
+\everyMPtoPDFconversion=\toks31
 ) (c:/texlive/2016/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO)
  (c:/texlive/2016/texmf-dist/tex/generic/oberdiek/ifluatex.sty
@@ -354,26 +361,22 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 135.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 135.
+) [1
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-) (./main.bbl [1
-
-{c:/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]) [2] (./main.aux) ) 
+{c:/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./sections/logic_gates.tex (./figures/and_gate.tex)) (./main.bbl [2]) [3] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 18730 strings out of 493013
- 444982 string characters out of 6136993
- 608913 words of memory out of 5000000
- 22003 multiletter control sequences out of 15000+600000
+ 18798 strings out of 493013
+ 445878 string characters out of 6136993
+ 610285 words of memory out of 5000000
+ 22060 multiletter control sequences out of 15000+600000
  7626 words of font info for 27 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 64i,9n,56p,672b,815s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 64i,15n,56p,672b,815s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on main.pdf (2 pages, 86054 bytes).
+Output written on main.pdf (3 pages, 89024 bytes).
 PDF statistics:
- 42 PDF objects out of 1000 (max. 8388607)
- 30 compressed objects within 1 object stream
+ 45 PDF objects out of 1000 (max. 8388607)
+ 32 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
