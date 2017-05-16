@@ -23,8 +23,8 @@ The logic gates can be made using strand displacement \cite{Zhang2011}, where th
 \centering
 
 
-\begin{scaletikzpicturetowidth}{\columnwidth}
-\begin{tikzpicture}[scale=\tikzscale]
+\resizebox {\columnwidth} {!} {
+\begin{tikzpicture}
 
 
 \def\strandtwo(#1,#2){
@@ -129,7 +129,7 @@ The logic gates can be made using strand displacement \cite{Zhang2011}, where th
 \outputstrand(5,-10)
 
 \end{tikzpicture}
-\end{scaletikzpicturetowidth}
+}
 
 \label{example_and}
 \caption{An AND gate made with strand displacement. After two strand displacements by the input strands $a^*b^*c^*$ and $bcdf$, the ouput strand $def$ is released and can react in further strand displacements with other logic gates, or activate enzymes and FRET signals.}
