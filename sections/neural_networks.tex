@@ -1,2 +1,48 @@
 % !TEX root = ../main.tex
 \section{Neural networks}
+\subsection{In silico neural networks}
+Artificial neural networks (referred to just as neural networks) is a software implementation of the connection of neurons in the brain. In computer science they can be used to solve a wide variety of problems, like character and facial recognition. They present an advantage over conventional programmatic methods, as they don't need explicit coding for each new problem. There exist many different implementations of neural networks, but in the case of the perceptron (also known as feed-forward neural network), it only needs to know the inputs and the matching outputs to train itself. An example usage showing character recognition can be seen in figure \ref{neuralnetwork_example}.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\columnwidth]{images/neuralnetwork_example.png}
+\caption{An example usage of a neural network recognizing the handdrawn letter "a". The typical approach is to segment the area into a grid. Only 2x2 is shown here for simplification, but usually larger grids are used. The average color of each segment is calculated, and fed into a neural network, which has been trained to output "a", when presented an input resembling the handdrawn version.}
+\label{neuralnetwork_example}
+\end{figure}
+
+The neural network works by simulating the functionality of the brain, by connecting neurons together by varying strength. Continuing the example from figure \ref{neuralnetwork_example}, the 4 segments are fed into 4 input neurons (see figure \ref{neuralnetwork_neurons}). The 4 input neurons are connected to an output neuron by varying strength, much like the synapses of the natural neuron. If the weighted inputs sum exceed the threshold of the output neuron, it will activate. In this simplified example, the output neurons activation is of limited value, as it can only give a yes or no answer to if the input resembles an "a".
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=200]{images/neuralnetwork_neurons.png}
+\caption{}
+\label{neuralnetwork_neurons}
+\end{figure}
+
+ In a more practical example, the network would have enough input neurons to accommodate a 100x100 grid (10,000 input neurons), have some layers of neurons between the input and output (hidden layers), and enough output neurons to represent binary encoded characters (see figure \ref{neuralnetwork_ocr}).
+
+ \begin{figure}[H]
+ \centering
+ \includegraphics[width=\columnwidth]{images/neuralnetwork_ocr.png}
+ \caption{}
+ \label{neuralnetwork_ocr}
+ \end{figure}
+
+\subsection{In vitro neural networks}
+It has previously been shown that the function of the artificial neuron can also be implemented using strand displacement reactions. The system is based on the seesaw gate motif, and can fullfill most of the functionality of a real neuron.
+
+INSERT GENERAL INFORMATION ABOUT THE SEESAW WITH TOEHOLDS HERE
+
+ALSO A SUMMARY OF INPUT WEIGHT, SUMMATION, THRESHOLDING
+
+\subsubsection{Thresholding}
+In the natural neuron, the neuron will activate when its inputs exceeds a threshold. This is implemented using a threshold gate which will bind the input and prevent it from reacting downstream in the network. If the threshold gate concentration is higher than the input concentration, the input will be suppressed by the threshold. If the threshold gate concentration is lower than the input concentration, not all of the input is suppressed, and will be able to react further downstream in the network.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\columnwidth]{images/seesaw_threshold.png}
+\caption{}
+\label{seesaw_threshold}
+\end{figure}
+
+\subsubsection{Summation}

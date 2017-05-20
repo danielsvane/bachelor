@@ -1,13 +1,14 @@
 # Fdb version 3
-["bibtex main"] 1494955321 "main.aux" "main.bbl" "main" 1494955323
+["bibtex main"] 1495281133 "main.aux" "main.bbl" "main" 1495281136
   "c:/texlive/2016/texmf-dist/bibtex/bst/base/plain.bst" 1492444835 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "main.aux" 1494955323 281 964204af9db98ebba43ddad366f3ba3c ""
+  "main.aux" 1495281136 1477 b5b08698f1ae02012cec5eb7bbe3d536 ""
   "references.bib" 1492450500 5785 dc5711f1bcf4568594859ce5438e765f ""
   (generated)
-  "main.blg"
   "main.bbl"
-["pdflatex"] 1494955322 "main.tex" "main.pdf" "main" 1494955323
+  "main.blg"
+["pdflatex"] 1495281134 "main.tex" "main.pdf" "main" 1495281136
   "c:/texlive/2016/texmf-dist/fonts/map/fontname/texfonts.map" 1492445715 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
+  "c:/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1492445069 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "c:/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1492445069 1324 c910af8c371558dc20f2d7822f66fe64 ""
   "c:/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm" 1492445069 1524 4414a8315f39513458b80dfc63bff03a ""
   "c:/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm" 1492445069 1512 f21f83efb36853c0b70002322c1ab3ad ""
@@ -19,6 +20,7 @@
   "c:/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm" 1492445069 1124 6c73e740cf17375f03eec0ee63599741 ""
   "c:/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm" 1492445069 1116 933a60c408fc0a863a92debe84b2d294 ""
   "c:/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm" 1492445069 1120 8b7d695260f3cff42e636090a8002094 ""
+  "c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb" 1492444529 34811 78b52f49e893bcba91bd7581cdc144c0 ""
   "c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1492444529 32080 340ef9bf63678554ee606688e7b5339d ""
   "c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1492444529 35752 024fb6c41858982481f6968b5fc26508 ""
   "c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1492444529 32722 d7379af29a190c3f453aba36302ff5a9 ""
@@ -132,10 +134,14 @@
   "c:/texlive/2016/texmf-var/web2c/pdftex/pdflatex.fmt" 1492448425 4047359 dba18cc651d3582348c75718d35952c6 ""
   "c:/texlive/2016/texmf.cnf" 1492448314 673 4ae7b2f49cee444c5343a45b5d0f169c ""
   "header.tex" 1492462664 486 67f2c4d17118783489e8d13bc8559cf7 ""
-  "main.aux" 1494955323 281 964204af9db98ebba43ddad366f3ba3c ""
-  "main.bbl" 1494955322 49 0eba253fc001332e731e8aba3f23127b "bibtex main"
+  "images/neuralnetwork_example.png" 1494957601 43156 db9dbf379e297a0e0b4ccc1c344813ba ""
+  "images/neuralnetwork_neurons.png" 1494959965 54304 d7e0547f0e9e76014aa32d74da70de88 ""
+  "images/neuralnetwork_ocr.png" 1495278633 82570 694810f42ef6b7c92a2de97a28c33f87 ""
+  "images/seesaw_threshold.png" 1495280842 74401 022cc162c372c64be3b36b6b4d054a75 ""
+  "main.aux" 1495281136 1477 b5b08698f1ae02012cec5eb7bbe3d536 ""
+  "main.bbl" 1495281134 49 0eba253fc001332e731e8aba3f23127b "bibtex main"
   "main.tex" 1494955315 355 edc67aab825bbf002c4734221a960827 ""
-  "sections/neural_networks.tex" 1494955286 54 b5fae9d3d75dabefded73ed64516b5f8 ""
+  "sections/neural_networks.tex" 1495281130 3714 867fa99b0e93c1a01ccec889b5c91714 ""
   (generated)
   "main.aux"
   "main.log"
