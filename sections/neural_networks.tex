@@ -45,4 +45,29 @@ In the natural neuron, the neuron will activate when its inputs exceeds a thresh
 \label{seesaw_threshold}
 \end{figure}
 
-\subsubsection{Summation}
+\subsubsection{Integration}
+The input to the neuron have to be collected before thresholding, as they don't have the same left recognition sequence. This is done through an integrating gate, which will collect all inputs with the same right recognition sequence, and release a common signal which can be thresholded.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\columnwidth]{images/seesaw_integration.png}
+\caption{}
+\label{seesaw_integration}
+\end{figure}
+
+\subsubsection{Weighting}
+The inputs to the gate are weighted using their concentration. By making the integration gates concentration the sum of all the input concentrations, a high concentration of one input strand will contribute more to the activation than that of a low concentration.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\columnwidth]{images/seesaw_weight.png}
+\caption{}
+\label{seesaw_weight}
+\end{figure}
+
+A problem with this approach to weighting, is that the inputs can only contribute positively to the sum. In silico neural networks can use negative weights to simulate inhibitory synaptic connections, and is needed to implement many kind of boolean functions. The in vitro network can't have negative concentrations of input sequences, so other approaches have to be considered.
+
+WRITE STUFF ABOUT DUAL RAIL LOGIC HERE
+
+\subsubsection{Training}
+WRITE STUFF ABOUT TRAINING

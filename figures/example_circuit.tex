@@ -1,0 +1,9 @@
+\begin{circuitikz} \draw
+  (0,3) node[and port] (and1) {}
+  (2,2) node[or port] (or1) {}
+  (and1.in 1) node [anchor=east] {miRNA 1}
+  (and1.in 2) node [anchor=east] {miRNA 2}
+  (and1.out) -| (or1.in 1)
+  (or1.in 2) node [anchor=east] {Protein 1}
+  (or1.out) node [anchor=west] {FRET or enzymatic activity}
+;\end{circuitikz}

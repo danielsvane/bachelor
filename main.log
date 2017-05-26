@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2017.4.17)  20 MAY 2017 13:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2017.4.17)  27 MAY 2017 00:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -284,8 +284,50 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \float@box=\box37
 \@float@everytoks=\toks29
 \@floatcapt=\box38
+) (c:/texlive/2016/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip10
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+) (c:/texlive/2016/texmf-dist/tex/latex/adjustbox/adjustbox.sty
+Package: adjustbox 2012/05/21 v1.0 Adjusting TeX boxes (trim, clip, ...)
+ (c:/texlive/2016/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+ (c:/texlive/2016/texmf-dist/tex/generic/xkeyval/xkeyval.tex (c:/texlive/2016/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks30
+\XKV@tempa@toks=\toks31
 )
-\measure@tikzpicture=\box39
+\XKV@depth=\count109
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+)) (c:/texlive/2016/texmf-dist/tex/latex/adjustbox/adjcalc.sty
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back-ends (calc, etex, pgfmath)
+) (c:/texlive/2016/texmf-dist/tex/latex/adjustbox/trimclip.sty
+Package: trimclip 2012/05/16 v1.0 Trim and clip general TeX material
+ (c:/texlive/2016/texmf-dist/tex/latex/collectbox/collectbox.sty
+Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
+\collectedbox=\box39
+)
+\tc@llx=\dimen163
+\tc@lly=\dimen164
+\tc@urx=\dimen165
+\tc@ury=\dimen166
+Package trimclip Info: Using driver 'tc-pdftex.def'.
+ (c:/texlive/2016/texmf-dist/tex/latex/adjustbox/tc-pdftex.def
+File: tc-pdftex.def 2012/05/13 v1.0 Clipping driver for pdftex
+))
+\adjbox@Width=\dimen167
+\adjbox@Height=\dimen168
+\adjbox@Depth=\dimen169
+\adjbox@Totalheight=\dimen170
+ (c:/texlive/2016/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
+Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
+\c@checkoddpage=\count110
+) (c:/texlive/2016/texmf-dist/tex/latex/varwidth/varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box40
+\sift@deathcycles=\count111
+\@vwid@loff=\dimen171
+\@vwid@roff=\dimen172
+))
+\measure@tikzpicture=\box41
 ) (./main.aux)
 \openout1 = `main.aux'.
 
@@ -303,17 +345,17 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
 LaTeX Font Info:    ... okay on input line 8.
  ABD: EveryShipout initializing macros (c:/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count109
-\scratchdimen=\dimen163
-\scratchbox=\box40
-\nofMPsegments=\count110
-\nofMParguments=\count111
-\everyMPshowfont=\toks30
-\MPscratchCnt=\count112
-\MPscratchDim=\dimen164
-\MPnumerator=\count113
-\makeMPintoPDFobject=\count114
-\everyMPtoPDFconversion=\toks31
+\scratchcounter=\count112
+\scratchdimen=\dimen173
+\scratchbox=\box42
+\nofMPsegments=\count113
+\nofMParguments=\count114
+\everyMPshowfont=\toks32
+\MPscratchCnt=\count115
+\MPscratchDim=\dimen174
+\MPnumerator=\count116
+\makeMPintoPDFobject=\count117
+\everyMPtoPDFconversion=\toks33
 ) (c:/texlive/2016/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO)
  (c:/texlive/2016/texmf-dist/tex/generic/oberdiek/ifluatex.sty
@@ -356,75 +398,39 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 9.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 9.
- (./sections/neural_networks.tex <images/neuralnetwork_example.png, id=4, 1157.07281pt x 374.14781pt>
-File: images/neuralnetwork_example.png Graphic file (type png)
- <use images/neuralnetwork_example.png>
-Package pdftex.def Info: images/neuralnetwork_example.png used on input line 8.
-(pdftex.def)             Requested size: 345.0pt x 111.55441pt.
+ (./sections/method.tex
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 9.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 9.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 59.
  [1
 
-{c:/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./images/neuralnetwork_example.png>] <images/neuralnetwork_neurons.png, id=14, 718.18312pt x 574.39594pt>
-./sections/neural_networks.tex:17: Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \relax 
-l.17 ...dth=200]{images/neuralnetwork_neurons.png}
-                                                  
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-./sections/neural_networks.tex:17: Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \relax 
-l.17 ...dth=200]{images/neuralnetwork_neurons.png}
-                                                  
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-File: images/neuralnetwork_neurons.png Graphic file (type png)
-<use images/neuralnetwork_neurons.png>
-Package pdftex.def Info: images/neuralnetwork_neurons.png used on input line 17.
-(pdftex.def)             Requested size: 200.0pt x 159.9533pt.
- <images/neuralnetwork_ocr.png, id=15, 842.39719pt x 455.45157pt>
-File: images/neuralnetwork_ocr.png Graphic file (type png)
- <use images/neuralnetwork_ocr.png>
-Package pdftex.def Info: images/neuralnetwork_ocr.png used on input line 26.
-(pdftex.def)             Requested size: 345.0pt x 186.52786pt.
- [2 <./images/neuralnetwork_neurons.png> <./images/neuralnetwork_ocr.png>]
-Overfull \hbox (1.0345pt too wide) in paragraph at lines 34--35
-[]\OT1/cmr/m/n/10 INSERT GEN-ERAL IN-FOR-MA-TION ABOUT THE SEE-SAW WITH TOE-
- []
-
-<images/seesaw_threshold.png, id=19, 1301.61281pt x 509.65407pt>
-File: images/seesaw_threshold.png Graphic file (type png)
- <use images/seesaw_threshold.png>
-Package pdftex.def Info: images/seesaw_threshold.png used on input line 43.
-(pdftex.def)             Requested size: 345.0pt x 135.08101pt.
-) (./main.bbl
-
-LaTeX Warning: Empty `thebibliography' environment on input line 3.
-
-) [3 <./images/seesaw_threshold.png>] (./main.aux) ) 
+{c:/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] <images/promoter_annealing_gel.png, id=17, 1018.80624pt x 593.21625pt>
+File: images/promoter_annealing_gel.png Graphic file (type png)
+ <use images/promoter_annealing_gel.png>
+Package pdftex.def Info: images/promoter_annealing_gel.png used on input line 71.
+(pdftex.def)             Requested size: 345.0pt x 200.88525pt.
+) (./sections/appendix.tex <images/oligo_concentrations.png, id=18, 702.625pt x 451.6875pt>
+File: images/oligo_concentrations.png Graphic file (type png)
+ <use images/oligo_concentrations.png>
+Package pdftex.def Info: images/oligo_concentrations.png used on input line 6.
+(pdftex.def)             Requested size: 345.0pt x 221.79057pt.
+) [2 <./images/promoter_annealing_gel.png>] (./main.bbl) [3 <./images/oligo_concentrations.png>] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 18619 strings out of 493013
- 441916 string characters out of 6136993
- 573863 words of memory out of 5000000
- 21882 multiletter control sequences out of 15000+600000
- 7895 words of font info for 28 fonts, out of 8000000 for 9000
+ 19410 strings out of 493013
+ 454186 string characters out of 6136993
+ 595985 words of memory out of 5000000
+ 22631 multiletter control sequences out of 15000+600000
+ 8807 words of font info for 31 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 64i,6n,56p,764b,228s stack positions out of 5000i,500n,10000p,200000b,80000s
-<c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on main.pdf (3 pages, 288510 bytes).
+ 64i,8n,56p,671b,314s stack positions out of 5000i,500n,10000p,200000b,80000s
+<c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on main.pdf (3 pages, 274677 bytes).
 PDF statistics:
- 41 PDF objects out of 1000 (max. 8388607)
- 26 compressed objects within 1 object stream
+ 53 PDF objects out of 1000 (max. 8388607)
+ 36 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 33 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 23 words of extra memory for PDF output out of 10000 (max. 10000000)
 
