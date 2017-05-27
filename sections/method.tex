@@ -5,7 +5,6 @@
 
 \begin{table}
 \begin{adjustbox}{width=\columnwidth}
-\small
 \begin{tabular}{llll}
 \hline
 \textbf{Name}      & \textbf{Short} & \textbf{Sequence}                                           & \textbf{Length} \\
@@ -14,7 +13,7 @@ T7 promoter        & 0          & GGTAATACGACTCACTATAG                          
 Short 1            & 1          & CCTCAAGGAGCTTCAGTCTAGCCCTATAGTGAGTCGTATTACC                    & 43     \\
 Short 2            & 2          & CTCCTTGAGGCACATAACTCCCCTATAGTGAGTCGTATTACC                     & 42     \\
 Short 3            & 3          & CACATAACTCTACTAAATCTCCCTATAGTGAGTCGTATTACC                     & 42     \\
-Short 4            & 4          & CACATAACTCTACTAAATCTCCCTATAGTGAGTCGTATTACC                     & 42     \\
+Short 4            & 4          & GAGTTATGTGCCTCAAGGAGCCCTATAGTGAGTCGTATTACC                    & 42     \\
 Short 5            & 5          & AGATTTAGTAGAGTTATGTGCCCTATAGTGAGTCGTATTACC                     & 42     \\
 Long 1             & 6          & GTCAATTCGCCTCAAGGAGCTTCAGTCTAGCCCTATAGTGAGTCGTATTACC           & 52     \\
 Long 2             & 7          & GCTCCTTGAGGCGAATTGACCCATCTTCATTCTACTCCTACCCTATAGTGAGTCGTATTACC & 62     \\
@@ -27,11 +26,11 @@ Long 5             & 10         & GATTGAGGTATAGGAGTAGAATGAAGATGGCCCTATAGTGAGTCGT
 \end{tabular}
 \end{adjustbox}
 \caption{Sequences and names of the DNA strands used for transcription.}
+\label{dna_strands}
 \end{table}
 
 \begin{table}
 \begin{adjustbox}{width=\columnwidth}
-\small
 \begin{tabular}{llll}
 \hline
 \textbf{Name}      & \textbf{Short} & \textbf{Sequence}                                           & \textbf{Length} \\
@@ -52,6 +51,7 @@ Long 5             & 10         & GGCCAUCUUCAUUCUACUCCUAUACCUCAAUC           & 3
 \end{tabular}
 \end{adjustbox}
 \caption{Sequences and names of the transcribed RNA strands.}
+\label{rna_strands}
 \end{table}
 
 \subsection{Transcription}
@@ -69,8 +69,61 @@ To check if samples annealed properly, they were run on a 20\% native PAGE gel f
 \begin{figure}[H]
 \centering
 \includegraphics[width=\columnwidth]{images/promoter_annealing_gel.png}
-\caption{Typhoon scan of SYBR Gold stained native PAGE gel, with the annealed templates and promoter strands. The lanes are labelled by which strands are annealed (see table [CREATE TABLE WITH NAMES OF STRANDS]).}
+\caption{Typhoon scan of SYBR Gold stained native PAGE gel, with the annealed templates and promoter strands. The lanes are labelled by which strands are annealed (see table \ref{dna_strands}).}
 \label{fig:promoter_annealing_gel}
 \end{figure}
 
-As can be seen in figure \ref{fig:promoter_annealing_gel}, the darkest bands is the annealed samples. The samples for the short translator runs as about the same size, while there is bigger variation in the long translator samples, as expected based on [TABLE WITH STRANDS]. The exact positions of the long translator samples does not match with the sequence length, though this can be explained by secondary structures of the single-stranded part of the sample. The shorter bands visible below, is probably surplus promoter, other secondary structures, and shorter sequences from synthesis errors.
+As can be seen in figure \ref{fig:promoter_annealing_gel}, the darkest bands is the annealed samples. The samples for the short translator runs as about the same size, while there is bigger variation in the long translator samples, as expected based on table \ref{dna_strands}. The exact positions of the long translator samples does not match with the sequence length, though this can be explained by secondary structures of the single-stranded part of the sample. The shorter bands visible below, is probably excess promoter, other secondary structures, and shorter sequences from synthesis errors. No lane with ladder was run, so the exact position of the bands can't be commented on.
+
+To get the desired RNA sequences, a transcription reaction was run with each of the annealed DNA templates, according to table \ref{transcription1}.
+
+\begin{table}\centering
+\begin{tabular}{llll}
+  \hline
+                       & \textbf{Initial conc.} & \textbf{Final conc.} & \textbf{Volume} \\ \hline
+  Transcription buffer & 10X                    & 1X                   & 10 \si{\micro}L           \\
+  DTT                  & 100 mM                 & 10 mM                & 10 \si{\micro}L           \\
+  NTP mix              & 25 mM                  & 2.5 mM               & 10 \si{\micro}L           \\
+  Template             & 500 nM                 & 50 nM                & 10 \si{\micro}L           \\
+  T7 RNA polymerase    &                        &                      & 1 \si{\micro}L            \\
+  Nuclease-free water  &                        &                      & 59 \si{\micro}L           \\
+  Total                &                        &                      & 100 \si{\micro}L          \\ \hline
+\end{tabular}
+\caption{Mixing of compounds for the first transcription done on the templates for both the short and long translater.}
+\label{transcription1}
+\end{table}
+
+The samples were left overnight at 37$^\circ$ C. The day after, 1 \si{\micro}L of RNAse free DNAse was added to the samples, and heated for 37$^\circ$ C for an hour. Afterwards, 100 ul of denaturing loading buffer was added to each sample, and 10 ul of the DNA 0 and DNA 5 strands was mixed with 10 ul of denaturing loading buffer, and heated for 5 minutes at 90$^\circ$ C.
+
+To purify the RNA, the transcribed sequences and controls were run on a 20\% denaturing PAGE gel, for 4 hours at 20 W.
+
+The RNA product should be visible in UV shadowing, but no product was visible. The gel was then stained with SYBR Gold and scanned on the Typhoon [PROTOCOL]. The result can be seen in figure \ref{transcription_1}.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=200]{images/translator_transcription_1.png}
+\caption{Typhoon scan of SYBR Gold stained native PAGE gel, with the transcribed RNA strands in lanes 1-10, and controls in 11 and 12. The lanes are labelled by which strands are annealed (see \tref{rna_strands}). The asterix refers to the DNA strands in \tref{dna_strands}.}
+\label{transcription_1}
+\end{figure}
+
+As can be seen in \fref{transcription_1}, the gel wasn't stained long enough, so after restaining it in SYBR Gold, it was scanned again.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=200]{images/translator_transcription_2.png}
+\caption{Typhoon scan of SYBR Gold stained native PAGE gel, with the transcribed RNA strands in lanes 1-10, and controls in 11 and 12. The lanes are labelled by which strands are annealed (see table \ref{rna_strands}). The asterix refers to the DNA strands in table \ref{dna_strands}.}
+\label{transcription_2}
+\end{figure}
+
+The lanes 1-10 in \fref{transcription_2} does not show distinct bands. There seems to be more product from the long translator transcriptions (lanes 6-10), than in the short ones (lanes 1-5). Even the controls which were loaded in equal amounts does not show up in equal strength. Since the gel from the DNA annealing was run without any controls, it was difficult to see if there was any errors in the annealing. Another 20\% native PAGE gel was run with the annealed DNA, using the single stranded oligos as control. To simplify the experiment while trying to the find the error, only the short translator sequences were used.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=200]{images/translator_annealing_2.png}
+\caption{The annealed oligos together with controls and a 10 nt ladder. The lanes are labelled with the oligo names given in \tref{dna_strands}. The plus symbol denotes which strands are annealed.}
+\label{translator_annealing_2}
+\end{figure}
+
+The results of \fref{translator_annealing_2} still shows that the templates have annealed with the promoter, and runs as about 40-50 bp. The expected size is around 60 bp (sum of promoter and template), but it is difficult to say how a partly annealed structure will run on a native gel. The new gel does however show that the bands in the annealed lanes below the assumed product, might not be excess promoter. The promoter is seen in the second lane, and lies below the bands in the annealed structure thought to be excess promoter. The bands below the product might be due to secondary structures of each of the template strands, but comparing with \fref{short_secondary_structures}, the band in the 5+0 lane would be expected to be less visible, as strand 5 has no secondary structure.
+
+Despite the unexplained bands from the annealing, a new transcription was run on the short template strands to see if better results could be attained.

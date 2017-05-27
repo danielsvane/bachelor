@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2017.4.17)  27 MAY 2017 00:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2017.4.17)  27 MAY 2017 18:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -91,9 +91,21 @@ l.7 \usepackage{
 \usepackage may only appear in the document preamble, i.e.,
 between \documentclass and \begin{document}.
 
+
+./header.tex:8: LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 \usepackage{
+                siunitx}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
 \measure@tikzpicture=\box26
-./header.tex:12: Undefined control sequence.
-l.12 \NewEnviron
+./header.tex:18: Undefined control sequence.
+l.18 \NewEnviron
                 {scaletikzpicturetowidth}[1]{%
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -102,13 +114,13 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-./header.tex:12: LaTeX Error: Missing \begin{document}.
+./header.tex:18: LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.12 \NewEnviron{s
+l.18 \NewEnviron{s
                   caletikzpicturetowidth}[1]{%
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -139,17 +151,17 @@ Missing character: There is no h in font nullfont!
 Missing character: There is no [ in font nullfont!
 Missing character: There is no 1 in font nullfont!
 Missing character: There is no ] in font nullfont!
-./header.tex:13: Illegal parameter number in definition of \tikz@width.
+./header.tex:19: Illegal parameter number in definition of \tikz@width.
 <to be read again> 
                    1
-l.13   \def\tikz@width{#1
+l.19   \def\tikz@width{#1
                          }%
 You meant to type ## instead of #, right?
 Or maybe a } was forgotten somewhere earlier, and things
 are all screwed up? I'm going to assume that you meant ##.
 
-./header.tex:15: Undefined control sequence.
-l.15   \BODY
+./header.tex:21: Undefined control sequence.
+l.21   \BODY
             
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -157,8 +169,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./header.tex:17: Undefined control sequence.
-l.17   \pgfmathparse
+./header.tex:23: Undefined control sequence.
+l.23   \pgfmathparse
                     {#1/\wd\measure@tikzpicture}%
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -166,8 +178,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./header.tex:17: You can't use `macro parameter character #' in horizontal mode.
-l.17   \pgfmathparse{#
+./header.tex:23: You can't use `macro parameter character #' in horizontal mode.
+l.23   \pgfmathparse{#
                       1/\wd\measure@tikzpicture}%
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -176,19 +188,19 @@ return to the right one by typing `I}' or `I$' or `I\par'.
 
 Missing character: There is no 1 in font nullfont!
 Missing character: There is no / in font nullfont!
-./header.tex:17: Missing number, treated as zero.
+./header.tex:23: Missing number, treated as zero.
 <to be read again> 
                    }
-l.17   \pgfmathparse{#1/\wd\measure@tikzpicture}
+l.23   \pgfmathparse{#1/\wd\measure@tikzpicture}
                                                 %
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
 
-./header.tex:17: Illegal unit of measure (pt inserted).
+./header.tex:23: Illegal unit of measure (pt inserted).
 <to be read again> 
                    }
-l.17   \pgfmathparse{#1/\wd\measure@tikzpicture}
+l.23   \pgfmathparse{#1/\wd\measure@tikzpicture}
                                                 %
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -197,8 +209,8 @@ To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
-./header.tex:18: Undefined control sequence.
-l.18   \edef\tikzscale{\pgfmathresult
+./header.tex:24: Undefined control sequence.
+l.24   \edef\tikzscale{\pgfmathresult
                                      }%
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -206,8 +218,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./header.tex:19: Undefined control sequence.
-l.19   \BODY
+./header.tex:25: Undefined control sequence.
+l.25   \BODY
             
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -223,11 +235,11 @@ and I'll forget about whatever was undefined.
 
  
 Here is how much of TeX's memory you used:
- 8 strings out of 493013
- 170 string characters out of 6136993
+ 15 strings out of 493013
+ 218 string characters out of 6136993
  53646 words of memory out of 5000000
- 3652 multiletter control sequences out of 15000+600000
+ 3659 multiletter control sequences out of 15000+600000
  3640 words of font info for 14 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 6i,1n,12p,76b,24s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 7i,1n,12p,76b,24s stack positions out of 5000i,500n,10000p,200000b,80000s
 !  ==> Fatal error occurred, no output PDF file produced!
