@@ -119,11 +119,35 @@ The lanes 1-10 in \fref{transcription_2} does not show distinct bands. There see
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=200]{images/translator_annealing_2.png}
+\includegraphics[width=200pt]{images/translator_annealing_2.png}
 \caption{The annealed oligos together with controls and a 10 nt ladder. The lanes are labelled with the oligo names given in \tref{dna_strands}. The plus symbol denotes which strands are annealed.}
 \label{translator_annealing_2}
 \end{figure}
 
 The results of \fref{translator_annealing_2} still shows that the templates have annealed with the promoter, and runs as about 40-50 bp. The expected size is around 60 bp (sum of promoter and template), but it is difficult to say how a partly annealed structure will run on a native gel. The new gel does however show that the bands in the annealed lanes below the assumed product, might not be excess promoter. The promoter is seen in the second lane, and lies below the bands in the annealed structure thought to be excess promoter. The bands below the product might be due to secondary structures of each of the template strands, but comparing with \fref{short_secondary_structures}, the band in the 5+0 lane would be expected to be less visible, as strand 5 has no secondary structure.
 
-Despite the unexplained bands from the annealing, a new transcription was run on the short template strands to see if better results could be attained.
+Despite the unexplained bands from the annealing, a new transcription was run on the short template strands to see if better results could be attained. Another transcription was done using the previous protocol (\tref{transcription1}), and run on a gel. The UV shadowing still didn't show any visible product, so the gel was scanned to check for bands.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=150pt]{images/translator_transcription_3.png}
+\caption{The transcribed short translator sequences and a 10 nt ladder. The lanes are labelled with the oligo names given in \tref{rna_strands}.}
+\label{translator_transcription_3}
+\end{figure}
+
+[MAYBE MENTION THE OLIGOS RUN AS DYE BASED ON IDT]
+
+As seen in \fref{translator_transcription_3}, still no clear bands with RNA product was visible. After checking all buffers and materials, it was learned that the T7 polymerase that was used was from 2013, and might have been too old to still function properly. A fresh T7 polymerase was used for a new transcription, same as the previous protocol. The UV shadowing did show some distinct bands this time, so the bands was cut out for purification. The purification was done using the precipitation protocol [PROTOCOL]. After purification the pellets were dissolved in 100 \si{\micro}L TE buffer, their absorbance measured on the Nanodrop, and their concentration calculated using their extinction coefficients [GET TABLE WITH EXTINCTION COEFF].
+
+To check that the purification worked, 2 \si{\micro}L of each sample with 1 \si{\micro}L of denaturing loading buffer was run on a 20\% denaturing gel, and visualised on the Typhoon.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=150pt]{images/translator_transcription_purified.png}
+\caption{The purified short translator RNA oligos.}
+\label{translator_transcription_purified}
+\end{figure}
+
+\fref{translator_transcription_purified} shows that the RNA has been isolated, but is not very pure. It is possible that when cutting out the RNA from the gel before purification, too large an area was taken. The target RNA sequences was still expected to be in the purified samples (albeit not very pure), and it has previously been shown that strand displacement reactions can work with unpurified components [REFERENCE PLEASE], so the experiment continued with the current RNA.
+
+Based on the concentrations in \fref{translator_transcription_concentration}, the samples were further diluted to 1 \si{\micro}L in TE buffer.

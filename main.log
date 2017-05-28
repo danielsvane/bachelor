@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2017.4.17)  27 MAY 2017 20:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2017.4.17)  28 MAY 2017 13:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -806,88 +806,80 @@ File: images/translator_transcription_2.png Graphic file (type png)
 Package pdftex.def Info: images/translator_transcription_2.png used on input line 113.
 (pdftex.def)             Requested size: 200.0pt x 271.57166pt.
  [4 <./images/translator_transcription_1.png>] <images/translator_annealing_2.png, id=29, 628.3475pt x 932.48375pt>
-./sections/method.tex:122: Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \relax 
-l.122 ...h=200]{images/translator_annealing_2.png}
-                                                  
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-./sections/method.tex:122: Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \relax 
-l.122 ...h=200]{images/translator_annealing_2.png}
-                                                  
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
 File: images/translator_annealing_2.png Graphic file (type png)
-<use images/translator_annealing_2.png>
+ <use images/translator_annealing_2.png>
 Package pdftex.def Info: images/translator_annealing_2.png used on input line 122.
 (pdftex.def)             Requested size: 200.0pt x 296.79308pt.
- [5 <./images/translator_transcription_2.png>]) (./sections/appendix.tex <images/oligo_concentrations.png, id=33, 702.625pt x 451.6875pt>
+ [5 <./images/translator_transcription_2.png>] <images/translator_transcription_3.png, id=33, 271.7352pt x 506.8536pt>
+File: images/translator_transcription_3.png Graphic file (type png)
+ <use images/translator_transcription_3.png>
+Package pdftex.def Info: images/translator_transcription_3.png used on input line 133.
+(pdftex.def)             Requested size: 150.0pt x 279.78348pt.
+ [6 <./images/translator_annealing_2.png>] <images/translator_transcription_purified.png, id=37, 306.4248pt x 440.6061pt>
+File: images/translator_transcription_purified.png Graphic file (type png)
+ <use images/translator_transcription_purified.png>
+Package pdftex.def Info: images/translator_transcription_purified.png used on input line 146.
+(pdftex.def)             Requested size: 150.0pt x 215.68373pt.
+ [7 <./images/translator_transcription_3.png>]) (./sections/appendix.tex <images/oligo_concentrations.png, id=42, 702.625pt x 451.6875pt>
 File: images/oligo_concentrations.png Graphic file (type png)
  <use images/oligo_concentrations.png>
 Package pdftex.def Info: images/oligo_concentrations.png used on input line 6.
 (pdftex.def)             Requested size: 345.0pt x 221.79057pt.
- [6 <./images/translator_annealing_2.png>] <images/0_analysis.png, id=38, 369.2997pt x 369.2997pt>
+ [8 <./images/translator_transcription_purified.png>] <images/translator_transcription_concentration.png, id=47, 702.625pt x 451.6875pt>
+File: images/translator_transcription_concentration.png Graphic file (type png)
+ <use images/translator_transcription_concentration.png>
+Package pdftex.def Info: images/translator_transcription_concentration.png used on input line 13.
+(pdftex.def)             Requested size: 345.0pt x 221.79057pt.
+ <images/0_analysis.png, id=48, 369.2997pt x 369.2997pt>
 File: images/0_analysis.png Graphic file (type png)
  <use images/0_analysis.png>
-Package pdftex.def Info: images/0_analysis.png used on input line 15.
-(pdftex.def)             Requested size: 110.40253pt x 110.40193pt.
- <images/1_analysis.png, id=39, 369.2997pt x 369.2997pt>
-File: images/1_analysis.png Graphic file (type png)
- <use images/1_analysis.png>
-Package pdftex.def Info: images/1_analysis.png used on input line 20.
-(pdftex.def)             Requested size: 110.40253pt x 110.40193pt.
- <images/2_analysis.png, id=40, 369.2997pt x 369.2997pt>
-File: images/2_analysis.png Graphic file (type png)
- <use images/2_analysis.png>
-Package pdftex.def Info: images/2_analysis.png used on input line 25.
-(pdftex.def)             Requested size: 110.40253pt x 110.40193pt.
- <images/3_analysis.png, id=41, 369.2997pt x 369.2997pt>
-File: images/3_analysis.png Graphic file (type png)
- <use images/3_analysis.png>
-Package pdftex.def Info: images/3_analysis.png used on input line 30.
-(pdftex.def)             Requested size: 110.40253pt x 110.40193pt.
- <images/4_analysis.png, id=42, 369.2997pt x 369.2997pt>
-File: images/4_analysis.png Graphic file (type png)
- <use images/4_analysis.png>
-Package pdftex.def Info: images/4_analysis.png used on input line 35.
-(pdftex.def)             Requested size: 110.40253pt x 110.40193pt.
- <images/5_analysis.png, id=43, 369.2997pt x 369.2997pt>
-File: images/5_analysis.png Graphic file (type png)
- <use images/5_analysis.png>
-Package pdftex.def Info: images/5_analysis.png used on input line 40.
+Package pdftex.def Info: images/0_analysis.png used on input line 22.
 (pdftex.def)             Requested size: 110.40253pt x 110.40193pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 13--43
+<images/1_analysis.png, id=49, 369.2997pt x 369.2997pt>
+File: images/1_analysis.png Graphic file (type png)
+ <use images/1_analysis.png>
+Package pdftex.def Info: images/1_analysis.png used on input line 27.
+(pdftex.def)             Requested size: 110.40253pt x 110.40193pt.
+ <images/2_analysis.png, id=50, 369.2997pt x 369.2997pt>
+File: images/2_analysis.png Graphic file (type png)
+ <use images/2_analysis.png>
+Package pdftex.def Info: images/2_analysis.png used on input line 32.
+(pdftex.def)             Requested size: 110.40253pt x 110.40193pt.
+ <images/3_analysis.png, id=51, 369.2997pt x 369.2997pt>
+File: images/3_analysis.png Graphic file (type png)
+ <use images/3_analysis.png>
+Package pdftex.def Info: images/3_analysis.png used on input line 37.
+(pdftex.def)             Requested size: 110.40253pt x 110.40193pt.
+ <images/4_analysis.png, id=52, 369.2997pt x 369.2997pt>
+File: images/4_analysis.png Graphic file (type png)
+ <use images/4_analysis.png>
+Package pdftex.def Info: images/4_analysis.png used on input line 42.
+(pdftex.def)             Requested size: 110.40253pt x 110.40193pt.
+ <images/5_analysis.png, id=53, 369.2997pt x 369.2997pt>
+File: images/5_analysis.png Graphic file (type png)
+ <use images/5_analysis.png>
+Package pdftex.def Info: images/5_analysis.png used on input line 47.
+(pdftex.def)             Requested size: 110.40253pt x 110.40193pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--50
 []$[]$$[]$ $[]$
  []
 
-) (./main.bbl) [7 <./images/oligo_concentrations.png>] [8 <./images/0_analysis.png> <./images/1_analysis.png> <./images/2_analysis.png> <./images/3_analysis.png> <./images/4_analysis.png> <./images/5_analysis.png>] (./main.aux) ) 
+[9 <./images/oligo_concentrations.png> <./images/translator_transcription_concentration.png>]) (./main.bbl) [10 <./images/0_analysis.png> <./images/1_analysis.png> <./images/2_analysis.png> <./images/3_analysis.png> <./images/4_analysis.png> <./images/5_analysis.png>] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 30977 strings out of 493013
- 707313 string characters out of 6136993
- 822974 words of memory out of 5000000
- 34095 multiletter control sequences out of 15000+600000
+ 30995 strings out of 493013
+ 708102 string characters out of 6136993
+ 822999 words of memory out of 5000000
+ 34110 multiletter control sequences out of 15000+600000
  12028 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  67i,14n,106p,10392b,729s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2016/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on main.pdf (8 pages, 1392764 bytes).
+Output written on main.pdf (10 pages, 4415263 bytes).
 PDF statistics:
- 90 PDF objects out of 1000 (max. 8388607)
- 52 compressed objects within 1 object stream
+ 100 PDF objects out of 1000 (max. 8388607)
+ 56 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 68 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 83 words of extra memory for PDF output out of 10000 (max. 10000000)
 

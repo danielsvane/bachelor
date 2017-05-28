@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex main"] 1495910240 "main.aux" "main.bbl" "main" 1495910458
+["bibtex main"] 1495971435 "main.aux" "main.bbl" "main" 1495971444
   "c:/texlive/2016/texmf-dist/bibtex/bst/base/plain.bst" 1492444835 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "main.aux" 1495910457 3038 13924a4425908fc56a2abc0803ac8a16 ""
+  "main.aux" 1495971443 3745 e3ebf52c7ebb77dd1a1d34b0b85e1c52 ""
   "references.bib" 1495812107 11111 19a5eea63be21b9db1a2d8dec30a7928 ""
   (generated)
   "main.bbl"
   "main.blg"
-["pdflatex"] 1495910453 "main.tex" "main.pdf" "main" 1495910458
+["pdflatex"] 1495971436 "main.tex" "main.pdf" "main" 1495971444
   "c:/texlive/2016/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1492445132 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "c:/texlive/2016/texmf-dist/fonts/map/fontname/texfonts.map" 1492445715 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "c:/texlive/2016/texmf-dist/fonts/tfm/jknappen/ec/tcrm0500.tfm" 1492445468 1536 b3387106d9afecbfe14bde2de6eadf47 ""
@@ -198,12 +198,15 @@
   "images/translator_annealing_2.png" 1495904830 202428 849a5ec298fac47e586c4b42558193ae ""
   "images/translator_transcription_1.png" 1495898234 199819 d010d0710c5b1664983e5452e9337bc4 ""
   "images/translator_transcription_2.png" 1495898302 219145 6252e2f3e30beea8e986a9b210899fe4 ""
-  "main.aux" 1495910457 3038 13924a4425908fc56a2abc0803ac8a16 ""
-  "main.bbl" 1495910241 114 d057f8b5ea45ac0c47cad96e0bd23b3a "bibtex main"
+  "images/translator_transcription_3.png" 1495968161 1123338 af9f121325a0cfebfdf2e2cff0bda24d ""
+  "images/translator_transcription_concentration.png" 1492958192 28805 3219d36fee9669b159ce3ccc502e1758 ""
+  "images/translator_transcription_purified.png" 1495971001 1287080 60d140f2af08a172ef9c262bf2d63258 ""
+  "main.aux" 1495971443 3745 e3ebf52c7ebb77dd1a1d34b0b85e1c52 ""
+  "main.bbl" 1495971436 114 d057f8b5ea45ac0c47cad96e0bd23b3a "bibtex main"
   "main.tex" 1495811767 466 ff32139259a430b91c6883932c0a4929 ""
-  "sections/appendix.tex" 1495910233 1284 853616b9d5c27f170475988a65aa854a ""
-  "sections/method.tex" 1495910451 10735 4b8f9af586630f60a37f10120c487d45 ""
+  "sections/appendix.tex" 1495970315 1593 dbcc507054aedbed55c0df623b674391 ""
+  "sections/method.tex" 1495971428 13077 5148d3d8e0c0c78b9174539d4f67d139 ""
   (generated)
-  "main.pdf"
-  "main.log"
   "main.aux"
+  "main.log"
+  "main.pdf"
