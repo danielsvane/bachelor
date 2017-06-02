@@ -10,11 +10,13 @@
 \usepackage{siunitx}
 \usepackage{svg}
 \usepackage{subcaption}
+\usepackage{listings}
 
 % For easier referring like \fref, \tref, \eref
 \newcommand{\tref}[1]{\tablename~\ref{#1}}
 \newcommand{\fref}[1]{\figurename~\ref{#1}}
 \newcommand{\eref}[1]{\equationname~\eqref{#1}}
+\newcommand{\lref}[1]{\lstlistingname~\ref{#1}}
 
 % Needed for scaling tikz drawings without scaling font size
 \makeatletter
@@ -29,3 +31,12 @@
   \BODY
 }
 \makeatother
+
+\lstset{
+         basicstyle=\footnotesize\ttfamily,
+         numberstyle=\tiny,
+         numbersep=5pt,
+         extendedchars=true,
+         breaklines=true,
+         frame=single
+ }

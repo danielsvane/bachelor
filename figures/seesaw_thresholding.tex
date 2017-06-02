@@ -1,0 +1,55 @@
+% !TEX root = ../main.tex
+
+\begin{tikzpicture}[baseline=-200pt]
+
+\def\inputstrand(#1,#2){
+  \begin{scope}[shift={(#1,#2)}]
+    \draw[-|](0, 0) -- node[above] {$S_1$} (2, 0);
+    \draw[-|](2, 0) -- node[above] {$T$} (3, 0);
+    \draw[->](3, 0) -- node[above] {$S_2$} (5, 0);
+  \end{scope}
+}
+
+\node at (6, 0) {$+$};
+
+\def\thresholdbot(#1,#2){
+  \begin{scope}[shift={(#1,#2)}]
+    \draw[<-](7, -0.1) -- node[below] {$s_1^*$} (8, -0.1);
+    \draw[|-](8, -0.1) -- node[below] {$T^*$} (9, -0.1);
+    \draw[|-](9, -0.1) -- node[below] {$S_2^*$} (11, -0.1);
+  \end{scope}
+}
+
+\def\thresholdtop(#1,#2){
+  \begin{scope}[shift={(#1,#2)}]
+    \draw[->](9, 0.1) -- node[above] {$S_2$} (11, 0.1);
+  \end{scope}
+}
+
+\inputstrand(0,0)
+\thresholdbot(0,0)
+\thresholdtop(0,0)
+
+\draw[->](6, -1) -- (6, -4);
+
+\inputstrand(0,-5)
+\thresholdbot(-6,-5.1)
+\node at (6, -5.1) {$+$};
+\thresholdtop(-1,-5.2)
+
+\node[align=center] at (2.5, -1) {Input strand};
+
+\node[align=center] at (9, -1) {Threshold gate};
+
+\node[align=center] at (9, -6) {Waste};
+
+% \def\strandtwo(#1,#2){
+%   \begin{scope}[shift={(#1,#2)}]
+%     \draw[<-](4,0.3) -- node[above] {d} (5.9,0.3);
+%     \node[label=above:{e}] at (6,1) {};
+%     \draw plot [smooth, tension=1] coordinates {(5.9, 0.3) (5.9, 0.4) (5.7, 0.7) (6, 1) (6.3, 0.7) (6.1, 0.4) (6.1, 0.3)};
+%     \draw(6.1,0.3) -- node[above] {f} (8,0.3);
+%   \end{scope}
+% }
+
+\end{tikzpicture}

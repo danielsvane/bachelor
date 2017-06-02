@@ -3,46 +3,47 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: main.aux
 The style file: plain.bst
 Database file #1: references.bib
-Warning--to sort, need author or key in nanodropimport
-You've used 1 entry,
+Warning--empty journal in Qian
+Warning--empty year in Qian
+You've used 2 entries,
             2118 wiz_defined-function locations,
-            499 strings with 4041 characters,
-and the built_in function-call counts, 165 in all, are:
-= -- 11
-> -- 1
+            508 strings with 4233 characters,
+and the built_in function-call counts, 530 in all, are:
+= -- 46
+> -- 31
 < -- 0
-+ -- 1
-- -- 0
-* -- 7
-:= -- 22
-add.period$ -- 1
-call.type$ -- 1
-change.case$ -- 2
++ -- 12
+- -- 10
+* -- 35
+:= -- 103
+add.period$ -- 5
+call.type$ -- 2
+change.case$ -- 11
 chr.to.int$ -- 0
-cite$ -- 2
-duplicate$ -- 7
-empty$ -- 24
-format.name$ -- 0
-if$ -- 37
+cite$ -- 4
+duplicate$ -- 20
+empty$ -- 35
+format.name$ -- 10
+if$ -- 100
 int.to.chr$ -- 0
-int.to.str$ -- 1
-missing$ -- 0
-newline$ -- 6
-num.names$ -- 0
-pop$ -- 12
+int.to.str$ -- 2
+missing$ -- 2
+newline$ -- 12
+num.names$ -- 4
+pop$ -- 13
 preamble$ -- 1
-purify$ -- 2
+purify$ -- 9
 quote$ -- 0
-skip$ -- 7
+skip$ -- 15
 stack$ -- 0
-substring$ -- 5
+substring$ -- 10
 swap$ -- 1
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 4
-warning$ -- 1
-while$ -- 0
-width$ -- 2
-write$ -- 7
-(There was 1 warning)
+type$ -- 8
+warning$ -- 2
+while$ -- 4
+width$ -- 3
+write$ -- 20
+(There were 2 warnings)

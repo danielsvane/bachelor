@@ -29,34 +29,89 @@ The neural network works by simulating the functionality of the brain, by connec
  \end{figure}
 
 \subsection{In vitro neural networks}
-It has previously been shown that the function of the artificial neuron can also be implemented using strand displacement reactions. The system is based on the seesaw gate motif, and can fullfill most of the functionality of a real neuron.
+It has previously been shown that the function of the artificial neuron can also be implemented using strand displacement reactions. The system is based on the seesaw gate motif \cite{Qian}, and can fullfill most of the functionality of a real neuron \cite{Qian2011}.
 
-INSERT GENERAL INFORMATION ABOUT THE SEESAW WITH TOEHOLDS HERE
+%INSERT GENERAL INFORMATION ABOUT THE SEESAW WITH TOEHOLDS HERE
+
+\subsubsection{Seesaw gate}
+
+The seesaw gate is a catalytic gate with a threshold, designed for use in scalable strand displacement circuits.
+
 
 ALSO A SUMMARY OF INPUT WEIGHT, SUMMATION, THRESHOLDING
 
 \subsubsection{Thresholding}
 In the natural neuron, the neuron will activate when its inputs exceeds a threshold. This is implemented using a threshold gate which will bind the input and prevent it from reacting downstream in the network. If the threshold gate concentration is higher than the input concentration, the input will be suppressed by the threshold. If the threshold gate concentration is lower than the input concentration, not all of the input is suppressed, and will be able to react further downstream in the network.
 
+% \begin{subfigure}{.49\columnwidth}
+%   \centering
+%   \includegraphics[width=\linewidth]{images/transcription_annealed_nostain.png}
+%   \caption{Not stained}
+% \end{subfigure}
+
 \begin{figure}[H]
-\centering
-\includegraphics[width=\columnwidth]{images/seesaw_threshold.png}
-\caption{}
-\label{seesaw_threshold}
+  \begin{subfigure}[t]{.49\columnwidth}
+    \centering
+\adjustbox{width=\linewidth} {
+\input{figures/seesaw_thresholding.tex}
+}
+\caption{Reaction of an input strand with a threshold gate. The product has no free toehold domain, and can't undergo reverse reaction. The waste has no toehold, and can't parcitipate in further reactions.}
+\label{}
+\end{subfigure}
+\hfill
+\begin{subfigure}[t]{.49\columnwidth}
+  \centering
+\includegraphics[width=\linewidth]{images/thresholding.png}
+\caption{Time analysis of the concentration of input strand (5 nM start concentration). A threshold concentration higher than the input (red) will bind all input strand. A lower concentration (blue), will allow the input strand to participate in further displacement reactions.}
+\label{}
+\end{subfigure}
 \end{figure}
 
 \subsubsection{Integration}
 The input to the neuron have to be collected before thresholding, as they don't have the same left recognition sequence. This is done through an integrating gate, which will collect all inputs with the same right recognition sequence, and release a common signal which can be thresholded.
 
 \begin{figure}[H]
-\centering
-\includegraphics[width=\columnwidth]{images/seesaw_integration.png}
-\caption{}
+  \begin{subfigure}[t]{.49\columnwidth}
+    \centering
+\adjustbox{width=\linewidth} {
+\input{figures/seesaw_integration.tex}
+}
+\caption{Reaction of 2 input strands with an integration gate. The input strands have the same right recognition sequence $S_2$, and will both displace the top strand of the integration gate, releasing the output.}
+\label{}
+\end{subfigure}
+\hfill
+\begin{subfigure}[t]{.49\columnwidth}
+  \centering
+\includegraphics[width=\linewidth]{images/integration.png}
+\caption{Time analysis of the concentration of the output strand. The concentration of the integration gate is 20 nM. The first input of 15 nM increases the output strand concentration, compared to the second input of 5 nM. When both strands are added the concentration of output increases further.}
+\label{}
+\end{subfigure}
 \label{seesaw_integration}
 \end{figure}
 
 \subsubsection{Weighting}
-The inputs to the gate are weighted using their concentration. By making the integration gates concentration the sum of all the input concentrations, a high concentration of one input strand will contribute more to the activation than that of a low concentration.
+The inputs to the gate are weighted using their concentration. By making the integration gates concentration the sum of all the input concentrations, a high concentration of one input strand will contribute more to the activation than that of a low concentration, as shown in \fref{seesaw_integration}.
+
+The weight is decided by the concentration of output of a input neuron and its fuel strand. The fuel serves the purpose of pushing the output of one gate to its target concentration.
+
+\begin{figure}[H]
+  \begin{subfigure}[t]{.49\columnwidth}
+    \centering
+\adjustbox{width=\linewidth} {
+\input{figures/seesaw_weighting.tex}
+}
+\caption{Reaction of 2 input strands with an integration gate. The input strands have the same right recognition sequence $S_2$, and will both displace the top strand of the integration gate, releasing the output.}
+\label{}
+\end{subfigure}
+\hfill
+\begin{subfigure}[t]{.49\columnwidth}
+  \centering
+\includegraphics[width=\linewidth]{images/integration.png}
+\caption{Time analysis of the concentration of the output strand. The concentration of the integration gate is 20 nM. The first input of 15 nM increases the output strand concentration, compared to the second input of 5 nM. When both strands are added the concentration of output increases further.}
+\label{}
+\end{subfigure}
+\label{seesaw_integration}
+\end{figure}
 
 \begin{figure}[H]
 \centering

@@ -1,0 +1,33 @@
+% !TEX root = ../main.tex
+
+\begin{tikzpicture}[baseline=-200pt]
+
+\draw[-|](0, 0) -- node[above] {$S_1$} (2, 0);
+\draw[-|](2, 0) -- node[above] {$T$} (3, 0);
+\draw[->](3, 0) -- node[above] {$S_2$} (5, 0);
+
+\node at (3, -1.7) {$+$};
+
+\draw[-|](1, -1.5) -- node[above] {$S_2$} (3, -1.5);
+\draw[-|](3, -1.5) -- node[above] {$T$} (4, -1.5);
+\draw[->](4, -1.5) -- node[above] {$S_3$} (6, -1.5);
+
+\draw[<-](0, -1.7) -- node[below] {$T^*$} (1, -1.7);
+\draw[-|](1, -1.7) -- node[below] {$S_2^*$} (3, -1.7);
+\draw[-|](3, -1.7) -- node[below] {$T^*$} (5, -1.7);
+
+\node at (3, -2) {$+$};
+
+\draw[-|](0, -3) -- node[above] {$S_2$} (2, -3);
+\draw[-|](2, -3) -- node[above] {$T$} (3, -3);
+\draw[->](3, -3) -- node[above] {$S_f$} (5, -3);
+
+\node[align=center] at (2.5, -0.5) {Input 1};
+
+\node[align=center] at (2.5, -3.5) {Input 2};
+
+\node[align=center] at (10, -2.7) {Integration gate};
+
+\node[align=center] at (10.5, -0.7) {Output};
+
+\end{tikzpicture}
