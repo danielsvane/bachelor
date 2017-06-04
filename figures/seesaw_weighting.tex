@@ -1,33 +1,66 @@
 % !TEX root = ../main.tex
 
-\begin{tikzpicture}[baseline=-200pt]
+\begin{tikzpicture}[baseline=-250pt]
 
-\draw[-|](0, 0) -- node[above] {$S_1$} (2, 0);
-\draw[-|](2, 0) -- node[above] {$T$} (3, 0);
-\draw[->](3, 0) -- node[above] {$S_2$} (5, 0);
+\def\inputstrand(#1,#2){
+  \begin{scope}[shift={(#1,#2)}]
+    \draw[-|](0, 0) -- node[above] {$S_1$} (2, 0);
+    \draw[-|](2, 0) -- node[above] {$T$} (3, 0);
+    \draw[->](3, 0) -- node[above] {$S_2$} (5, 0);
+  \end{scope}
+}
 
-\node at (3, -1.7) {$+$};
 
+\def\gatetop(#1,#2){
+
+  \begin{scope}[shift={(#1,#2)}]
 \draw[-|](1, -1.5) -- node[above] {$S_2$} (3, -1.5);
 \draw[-|](3, -1.5) -- node[above] {$T$} (4, -1.5);
 \draw[->](4, -1.5) -- node[above] {$S_3$} (6, -1.5);
+\end{scope}
+}
 
+\def\gatebottom(#1,#2){
+
+  \begin{scope}[shift={(#1,#2)}]
 \draw[<-](0, -1.7) -- node[below] {$T^*$} (1, -1.7);
-\draw[-|](1, -1.7) -- node[below] {$S_2^*$} (3, -1.7);
-\draw[-|](3, -1.7) -- node[below] {$T^*$} (5, -1.7);
+\draw[|-](1, -1.7) -- node[below] {$S_2^*$} (3, -1.7);
+\draw[|-](3, -1.7) -- node[below] {$T^*$} (4, -1.7);
+\end{scope}
+}
 
-\node at (3, -2) {$+$};
+\def\fuel(#1,#2){
 
+  \begin{scope}[shift={(#1,#2)}]
 \draw[-|](0, -3) -- node[above] {$S_2$} (2, -3);
 \draw[-|](2, -3) -- node[above] {$T$} (3, -3);
 \draw[->](3, -3) -- node[above] {$S_f$} (5, -3);
+\end{scope}
+}
 
-\node[align=center] at (2.5, -0.5) {Input 1};
+\inputstrand(0,0)
+\gatetop(-0.5,-1)
+\gatebottom(-0.5,-1)
+\fuel(0,-2)
 
-\node[align=center] at (2.5, -3.5) {Input 2};
+\node[align=center] at (2.5, -0.5) {Input};
+%
+\node[align=center] at (2.5, -3.5) {Gate};
 
-\node[align=center] at (10, -2.7) {Integration gate};
+\node[align=center] at (2.5, -5.5) {Fuel};
+\node[align=center] at (13, -3) {Output};
+%
+% \node[align=center] at (10, -2.7) {Integration gate};
+%
+% \node[align=center] at (10.5, -0.7) {Output};
 
-\node[align=center] at (10.5, -0.7) {Output};
+
+\draw[->](7.5, -2.5) -- (8.5, -2.5);
+
+\inputstrand(10,0)
+\gatebottom(12,1.5)
+\gatetop(9.5,-1)
+\gatebottom(10,-3)
+\fuel(11,-1.5)
 
 \end{tikzpicture}

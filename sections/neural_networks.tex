@@ -43,12 +43,6 @@ ALSO A SUMMARY OF INPUT WEIGHT, SUMMATION, THRESHOLDING
 \subsubsection{Thresholding}
 In the natural neuron, the neuron will activate when its inputs exceeds a threshold. This is implemented using a threshold gate which will bind the input and prevent it from reacting downstream in the network. If the threshold gate concentration is higher than the input concentration, the input will be suppressed by the threshold. If the threshold gate concentration is lower than the input concentration, not all of the input is suppressed, and will be able to react further downstream in the network.
 
-% \begin{subfigure}{.49\columnwidth}
-%   \centering
-%   \includegraphics[width=\linewidth]{images/transcription_annealed_nostain.png}
-%   \caption{Not stained}
-% \end{subfigure}
-
 \begin{figure}[H]
   \begin{subfigure}[t]{.49\columnwidth}
     \centering
@@ -100,29 +94,78 @@ The weight is decided by the concentration of output of a input neuron and its f
 \adjustbox{width=\linewidth} {
 \input{figures/seesaw_weighting.tex}
 }
-\caption{Reaction of 2 input strands with an integration gate. The input strands have the same right recognition sequence $S_2$, and will both displace the top strand of the integration gate, releasing the output.}
+\caption{Reaction of an input strand with a gate and fuel. The input displaces the output strand from the gate, and the fuel blocks the reverse reaction, pushing the equilibrium towards the free output.}
 \label{}
 \end{subfigure}
-\hfill
+\quad
 \begin{subfigure}[t]{.49\columnwidth}
   \centering
-\includegraphics[width=\linewidth]{images/integration.png}
-\caption{Time analysis of the concentration of the output strand. The concentration of the integration gate is 20 nM. The first input of 15 nM increases the output strand concentration, compared to the second input of 5 nM. When both strands are added the concentration of output increases further.}
+\includegraphics[width=\linewidth]{images/weighting.png}
+\caption{Time analysis of the concentration of the output strand. Input and gate concentration is initially 1 nM. When the fuel concentration is low (blue), the output concentration doesn't reach the initial gate concentration. When the fuel concentration is high (red), the output concentration is pushed closer towards its maximum concentration.}
 \label{}
 \end{subfigure}
-\label{seesaw_integration}
+\label{seesaw_weighting}
 \end{figure}
+
+A problem with this approach to weighting, is that the inputs can only contribute positively to the sum. In silico neural networks can use negative weights to simulate inhibitory synaptic connections, and is needed to implement many kind of boolean functions. The in vitro network can't have negative concentrations of input sequences, so other approaches have to be considered. The problem can be solved using dual rail logic, where each input is replaced by two inputs. The details of the dual rail logic circuits is not a part of this report, and thus the networks will be limited to simple AND and OR circuits.
+
+\subsubsection{Neuron}
+By combining the discussed functional elements of the seesaw gate, a neuron can be created using strand displacement reactions, as depicted in \fref{seesaw_neuron}.
 
 \begin{figure}[H]
-\centering
-\includegraphics[width=\columnwidth]{images/seesaw_weight.png}
-\caption{}
-\label{seesaw_weight}
+    \centering
+\adjustbox{width=\columnwidth} {
+\input{figures/seesaw_neuron.tex}
+}
+\caption{Schematic of a 2-input neuron implemented with seesaw gates. The neuron has an input gate for each input, which makes sure that the input is higher than a give threshold before the input is registered. The gate and fuel concentrations in each input gate affects the weight of the input before it is sent to the integration gate. The integration gate collects the right recognition sequence from the input gates for the threshold gate. The threshold gate activates if the sum of the weighted inputs is larger than the threshold concentration of the treshold gate.}
+\label{seesaw_neuron}
 \end{figure}
 
-A problem with this approach to weighting, is that the inputs can only contribute positively to the sum. In silico neural networks can use negative weights to simulate inhibitory synaptic connections, and is needed to implement many kind of boolean functions. The in vitro network can't have negative concentrations of input sequences, so other approaches have to be considered.
 
-WRITE STUFF ABOUT DUAL RAIL LOGIC HERE
 
 \subsubsection{Training}
-WRITE STUFF ABOUT TRAINING
+The training algorithm typically used for digital perceptrons is based on the ability of the neurons to have negative weights and thresholds. A modified algorithm is presented in \cite{Qian2011}, which works for dual rail circuits. For the circuits in this report without dual rail logic, the algorithm is as follows.
+
+\begin{lstlisting}
+initialize all weights to 0 and threshold to 10
+while training is incomplete
+  for all the input sets
+    find the output of the network from the input set
+    if output is not correct
+      mark training as incomplete
+  if training is marked as incomplete
+    increase the weights
+\end{lstlisting}
+
+This process will keep increasing the weights until the output of the network matches the desired output. Note that this will only work for AND and OR logic.
+
+The input sets are taken from the truth table that the circuit should realize. If the circuit for example should realize the simple AND gate (see \tref{and_table}), the network is activated with the input rows from the truth table, and tested whether the output equals (or is very close) to the output in the truth table.
+
+\begin{table}[]
+\centering
+\begin{tabular}{ccc}
+  \hline
+\multicolumn{1}{l}{\textbf{Input 1}} & \multicolumn{1}{l}{\textbf{Input 2}} & \multicolumn{1}{l}{\textbf{Output}} \\
+\hline
+0                                    & 0                                    & 0                                   \\
+0                                    & 1                                    & 0                                   \\
+1                                    & 0                                    & 0                                   \\
+1                                    & 1                                    & 1 \\
+\hline
+\end{tabular}
+\caption{Truth table for an AND gate.}
+\label{and_table}
+\end{table}
+
+\subsection{Input translation}
+
+As per design of the seesaw gate, the input sequences for the strand displacement neural network needs very specific left-recognition, right-recognition and toehold sequences. To detect sequences that does not have these elements, the sequence has to be translated. It has previously been demonstrated that miRNAs can be translated to other sequences \cite{Picuri2009}, by using two half-translators.
+
+\begin{figure}[H]
+    \centering
+\adjustbox{width=\columnwidth} {
+\input{figures/translator.tex}
+}
+\caption{Translation of arbitrary input sequences into the syntax required for the seesaw neural network. The input strand $ab$ displaces $bS_1T$ from the first half-translator. $bS_1T$ can then displace $S_1TS_2$ from the second half translator. This process successfully translates the input $ab$ into $S_1TS_2$, which can then be used for input in a neural network (see \fref{seesaw_neuron}).}
+\label{translator}
+\end{figure}
