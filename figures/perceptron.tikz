@@ -1,0 +1,36 @@
+% !TEX root = ../main.tex
+\begin{tikzpicture}
+
+\tikzstyle{box} = [rectangle, draw, fill=white]
+
+\coordinate (a) at (0, 0);
+\coordinate (b) at (0, -3);
+\coordinate (c) at (5, -1.5);
+\coordinate (d) at (7.5, -1.5);
+\coordinate (e) at (10, -1.5);
+
+\draw(a) -- (c);
+\draw(b) -- (c);
+\draw(c) -- (d);
+\draw(d) -- (e);
+
+
+\filldraw[fill=white] (a) circle (1) node{$x_1$};
+\filldraw[fill=white] (b) circle (1) node{$x_2$};
+
+\filldraw[fill=white] (c) circle (1) node{$\sum{w_ix_i}$};
+
+\filldraw[fill=white] (d) circle (1) node{$th$};
+
+\filldraw[fill=white] (e) circle (1) node{$y$};
+
+\node [box] at ($(a)!0.5!(c)$) {$w_1$};
+\node [box] at ($(b)!0.5!(c)$) {$w_2$};
+
+\node at (0, 2) {Inputs};
+\node at (2.5, 2) {Weights};
+\node at (5, 2) {Integration};
+\node at (7.5, 2) {Tresholding};
+\node at (10, 2) {Output};
+
+\end{tikzpicture}

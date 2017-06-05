@@ -1,54 +1,75 @@
 % !TEX root = ../main.tex
 \section{Neural networks}
 \subsection{In silico neural networks}
-Artificial neural networks (referred to just as neural networks) is a software implementation of the connection of neurons in the brain. In computer science they can be used to solve a wide variety of problems, like character and facial recognition. They present an advantage over conventional programmatic methods, as they don't need explicit coding for each new problem. There exist many different implementations of neural networks, but in the case of the perceptron (also known as feed-forward neural network), it only needs to know the inputs and the matching outputs to train itself. An example usage showing character recognition can be seen in figure \ref{neuralnetwork_example}.
+Artificial neural networks (referred to just as neural networks) is a software implementation of the connection of neurons in the brain. In computer science they can be used to solve a wide variety of problems, like character and facial recognition. They present an advantage over conventional programmatic methods, as they don't need explicit coding for each new problem. The simplest instance of neural networks is the single neuron, also known as the perceptron. The perceptron can be used for simple decision making (giving yes/no answers) from a set of inputs. The logical 2-input AND operator is an example of a problem that can be solved with the perceptron, where the perceptron can output 1 if both the inputs are 1, otherwise 0.
+
+The perceptron works by taking all the inputs, and multiplying each input by its associated weight. If the sum of the multiplied inputs exceeds a certain threshold, the perceptron will output 1, otherwise 0. This is shown schematically in \fref{perceptron}.
 
 \begin{figure}[H]
-\centering
-\includegraphics[width=\columnwidth]{images/neuralnetwork_example.png}
-\caption{An example usage of a neural network recognizing the handdrawn letter "a". The typical approach is to segment the area into a grid. Only 2x2 is shown here for simplification, but usually larger grids are used. The average color of each segment is calculated, and fed into a neural network, which has been trained to output "a", when presented an input resembling the handdrawn version.}
-\label{neuralnetwork_example}
+\includegraphics[width=\textwidth]{figures/perceptron.tikz}
+\caption{Diagram of the artificial perceptron.}
+\label{perceptron}
 \end{figure}
 
-The neural network works by simulating the functionality of the brain, by connecting neurons together by varying strength. Continuing the example from figure \ref{neuralnetwork_example}, the 4 segments are fed into 4 input neurons (see figure \ref{neuralnetwork_neurons}). The 4 input neurons are connected to an output neuron by varying strength, much like the synapses of the natural neuron. If the weighted inputs sum exceed the threshold of the output neuron, it will activate. In this simplified example, the output neurons activation is of limited value, as it can only give a yes or no answer to if the input resembles an "a".
+The representation can be simplified to the type shown in \fref{perceptron_simple}. The weights and thresholds for the perceptron version of the 2-input AND gate can also be seen in \fref{perceptron_simple}.
 
 \begin{figure}[H]
-\centering
-\includegraphics[width=200]{images/neuralnetwork_neurons.png}
-\caption{}
-\label{neuralnetwork_neurons}
+  \begin{subfigure}[t]{.49\textwidth}
+    \includegraphics[width=\textwidth]{figures/perceptron_simple.tikz}
+    \caption{Simple representation of a 2-input perceptron.}
+  \end{subfigure}
+  \quad
+  \begin{subfigure}[t]{.49\textwidth}
+    \includegraphics[width=\textwidth]{figures/perceptron_and.tikz}  \caption{Weights and thresholds on a perceptron that implements the 2-input AND gate.}
+  \end{subfigure}
+  \caption{}
+  \label{perceptron_simple}
 \end{figure}
 
- In a more practical example, the network would have enough input neurons to accommodate a 100x100 grid (10,000 input neurons), have some layers of neurons between the input and output (hidden layers), and enough output neurons to represent binary encoded characters (see figure \ref{neuralnetwork_ocr}).
+The perceptron is limited to classifying inputs that are linearly separable [SOURCE], which rules out the XOR operation.
 
- \begin{figure}[H]
- \centering
- \includegraphics[width=\columnwidth]{images/neuralnetwork_ocr.png}
- \caption{}
- \label{neuralnetwork_ocr}
- \end{figure}
+% \begin{figure}[H]
+% \centering
+% \includegraphics[width=\columnwidth]{images/neuralnetwork_example.png}
+% \caption{An example usage of a neural network recognizing the handdrawn letter "a". The typical approach is to segment the area into a grid. Only 2x2 is shown here for simplification, but usually larger grids are used. The average color of each segment is calculated, and fed into a neural network, which has been trained to output "a", when presented an input resembling the handdrawn version.}
+% \label{neuralnetwork_example}
+% \end{figure}
 
-\subsection{In vitro neural networks}
-It has previously been shown that the function of the artificial neuron can also be implemented using strand displacement reactions. The system is based on the seesaw gate motif \cite{Qian}, and can fullfill most of the functionality of a real neuron \cite{Qian2011}.
+% The neural network works by simulating the functionality of the brain, by connecting neurons together by varying strength. Continuing the example from figure \ref{neuralnetwork_example}, the 4 segments are fed into 4 input neurons (see figure \ref{neuralnetwork_neurons}). The 4 input neurons are connected to an output neuron by varying strength, much like the synapses of the natural neuron. If the weighted inputs sum exceed the threshold of the output neuron, it will activate. In this simplified example, the output neurons activation is of limited value, as it can only give a yes or no answer to if the input resembles an "a".
 
-%INSERT GENERAL INFORMATION ABOUT THE SEESAW WITH TOEHOLDS HERE
+% \begin{figure}[H]
+% \centering
+% \includegraphics[width=200]{images/neuralnetwork_neurons.png}
+% \caption{}
+% \label{neuralnetwork_neurons}
+% \end{figure}
+%
+%  In a more practical example, the network would have enough input neurons to accommodate a 100x100 grid (10,000 input neurons), have some layers of neurons between the input and output (hidden layers), and enough output neurons to represent binary encoded characters (see figure \ref{neuralnetwork_ocr}).
+%
+%  \begin{figure}[H]
+%  \centering
+%  \includegraphics[width=\columnwidth]{images/neuralnetwork_ocr.png}
+%  \caption{}
+%  \label{neuralnetwork_ocr}
+%  \end{figure}
 
-\subsubsection{Seesaw gate}
+\subsection{In vitro perceptron}
+It has previously been shown that the function of the artificial neuron can also be implemented using strand displacement reactions. The system is based on the seesaw gate motif \cite{Qian}, and can fullfill most of the functionality of a real neuron \cite{Qian2011}. The seesaw gate is a catalytic gate with a threshold, designed for use in scalable strand displacement circuits. The seesaw gate uses a toehold to accelerate reactions, and has a left and right recognition domain to connect to other seesaw gates. The seesaw is named after the back and forth reaction of the strand displacement reactions, seen in \fref{seesaw}.
 
-The seesaw gate is a catalytic gate with a threshold, designed for use in scalable strand displacement circuits.
+\begin{figure}[H]
+\includegraphics[width=\textwidth]{figures/seesaw.tikz}
+\caption{The back on forth reactions of the seesaw gate.}
+\label{seesaw}
+\end{figure}
 
-
-ALSO A SUMMARY OF INPUT WEIGHT, SUMMATION, THRESHOLDING
+The reaction can be pushed to the right by using a fuel strand, or the input can be reduced by using a threshold gate, the details of which is discussed below.
 
 \subsubsection{Thresholding}
 In the natural neuron, the neuron will activate when its inputs exceeds a threshold. This is implemented using a threshold gate which will bind the input and prevent it from reacting downstream in the network. If the threshold gate concentration is higher than the input concentration, the input will be suppressed by the threshold. If the threshold gate concentration is lower than the input concentration, not all of the input is suppressed, and will be able to react further downstream in the network.
 
 \begin{figure}[H]
-  \begin{subfigure}[t]{.49\columnwidth}
-    \centering
-\adjustbox{width=\linewidth} {
-\input{figures/seesaw_thresholding.tex}
-}
+  \begin{subfigure}[t]{.49\textwidth}
+    \includegraphics[width=\textwidth]{figures/seesaw_thresholding.tikz}
 \caption{Reaction of an input strand with a threshold gate. The product has no free toehold domain, and can't undergo reverse reaction. The waste has no toehold, and can't parcitipate in further reactions.}
 \label{}
 \end{subfigure}
@@ -65,11 +86,8 @@ In the natural neuron, the neuron will activate when its inputs exceeds a thresh
 The input to the neuron have to be collected before thresholding, as they don't have the same left recognition sequence. This is done through an integrating gate, which will collect all inputs with the same right recognition sequence, and release a common signal which can be thresholded.
 
 \begin{figure}[H]
-  \begin{subfigure}[t]{.49\columnwidth}
-    \centering
-\adjustbox{width=\linewidth} {
-\input{figures/seesaw_integration.tex}
-}
+  \begin{subfigure}[t]{.49\textwidth}
+    \includegraphics[width=\textwidth]{figures/seesaw_integration.tikz}
 \caption{Reaction of 2 input strands with an integration gate. The input strands have the same right recognition sequence $S_2$, and will both displace the top strand of the integration gate, releasing the output.}
 \label{}
 \end{subfigure}
@@ -89,11 +107,8 @@ The inputs to the gate are weighted using their concentration. By making the int
 The weight is decided by the concentration of output of a input neuron and its fuel strand. The fuel serves the purpose of pushing the output of one gate to its target concentration.
 
 \begin{figure}[H]
-  \begin{subfigure}[t]{.49\columnwidth}
-    \centering
-\adjustbox{width=\linewidth} {
-\input{figures/seesaw_weighting.tex}
-}
+  \begin{subfigure}[t]{.49\textwidth}
+    \includegraphics[width=\textwidth]{figures/seesaw_weighting.tikz}
 \caption{Reaction of an input strand with a gate and fuel. The input displaces the output strand from the gate, and the fuel blocks the reverse reaction, pushing the equilibrium towards the free output.}
 \label{}
 \end{subfigure}
@@ -112,16 +127,40 @@ A problem with this approach to weighting, is that the inputs can only contribut
 \subsubsection{Neuron}
 By combining the discussed functional elements of the seesaw gate, a neuron can be created using strand displacement reactions, as depicted in \fref{seesaw_neuron}.
 
+
 \begin{figure}[H]
-    \centering
-\adjustbox{width=\columnwidth} {
-\input{figures/seesaw_neuron.tex}
-}
+\includegraphics[width=\textwidth]{figures/seesaw_neuron.tikz}
 \caption{Schematic of a 2-input neuron implemented with seesaw gates. The neuron has an input gate for each input, which makes sure that the input is higher than a give threshold before the input is registered. The gate and fuel concentrations in each input gate affects the weight of the input before it is sent to the integration gate. The integration gate collects the right recognition sequence from the input gates for the threshold gate. The threshold gate activates if the sum of the weighted inputs is larger than the threshold concentration of the treshold gate.}
 \label{seesaw_neuron}
 \end{figure}
 
+Instead of displaying all strands of the seesaw circuit, each gate can be represented by a simplified seesaw gate schematic. The first input gate from \fref{seesaw_neuron} is shown as a schematic in \fref{seesaw_gate_simple}.
 
+\begin{figure}[H]
+  \begin{subfigure}[t]{.49\textwidth}
+    \includegraphics[width=\textwidth]{figures/seesaw_gate.tikz}
+    \caption{Seesaw gate strands}
+  \end{subfigure}
+  \quad
+  \begin{subfigure}[t]{.49\textwidth}
+    \includegraphics[width=\textwidth]{figures/seesaw_neuron_simple.tikz}
+    \caption{Seesaw gate schematic}
+  \end{subfigure}
+  \caption{The strands and concentrations of the units of a seesaw gate can be represented schematically to simplify larger diagrams.}
+  \label{seesaw_gate_simple}
+\end{figure}
+
+Using the schematic representation, the seesaw neuron from \fref{seesaw_neuron} can be simplified to the schematic in \fref{seesaw_neuron_schematic}.
+
+\begin{figure}[H]
+  \includegraphics[width=\textwidth]{figures/seesaw_neuron_schematic.tikz}
+  \caption{The seesaw neuron from \fref{seesaw_neuron} shown schematically.}
+  \label{seesaw_neuron_schematic}
+\end{figure}
+
+The recommendations from \cite{Qian2011} is that each fuel strands concentrations is twice that of the gate concentration. The threshold concentration on the input gates (as shown in \fref{seesaw_neuron_schematic}) allows for concentrations of input strand less than 2 nM to still be detected as 0.
+
+The representation from \fref{seesaw_neuron_schematic} can further be simplified to the original perceptron shown in \fref{perceptron}. The seesaw neuron thus successfully implements all the required functionality of the artificial neuron, except for negative weights.
 
 \subsubsection{Training}
 The training algorithm typically used for digital perceptrons is based on the ability of the neurons to have negative weights and thresholds. A modified algorithm is presented in \cite{Qian2011}, which works for dual rail circuits. For the circuits in this report without dual rail logic, the algorithm is as follows.
@@ -162,10 +201,7 @@ The input sets are taken from the truth table that the circuit should realize. I
 As per design of the seesaw gate, the input sequences for the strand displacement neural network needs very specific left-recognition, right-recognition and toehold sequences. To detect sequences that does not have these elements, the sequence has to be translated. It has previously been demonstrated that miRNAs can be translated to other sequences \cite{Picuri2009}, by using two half-translators.
 
 \begin{figure}[H]
-    \centering
-\adjustbox{width=\columnwidth} {
-\input{figures/translator.tex}
-}
+    \includegraphics[width=\textwidth]{figures/translator.tikz}
 \caption{Translation of arbitrary input sequences into the syntax required for the seesaw neural network. The input strand $ab$ displaces $bS_1T$ from the first half-translator. $bS_1T$ can then displace $S_1TS_2$ from the second half translator. This process successfully translates the input $ab$ into $S_1TS_2$, which can then be used for input in a neural network (see \fref{seesaw_neuron}).}
 \label{translator}
 \end{figure}

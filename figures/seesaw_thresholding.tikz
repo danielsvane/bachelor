@@ -1,6 +1,6 @@
 % !TEX root = ../main.tex
 
-\begin{tikzpicture}[baseline=-200pt]
+\begin{tikzpicture}
 
 \def\inputstrand(#1,#2){
   \begin{scope}[shift={(#1,#2)}]
@@ -10,7 +10,7 @@
   \end{scope}
 }
 
-\node at (6, 0) {$+$};
+% \node at (6, 0) {$+$};
 
 \def\thresholdbot(#1,#2){
   \begin{scope}[shift={(#1,#2)}]
@@ -30,16 +30,16 @@
 \thresholdbot(0,0)
 \thresholdtop(0,0)
 
-\draw[->](6, -1) -- (6, -4);
+\draw[->](6, -2) -- (6, -4);
 
 \inputstrand(0,-5)
 \thresholdbot(-6,-5.1)
-\node at (6, -5.1) {$+$};
+% \node at (6, -5.1) {$+$};
 \thresholdtop(-1,-5.2)
 
-\node[align=center] at (2.5, -1) {Input strand};
+\node[align=center] at (2.5, -1.5) {Input strand};
 
-\node[align=center] at (9, -1) {Threshold gate};
+\node[align=center] at (9, -1.5) {Threshold gate};
 
 \node[align=center] at (9, -6) {Waste};
 

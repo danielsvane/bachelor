@@ -1,0 +1,22 @@
+% !TEX root = ../main.tex
+\begin{tikzpicture}
+
+\tikzstyle{box} = [rectangle, draw, fill=white]
+
+\node (a) at (0, 0);
+\node (b) at (-2, 1);
+\node (c) at (-2, -1);
+\node (d) at (2, 0);
+
+\draw (b) -- node[near start, above] {$w_1$} (a);
+\node[left] at (b) {$x_1$};
+
+\draw (c) -- node[near start, above] {$w_2$} (a);
+\node[left] at (c) {$x_2$};
+
+\draw (a) -- (d);
+\node[right] at (d) {$y$};
+
+\filldraw[fill=white] (a) circle (1) node{$th$};
+
+\end{tikzpicture}

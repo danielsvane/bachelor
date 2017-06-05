@@ -1,0 +1,54 @@
+% !TEX root = ../main.tex
+
+\begin{tikzpicture}
+
+\def\seesawtop(#1, #2, #3, #4){
+  \begin{scope}[shift={(#1,#2)}]
+    \draw[-|](0, 0) -- node[above] {$#3$} (2, 0);
+    \draw[-|](2, 0) -- node[above] {$T$} (3, 0);
+    \draw[->](3, 0) -- node[above] {$#4$} (5, 0);
+  \end{scope}
+}
+
+\def\seesawbottom(#1, #2, #3, #4){
+  \begin{scope}[shift={(#1,#2)}]
+    \draw[<-](0, 0) -- node[below] {$T^*$} (1, 0);
+    \draw[-|](1, 0) -- node[below] {$#3^*$} (3, 0);
+    \draw[-|](3, 0) -- node[below] {$T^*$} (4, 0);
+  \end{scope}
+}
+
+\def\inputstrand(#1,#2, #3, #4){
+  \begin{scope}[shift={(#1,#2)}]
+    \draw[-|](0, 0) -- node[above] {$#3$} (2, 0);
+    \draw[-|](2, 0) -- node[above] {$T$} (3, 0);
+    \draw[->](3, 0) -- node[above] {$#4$} (5, 0);
+  \end{scope}
+}
+
+\seesawtop(1, 0, S_2, S_3);
+\seesawbottom(0, -0.1, S_2, S_3);
+\node[below] at (3, -1) {Seesaw gate};
+
+\inputstrand(0.5, -3, S_1, S_2);
+\node[below] at (3, -3.5) {Input strand};
+
+\draw[<->] (7, -1.5) -- (8, -1.5);
+
+\seesawtop(9.5, 0, S_2, S_3);
+\node[below] at (12, -0.5) {Output};
+
+\inputstrand(9, -3, S_1, S_2);
+\seesawbottom(11, -3.1, S_2, S_3);
+
+\node[above] at (1, 2.5) {Left recognition sequence};
+\draw[->] (1, 2.5) -- (2, 0.8);
+
+\node[above] at (6, 1.5) {Right recognition sequence};
+\draw[->] (6, 1.5) -- (5, 0.8);
+
+
+
+
+
+\end{tikzpicture}

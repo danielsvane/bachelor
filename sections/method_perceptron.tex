@@ -1,0 +1,43 @@
+% !TEX root = ../main.tex
+\section{Perceptron simulation}
+
+To simulate a perceptron with strand displacement reactions, the Visual DSD software was used to implement each of the subunits of a seesaw neuron discussed in the theory section. The syntax of the four subunits required to create a perceptron can be seen below (refer to the Visual DSD manual for the syntax \cite{dsdmanual}).
+
+\begin{lstlisting}[label=dsd_subunits]
+  def signal(N, S1L, S1, S1R, S2L, S2, S2R) = N * <S1L^ S1 S1R^ T^ S2L^ S2 S2R^>
+  def threshold(N, S1R, S2L, S2, S2R) = N * {S1R^* T^*}[S2L^ S2 S2R^]
+  def gate(N, S2L, S2, S2R, S3L, S3, S3R) = N * {T^*}[S2L^ S2 S2R^ T^]<S3L^ S3 S3R^>
+  def fuel(N, S1L, S1, S1R) = N * <S1L^ S1 S1R^ T^ Sf>
+\end{lstlisting}
+
+Each of the subunits can be called with the desired left and right recognition sequences, when combining them for larger units. Note that each of the recognition sequences (S1 for example) is split into 3 (S1L, S1, S1R). This is needed to implement the threshold gate, which has a short part of the left recognition sequence (\fref{seesaw_thresholding}).
+
+
+The actual perceptron can be pieced together by combining the subunits from \lref{dsd_subunits}. The 2-input AND using seesaw gates seen in \fref{seesaw_gate}, can be written in Visual DSD as:
+
+\begin{lstlisting}[label=dsd_and_gate]
+  (
+  (* First input gate *)
+  signal(0.9, S1L, S1, S1R, S2L, S2, S2R) |
+  threshold(0.2, S1R, S2L, S2, S2R) |
+  gate(1.0, S2L, S2, S2R, S3L, S3, S3R) |
+  fuel(2, S2L, S2, S2R) |
+  (* Second input gate*)
+  signal(0.9, S4L, S4, S4R, S5L, S5, S5R) |
+  threshold(0.2, S4R, S5L, S5, S5R) |
+  gate(1.0, S5L, S5, S5R, S3L, S3, S3R) |
+  fuel(2, S5L, S5, S5R) |
+  (* Summation gate *)
+  gate(2, S3L, S3, S3R, S6L, S6, S6R) |
+  (* Thresholding gate *)
+  threshold(1.5, S3R, S6L, S6, S6R) |
+  gate(1.0, S6L, S6, S6R, S7L, S7, S7R) |
+  fuel(2, S6L, S6, S6R)
+  )
+\end{lstlisting}
+
+To abstract from the Visual DSD syntax, a transpiler was created in Javascript which can generate the needed Visual DSD code for perceptrons of variable input size. The transpiler can take a truth table defined as an array, and generates the needed Visual DSD code to create a perceptron of required input size.
+
+To train the perceptron, the initial idea was to simply train a software perceptron to a given truth table, and use the found weights and thresholds in the seesaw perceptron. This idea proved too naive, as the weights and thresholds from a software perceptron did not produce the same outputs in a seesaw perceptron. The solution was to generate the Visual DSD code, run it through the command-line version of the Visual DSD software, and simulate the output concentration of the perceptron. This output could then be compared to the expected output from the truthtable, and the weights adjusted using the algorithm discussed in the theory section.
+
+It was not possible to create a web application with a user friendly interface for designing the perceptron, as was done with the software training \cite{neuralcircuit}. The command-line version of the Visual DSD software preferably needs to be run on a Windows machine, for which no free hosting could be found in time. The code is still available on Github for running locally on Windows machines \cite{neuralcompiler}.

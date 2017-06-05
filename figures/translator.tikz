@@ -5,7 +5,7 @@
 \draw[-|](0, 0) -- node[above] {$a$} (3, 0);
 \draw[->](3, 0) -- node[above] {$b$} (6, 0);
 
-\node[align=center] at (3, -1) {Input};
+\node[align=center] at (3, -2) {Input};
 
 \draw[-|](10+1, 0) -- node[above] {$b$} (13+1, 0);
 \draw[-|](13+1, 0) -- node[above] {$S_1$} (15+1, 0);
@@ -14,16 +14,16 @@
 \draw[<-](7+1, -0.2) -- node[below] {$a^*$} (10+1, -0.2);
 \draw[|-](10+1, -0.2) -- node[below] {$b^*$} (13+1, -0.2);
 
-\node[align=center] at (12.5, -1) {Half-translator 1};
+\node[align=center] at (12.5, -2) {Half-translator 1};
 
-\draw[->](17+5, 0) -- node[above] {$S_1$} (19+5, 0);
-\draw[->](19+5, 0) -- node[above] {$T$} (20+5, 0);
+\draw[-|](17+5, 0) -- node[above] {$S_1$} (19+5, 0);
+\draw[-|](19+5, 0) -- node[above] {$T$} (20+5, 0);
 \draw[->](20+5, 0) -- node[above] {$S_2$} (22+5, 0);
 
 \draw[<-](14+5, -0.2) -- node[below] {$b^*$} (17+5, -0.2);
 \draw[|-](17+5, -0.2) -- node[below] {$S_1^*$} (19+5, -0.2);
 \draw[|-](19+5, -0.2) -- node[below] {$T^*$} (20+5, -0.2);
 
-\node[align=center] at (23, -1) {Half-translator 2};
+\node[align=center] at (23, -2) {Half-translator 2};
 
 \end{tikzpicture}
