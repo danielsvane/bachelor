@@ -1,0 +1,21 @@
+% !TEX root = ../main.tex
+
+\begin{tikzpicture}
+
+\draw[->](0, 0) -- node[above] {Long 5} (6, 0);
+
+\node[align=center] at (3, -2) {Input};
+
+\draw[->](11, 0) -- node[above] {Long 3} (17, 0);
+
+\draw[<-](8, -0.2) -- node[below] {Long 4} (14, -0.2);
+
+\node[align=center] at (12.5, -2) {Half-translator 1};
+
+\draw[->](22, 0) -- node[above] {Long 1} (28, 0);
+
+\draw[<-](19, -0.2) -- node[below] {Long 2} (25, -0.2);
+
+\node[align=center] at (23, -2) {Half-translator 2};
+
+\end{tikzpicture}

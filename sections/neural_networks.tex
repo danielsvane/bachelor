@@ -1,11 +1,11 @@
 % !TEX root = ../main.tex
 \section{Neural networks}
 \subsection{In silico neural networks}
-Artificial neural networks (referred to just as neural networks) is a software implementation of the connection of neurons in the brain. In computer science they can be used to solve a wide variety of problems, like character and facial recognition. They present an advantage over conventional programmatic methods, as they don't need explicit coding for each new problem. The simplest instance of neural networks is the single neuron, also known as the perceptron. The perceptron can be used for simple decision making (giving yes/no answers) from a set of inputs. The logical 2-input AND operator is an example of a problem that can be solved with the perceptron, where the perceptron can output 1 if both the inputs are 1, otherwise 0.
+Artificial neural networks (referred to just as neural networks) is a software implementation of the connection of neurons in the brain. In computer science they can be used to solve a wide variety of problems, like character and facial recognition. They present an advantage over conventional programmatic methods, as they don't need explicit coding for each new problem. The simplest instance of neural networks is the single neuron, also known as the perceptron \cite{Lippmann}. The perceptron can be used for simple decision making (giving yes/no answers) from a set of inputs. The logical 2-input AND operator is an example of a problem that can be solved with the perceptron \cite{ZhaoYanling}, where the perceptron can output 1 if both the inputs are 1, otherwise 0.
 
 The perceptron works by taking all the inputs, and multiplying each input by its associated weight. If the sum of the multiplied inputs exceeds a certain threshold, the perceptron will output 1, otherwise 0. This is shown schematically in \fref{perceptron}.
 
-\begin{figure}[H]
+\begin{figure}[h]
 \includegraphics[width=\textwidth]{figures/perceptron.tikz}
 \caption{Diagram of the artificial perceptron.}
 \label{perceptron}
@@ -13,20 +13,24 @@ The perceptron works by taking all the inputs, and multiplying each input by its
 
 The representation can be simplified to the type shown in \fref{perceptron_simple}. The weights and thresholds for the perceptron version of the 2-input AND gate can also be seen in \fref{perceptron_simple}.
 
-\begin{figure}[H]
+\begin{figure}[h]
   \begin{subfigure}[t]{.49\textwidth}
     \includegraphics[width=\textwidth]{figures/perceptron_simple.tikz}
-    \caption{Simple representation of a 2-input perceptron.}
+    \caption{}
+    \label{perceptron_simple_a}
   \end{subfigure}
   \quad
   \begin{subfigure}[t]{.49\textwidth}
-    \includegraphics[width=\textwidth]{figures/perceptron_and.tikz}  \caption{Weights and thresholds on a perceptron that implements the 2-input AND gate.}
+    \includegraphics[width=\textwidth]{figures/perceptron_and.tikz}
+    \caption{}
+    \label{perceptron_simple_b}
   \end{subfigure}
-  \caption{}
+  \caption{\subref{perceptron_simple_a} Simple representation of a 2-input perceptron. \subref{perceptron_simple_a} Weights and thresholds on a perceptron that implements the 2-input AND gate.}
   \label{perceptron_simple}
 \end{figure}
 
-The perceptron is limited to classifying inputs that are linearly separable [SOURCE], which rules out the XOR operation.
+The perceptron is limited to classifying inputs that are linearly separable \cite{ZhaoYanling}, which rules out the XOR operation.
+
 
 % \begin{figure}[H]
 % \centering
@@ -56,7 +60,7 @@ The perceptron is limited to classifying inputs that are linearly separable [SOU
 \subsection{In vitro perceptron}
 It has previously been shown that the function of the artificial neuron can also be implemented using strand displacement reactions. The system is based on the seesaw gate motif \cite{Qian}, and can fullfill most of the functionality of a real neuron \cite{Qian2011}. The seesaw gate is a catalytic gate with a threshold, designed for use in scalable strand displacement circuits. The seesaw gate uses a toehold to accelerate reactions, and has a left and right recognition domain to connect to other seesaw gates. The seesaw is named after the back and forth reaction of the strand displacement reactions, seen in \fref{seesaw}.
 
-\begin{figure}[H]
+\begin{figure}[h]
 \includegraphics[width=\textwidth]{figures/seesaw.tikz}
 \caption{The back on forth reactions of the seesaw gate.}
 \label{seesaw}
@@ -67,58 +71,59 @@ The reaction can be pushed to the right by using a fuel strand, or the input can
 \subsubsection{Thresholding}
 In the natural neuron, the neuron will activate when its inputs exceeds a threshold. This is implemented using a threshold gate which will bind the input and prevent it from reacting downstream in the network. If the threshold gate concentration is higher than the input concentration, the input will be suppressed by the threshold. If the threshold gate concentration is lower than the input concentration, not all of the input is suppressed, and will be able to react further downstream in the network.
 
-\begin{figure}[H]
+\begin{figure}[h]
   \begin{subfigure}[t]{.49\textwidth}
     \includegraphics[width=\textwidth]{figures/seesaw_thresholding.tikz}
-\caption{Reaction of an input strand with a threshold gate. The product has no free toehold domain, and can't undergo reverse reaction. The waste has no toehold, and can't parcitipate in further reactions.}
-\label{}
+\caption{}
+\label{seesaw_thresholding_reaction}
 \end{subfigure}
 \hfill
 \begin{subfigure}[t]{.49\columnwidth}
   \centering
 \includegraphics[width=\linewidth]{images/thresholding.png}
-\caption{Time analysis of the concentration of input strand (5 nM start concentration). A threshold concentration higher than the input (red) will bind all input strand. A lower concentration (blue), will allow the input strand to participate in further displacement reactions.}
-\label{}
+\caption{}
+\label{seesaw_thresholding_analysis}
 \end{subfigure}
+\caption{\subref{seesaw_thresholding_reaction} Reaction of an input strand with a threshold gate. The product has no free toehold domain, and can't undergo reverse reaction. The waste has no toehold, and can't parcitipate in further reactions. \subref{seesaw_thresholding_analysis} Time analysis of the concentration of input strand (5 nM start concentration). A threshold concentration higher than the input (red) will bind all input strand. A lower concentration (blue), will allow the input strand to participate in further displacement reactions.}
 \end{figure}
 
 \subsubsection{Integration}
 The input to the neuron have to be collected before thresholding, as they don't have the same left recognition sequence. This is done through an integrating gate, which will collect all inputs with the same right recognition sequence, and release a common signal which can be thresholded.
 
-\begin{figure}[H]
-  \begin{subfigure}[t]{.49\textwidth}
-    \includegraphics[width=\textwidth]{figures/seesaw_integration.tikz}
-\caption{Reaction of 2 input strands with an integration gate. The input strands have the same right recognition sequence $S_2$, and will both displace the top strand of the integration gate, releasing the output.}
-\label{}
+\begin{figure}[h]
+\begin{subfigure}[t]{.49\textwidth}
+  \includegraphics[width=\textwidth]{figures/seesaw_integration.tikz}
+  \caption{}
+  \label{seesaw_integration_reaction}
 \end{subfigure}
 \hfill
 \begin{subfigure}[t]{.49\columnwidth}
-  \centering
-\includegraphics[width=\linewidth]{images/integration.png}
-\caption{Time analysis of the concentration of the output strand. The concentration of the integration gate is 20 nM. The first input of 15 nM increases the output strand concentration, compared to the second input of 5 nM. When both strands are added the concentration of output increases further.}
-\label{}
+  \includegraphics[width=\linewidth]{images/integration.png}
+  \caption{}
+  \label{seesaw_integration_time}
 \end{subfigure}
+\caption{\subref{seesaw_integration_reaction} Reaction of 2 input strands with an integration gate. The input strands have the same right recognition sequence $S_2$, and will both displace the top strand of the integration gate, releasing the output. \subref{seesaw_integration_time} Time analysis of the concentration of the output strand. The concentration of the integration gate is 20 nM. The first input of 15 nM increases the output strand concentration, compared to the second input of 5 nM. When both strands are added the concentration of output increases further.}
 \label{seesaw_integration}
 \end{figure}
 
 \subsubsection{Weighting}
-The inputs to the gate are weighted using their concentration. By making the integration gates concentration the sum of all the input concentrations, a high concentration of one input strand will contribute more to the activation than that of a low concentration, as shown in \fref{seesaw_integration}.
+The inputs to the gate are weighted using their concentration. By making the integration gates concentration the sum of all the input concentrations, a high concentration of one input strand will contribute more to the activation than that of a low concentration, as shown in \fref{seesaw_integration_time}.
 
 The weight is decided by the concentration of output of a input neuron and its fuel strand. The fuel serves the purpose of pushing the output of one gate to its target concentration.
 
-\begin{figure}[H]
-  \begin{subfigure}[t]{.49\textwidth}
-    \includegraphics[width=\textwidth]{figures/seesaw_weighting.tikz}
-\caption{Reaction of an input strand with a gate and fuel. The input displaces the output strand from the gate, and the fuel blocks the reverse reaction, pushing the equilibrium towards the free output.}
-\label{}
+\begin{figure}[h]
+\begin{subfigure}[t]{.49\textwidth}
+  \includegraphics[width=\textwidth]{figures/seesaw_weighting.tikz}
+  \caption{}
+  \label{seesaw_weighting_reaction}
 \end{subfigure}
-\quad
+\hfill
 \begin{subfigure}[t]{.49\columnwidth}
-  \centering
-\includegraphics[width=\linewidth]{images/weighting.png}
-\caption{Time analysis of the concentration of the output strand. Input and gate concentration is initially 1 nM. When the fuel concentration is low (blue), the output concentration doesn't reach the initial gate concentration. When the fuel concentration is high (red), the output concentration is pushed closer towards its maximum concentration.}
-\label{}
+  \includegraphics[width=\linewidth]{images/weighting.png}
+  \caption{}
+  \label{seesaw_weighting_analysis}
 \end{subfigure}
+\caption{\subref{seesaw_weighting_reaction} Reaction of an input strand with a gate and fuel. The input displaces the output strand from the gate, and the fuel blocks the reverse reaction, pushing the equilibrium towards the free output. \subref{seesaw_weighting_analysis} Time analysis of the concentration of the output strand. Input and gate concentration is initially 1 nM. When the fuel concentration is low (blue), the output concentration doesn't reach the initial gate concentration. When the fuel concentration is high (red), the output concentration is pushed closer towards its maximum concentration.}
 \label{seesaw_weighting}
 \end{figure}
 
@@ -128,7 +133,7 @@ A problem with this approach to weighting, is that the inputs can only contribut
 By combining the discussed functional elements of the seesaw gate, a neuron can be created using strand displacement reactions, as depicted in \fref{seesaw_neuron}.
 
 
-\begin{figure}[H]
+\begin{figure}[h]
 \includegraphics[width=\textwidth]{figures/seesaw_neuron.tikz}
 \caption{Schematic of a 2-input neuron implemented with seesaw gates. The neuron has an input gate for each input, which makes sure that the input is higher than a give threshold before the input is registered. The gate and fuel concentrations in each input gate affects the weight of the input before it is sent to the integration gate. The integration gate collects the right recognition sequence from the input gates for the threshold gate. The threshold gate activates if the sum of the weighted inputs is larger than the threshold concentration of the treshold gate.}
 \label{seesaw_neuron}
@@ -136,7 +141,7 @@ By combining the discussed functional elements of the seesaw gate, a neuron can 
 
 Instead of displaying all strands of the seesaw circuit, each gate can be represented by a simplified seesaw gate schematic. The first input gate from \fref{seesaw_neuron} is shown as a schematic in \fref{seesaw_gate_simple}.
 
-\begin{figure}[H]
+\begin{figure}[h]
   \begin{subfigure}[t]{.49\textwidth}
     \includegraphics[width=\textwidth]{figures/seesaw_gate.tikz}
     \caption{Seesaw gate strands}
@@ -152,7 +157,7 @@ Instead of displaying all strands of the seesaw circuit, each gate can be repres
 
 Using the schematic representation, the seesaw neuron from \fref{seesaw_neuron} can be simplified to the schematic in \fref{seesaw_neuron_schematic}.
 
-\begin{figure}[H]
+\begin{figure}[h]
   \includegraphics[width=\textwidth]{figures/seesaw_neuron_schematic.tikz}
   \caption{The seesaw neuron from \fref{seesaw_neuron} shown schematically.}
   \label{seesaw_neuron_schematic}
@@ -163,9 +168,9 @@ The recommendations from \cite{Qian2011} is that each fuel strands concentration
 The representation from \fref{seesaw_neuron_schematic} can further be simplified to the original perceptron shown in \fref{perceptron}. The seesaw neuron thus successfully implements all the required functionality of the artificial neuron, except for negative weights.
 
 \subsubsection{Training}
-The training algorithm typically used for digital perceptrons is based on the ability of the neurons to have negative weights and thresholds. A modified algorithm is presented in \cite{Qian2011}, which works for dual rail circuits. For the circuits in this report without dual rail logic, the algorithm is as follows.
+The training algorithm typically used for digital perceptrons is based on the ability of the neurons to have negative weights and thresholds. A modified algorithm is presented in \cite{Qian2011}, which works for dual rail circuits. For the circuits in this report without dual rail logic, the algorithm can be seen in \lref{codetraining}.
 
-\begin{lstlisting}
+\begin{lstlisting}[float,floatplacement=h,caption=Pseudocode for the seesaw perceptron training algorithm, label=codetraining]
 initialize all weights to 0 and threshold to 10
 while training is incomplete
   for all the input sets
@@ -176,11 +181,11 @@ while training is incomplete
     increase the weights
 \end{lstlisting}
 
-This process will keep increasing the weights until the output of the network matches the desired output. Note that this will only work for AND and OR logic.
+This process will keep increasing the weights until the output of the network matches the desired output. Without negative weights this will only work for AND and OR logic.
 
 The input sets are taken from the truth table that the circuit should realize. If the circuit for example should realize the simple AND gate (see \tref{and_table}), the network is activated with the input rows from the truth table, and tested whether the output equals (or is very close) to the output in the truth table.
 
-\begin{table}[]
+\begin{table}[h]
 \centering
 \begin{tabular}{ccc}
   \hline
@@ -200,7 +205,7 @@ The input sets are taken from the truth table that the circuit should realize. I
 
 As per design of the seesaw gate, the input sequences for the strand displacement neural network needs very specific left-recognition, right-recognition and toehold sequences. To detect sequences that does not have these elements, the sequence has to be translated. It has previously been demonstrated that miRNAs can be translated to other sequences \cite{Picuri2009}, by using two half-translators.
 
-\begin{figure}[H]
+\begin{figure}[h]
     \includegraphics[width=\textwidth]{figures/translator.tikz}
 \caption{Translation of arbitrary input sequences into the syntax required for the seesaw neural network. The input strand $ab$ displaces $bS_1T$ from the first half-translator. $bS_1T$ can then displace $S_1TS_2$ from the second half translator. This process successfully translates the input $ab$ into $S_1TS_2$, which can then be used for input in a neural network (see \fref{seesaw_neuron}).}
 \label{translator}

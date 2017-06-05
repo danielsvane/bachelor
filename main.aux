@@ -1,5 +1,10 @@
 \relax 
 \providecommand{\transparent@use}[1]{}
+\citation{Lippmann}
+\citation{ZhaoYanling}
+\citation{ZhaoYanling}
+\citation{Qian}
+\citation{Qian2011}
 \providecommand \oddpage@label [2]{}
 \select@language{english}
 \@writefile{toc}{\select@language{english}}
@@ -10,43 +15,57 @@
 \@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Diagram of the artificial perceptron.\relax }}{1}}
 \providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
 \newlabel{perceptron}{{1}{1}}
-\citation{Qian}
-\citation{Qian2011}
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces \relax }}{2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {0.1.2}In vitro perceptron}{1}}
+\newlabel{perceptron_simple_a}{{2a}{2}}
+\newlabel{sub@perceptron_simple_a}{{a}{2}}
+\newlabel{perceptron_simple_b}{{2b}{2}}
+\newlabel{sub@perceptron_simple_b}{{b}{2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces \subref  {perceptron_simple_a} Simple representation of a 2-input perceptron. \subref  {perceptron_simple_a} Weights and thresholds on a perceptron that implements the 2-input AND gate.\relax }}{2}}
 \newlabel{perceptron_simple}{{2}{2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {0.1.2}In vitro perceptron}{2}}
 \@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces The back on forth reactions of the seesaw gate.\relax }}{2}}
 \newlabel{seesaw}{{3}{2}}
-\@writefile{toc}{\contentsline {subsubsection}{Thresholding}{3}}
-\newlabel{}{{4a}{3}}
-\newlabel{sub@}{{a}{3}}
-\newlabel{}{{4b}{3}}
-\newlabel{sub@}{{b}{3}}
+\@writefile{toc}{\contentsline {subsubsection}{Thresholding}{2}}
+\newlabel{seesaw_thresholding_reaction}{{4a}{3}}
+\newlabel{sub@seesaw_thresholding_reaction}{{a}{3}}
+\newlabel{seesaw_thresholding_analysis}{{4b}{3}}
+\newlabel{sub@seesaw_thresholding_analysis}{{b}{3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces \subref  {seesaw_thresholding_reaction} Reaction of an input strand with a threshold gate. The product has no free toehold domain, and can't undergo reverse reaction. The waste has no toehold, and can't parcitipate in further reactions. \subref  {seesaw_thresholding_analysis} Time analysis of the concentration of input strand (5 nM start concentration). A threshold concentration higher than the input (red) will bind all input strand. A lower concentration (blue), will allow the input strand to participate in further displacement reactions.\relax }}{3}}
 \@writefile{toc}{\contentsline {subsubsection}{Integration}{3}}
-\newlabel{}{{5a}{4}}
-\newlabel{sub@}{{a}{4}}
-\newlabel{}{{5b}{4}}
-\newlabel{sub@}{{b}{4}}
-\newlabel{seesaw_integration}{{\caption@xref {seesaw_integration}{ on input line 101}}{4}}
-\@writefile{toc}{\contentsline {subsubsection}{Weighting}{4}}
-\newlabel{}{{6a}{5}}
-\newlabel{sub@}{{a}{5}}
-\newlabel{}{{6b}{5}}
-\newlabel{sub@}{{b}{5}}
-\newlabel{seesaw_weighting}{{\caption@xref {seesaw_weighting}{ on input line 122}}{5}}
-\@writefile{toc}{\contentsline {subsubsection}{Neuron}{5}}
+\@writefile{toc}{\contentsline {subsubsection}{Weighting}{3}}
+\citation{Qian2011}
+\citation{Qian2011}
+\newlabel{seesaw_integration_reaction}{{5a}{4}}
+\newlabel{sub@seesaw_integration_reaction}{{a}{4}}
+\newlabel{seesaw_integration_time}{{5b}{4}}
+\newlabel{sub@seesaw_integration_time}{{b}{4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces \subref  {seesaw_integration_reaction} Reaction of 2 input strands with an integration gate. The input strands have the same right recognition sequence $S_2$, and will both displace the top strand of the integration gate, releasing the output. \subref  {seesaw_integration_time} Time analysis of the concentration of the output strand. The concentration of the integration gate is 20 nM. The first input of 15 nM increases the output strand concentration, compared to the second input of 5 nM. When both strands are added the concentration of output increases further.\relax }}{4}}
+\newlabel{seesaw_integration}{{5}{4}}
+\@writefile{toc}{\contentsline {subsubsection}{Neuron}{4}}
+\@writefile{toc}{\contentsline {subsubsection}{Training}{4}}
+\citation{Picuri2009}
+\newlabel{seesaw_weighting_reaction}{{6a}{5}}
+\newlabel{sub@seesaw_weighting_reaction}{{a}{5}}
+\newlabel{seesaw_weighting_analysis}{{6b}{5}}
+\newlabel{sub@seesaw_weighting_analysis}{{b}{5}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces \subref  {seesaw_weighting_reaction} Reaction of an input strand with a gate and fuel. The input displaces the output strand from the gate, and the fuel blocks the reverse reaction, pushing the equilibrium towards the free output. \subref  {seesaw_weighting_analysis} Time analysis of the concentration of the output strand. Input and gate concentration is initially 1 nM. When the fuel concentration is low (blue), the output concentration doesn't reach the initial gate concentration. When the fuel concentration is high (red), the output concentration is pushed closer towards its maximum concentration.\relax }}{5}}
+\newlabel{seesaw_weighting}{{6}{5}}
+\newlabel{codetraining}{{1}{5}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {1}Pseudocode for the seesaw perceptron training algorithm}{5}}
+\bibstyle{unsrt}
+\bibdata{references}
 \@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Schematic of a 2-input neuron implemented with seesaw gates. The neuron has an input gate for each input, which makes sure that the input is higher than a give threshold before the input is registered. The gate and fuel concentrations in each input gate affects the weight of the input before it is sent to the integration gate. The integration gate collects the right recognition sequence from the input gates for the threshold gate. The threshold gate activates if the sum of the weighted inputs is larger than the threshold concentration of the treshold gate.\relax }}{6}}
 \newlabel{seesaw_neuron}{{7}{6}}
-\citation{Qian2011}
-\citation{Qian2011}
+\@writefile{toc}{\contentsline {subsection}{\numberline {0.1.3}Input translation}{6}}
 \@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces The strands and concentrations of the units of a seesaw gate can be represented schematically to simplify larger diagrams.\relax }}{7}}
 \newlabel{seesaw_gate_simple}{{8}{7}}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Truth table for an AND gate.\relax }}{7}}
+\newlabel{and_table}{{1}{7}}
 \@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces The seesaw neuron from Figure~\ref  {seesaw_neuron} shown schematically.\relax }}{7}}
 \newlabel{seesaw_neuron_schematic}{{9}{7}}
-\citation{Picuri2009}
-\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Truth table for an AND gate.\relax }}{8}}
-\newlabel{and_table}{{1}{8}}
-\@writefile{toc}{\contentsline {subsubsection}{Training}{8}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {0.1.3}Input translation}{8}}
-\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Translation of arbitrary input sequences into the syntax required for the seesaw neural network. The input strand $ab$ displaces $bS_1T$ from the first half-translator. $bS_1T$ can then displace $S_1TS_2$ from the second half translator. This process successfully translates the input $ab$ into $S_1TS_2$, which can then be used for input in a neural network (see Figure~\ref  {seesaw_neuron}).\relax }}{9}}
-\newlabel{translator}{{10}{9}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Translation of arbitrary input sequences into the syntax required for the seesaw neural network. The input strand $ab$ displaces $bS_1T$ from the first half-translator. $bS_1T$ can then displace $S_1TS_2$ from the second half translator. This process successfully translates the input $ab$ into $S_1TS_2$, which can then be used for input in a neural network (see Figure~\ref  {seesaw_neuron}).\relax }}{8}}
+\newlabel{translator}{{10}{8}}
+\bibcite{Lippmann}{1}
+\bibcite{ZhaoYanling}{2}
+\bibcite{Qian}{3}
+\bibcite{Qian2011}{4}
+\bibcite{Picuri2009}{5}

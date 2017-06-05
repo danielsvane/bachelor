@@ -80,3 +80,107 @@
 \caption{Secondary structures of the RNA sequences for the long translator.}
 \label{long_secondary_structures}
 \end{figure}
+
+\begin{table}
+\centering
+\begin{tabular}{ll}
+  \hline
+\textbf{}           & \textbf{Concentration} \\
+\hline
+Tris-HCl pH 8.0     & 10 nM                  \\
+EDTA                & 1 mM                   \\
+Nuclease-free water &               \\
+\hline
+\end{tabular}
+\caption{Contents of 1X TE buffer.}
+\label{te_buffer}
+\end{table}
+
+\begin{table}
+\centering
+\begin{tabular}{ll}
+  \hline
+\textbf{}           & \textbf{Concentration} \\
+\hline
+Tris pH 8.0     & 10 nM                  \\
+NaCl                & 50 mM                   \\
+EDTA                & 1 mM                   \\
+Nuclease-free water &               \\
+\hline
+\end{tabular}
+\caption{Contents of 1X annealing buffer.}
+\label{annealing_buffer}
+\end{table}
+
+\begin{table}
+\centering
+\begin{tabular}{ll}
+  \hline
+\textbf{}           & \textbf{Concentration} \\
+\hline
+Xylene cyanol     & 0.04\%                 \\
+Bromophenol blue                & 0.04\%                   \\
+Glycerol                & 20\%                   \\
+Nuclease-free water &               \\
+\hline
+\end{tabular}
+\caption{Contents of native loading buffer.}
+\label{native_buffer}
+\end{table}
+
+\begin{table}
+\centering
+\begin{tabular}{ll}
+  \hline
+\textbf{}           & \textbf{Concentration} \\
+\hline
+Xylene cyanol     & 0.04\%                 \\
+Bromophenol blue                & 0.04\%                   \\
+Glycerol                & 20\%                   \\
+Urea & 5.4 M              \\
+\hline
+\end{tabular}
+\caption{Contents of denaturing loading buffer.}
+\label{denaturing_buffer}
+\end{table}
+
+\begin{lstlisting}[float,floatplacement=h,caption=Nupack code for the short translator, label=codeshort]
+structure state1 = ......................
+structure state2 = ............((((((((((+............))))))))))
+structure state3 = .............((((((((((+............))))))))))
+structure state4 = .......................
+
+domain a = N10
+domain b = N10
+domain c = CUCCUUGAGG
+domain d = CUAGACUGAAG
+domain e = GG
+
+state1.seq = e a b
+state2.seq = e c a e b* a*
+state3.seq = e d c e a* c*
+state4.seq = e d c
+
+prevent = AAAA, CCCC, GGGG, UUUU, KKKKKK, MMMMMM, RRRRRR, SSSSSS, WWWWWW, YYYYYY
+\end{lstlisting}
+
+
+\begin{lstlisting}[float,floatplacement=h, caption=Nupack code for the long translator, label=codelong]
+structure state1 = ................................
+structure state2 = ......................((((((((((((((((((((+............))))))))))))))))))))
+structure state3 = ............((((((((((((((((((((+......................))))))))))))))))))))
+structure state4 = ................................
+
+domain a = N20
+domain b = N10
+domain c = GCUCCUUGAGG N9
+domain d = CUAGACUGAA
+domain e = GG
+
+state1.seq = e a b
+state2.seq = e c a e b* a*
+state3.seq = e d c e a* c*
+state4.seq = e d c
+
+prevent = AAAA, CCCC, GGGG, UUUU, KKKKKK, MMMMMM, RRRRRR, SSSSSS, WWWWWW, YYYYYY
+\end{lstlisting}

@@ -1,0 +1,17 @@
+% !TEX root = ../main.tex
+
+\begin{tikzpicture}
+
+\draw[->](0, 0) -- node[above] {a} (6, 0);
+
+\node[align=center] at (3, -2) {RNA};
+
+\draw[->, line width=2](8, 0) -- (9, 0);
+
+\draw[->](11, 0) -- node[above] {T7} (14, 0);
+\draw[<-](11, -0.2) -- node[below] {T7$^*$} (14, -0.2);
+\draw[|-](14, -0.2) -- node[below] {a$^*$} (20, -0.2);
+
+\node[align=center] at (16, -2) {DNA template};
+
+\end{tikzpicture}

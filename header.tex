@@ -15,31 +15,17 @@
 
 \usetikzlibrary{shapes,arrows,calc}
 
+\DeclareCaptionLabelFormat{bold}{\textbf{(#2)}}
+\captionsetup{subrefformat=bold}
+
 % For easier referring like \fref, \tref, \eref
 \newcommand{\tref}[1]{\tablename~\ref{#1}}
 \newcommand{\fref}[1]{\figurename~\ref{#1}}
 \newcommand{\eref}[1]{\equationname~\eqref{#1}}
-\newcommand{\lref}[1]{\lstlistingname~\ref{#1}}
-
-% Needed for scaling tikz drawings without scaling font size
-\makeatletter
-\newsavebox{\measure@tikzpicture}
-\NewEnviron{scaletikzpicturetowidth}[1]{%
-  \def\tikz@width{#1}%
-  \def\tikzscale{1}\begin{lrbox}{\measure@tikzpicture}%
-  \BODY
-  \end{lrbox}%
-  \pgfmathparse{#1/\wd\measure@tikzpicture}%
-  \edef\tikzscale{\pgfmathresult}%
-  \BODY
-}
-\makeatother
+\newcommand{\lref}[1]{Code~\ref{#1}}
 
 \lstset{
-         basicstyle=\footnotesize\ttfamily,
-         numberstyle=\tiny,
-         numbersep=5pt,
-         extendedchars=true,
-         breaklines=true,
-         frame=single
+   breaklines=true,
+   frame=single,
+   basicstyle=\small\ttfamily
  }

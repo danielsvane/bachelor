@@ -1,0 +1,28 @@
+\begin{thebibliography}{1}
+
+\bibitem{Lippmann}
+Richard~P Lippmann.
+\newblock {An Introduction' to Computing with Neural Nets}.
+
+\bibitem{ZhaoYanling}
+{Zhao Yanling}, {Deng Bimin}, and {Wang Zhanrong}.
+\newblock {Analysis and study of perceptron to solve XOR problem}.
+\newblock In {\em The 2nd International Workshop on Autonomous Decentralized
+  System, 2002.}, pages 168--173. IEEE Comput. Soc.
+
+\bibitem{Qian}
+Lulu Qian and Erik Winfree.
+\newblock {A Simple DNA Gate Motif for Synthesizing Large-Scale Circuits}.
+
+\bibitem{Qian2011}
+Lulu Qian, Erik Winfree, and Jehoshua Bruck.
+\newblock {Neural network computation with DNA strand displacement cascades}.
+\newblock {\em Nature}, 475, 2011.
+
+\bibitem{Picuri2009}
+John~M. Picuri, Brian~M. Frezza, and M.~Reza Ghadiri.
+\newblock {Universal translators for nucleic acid diagnosis}.
+\newblock {\em Journal of the American Chemical Society}, 131(26):9368--9377,
+  2009.
+
+\end{thebibliography}
