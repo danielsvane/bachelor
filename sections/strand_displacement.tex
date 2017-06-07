@@ -1,2 +1,31 @@
 % !TEX root = ../main.tex
 \section{Strand displacement}
+
+Strand displacement can be used to implement DNA devices which can be used in molecular computing \cite{Zhang2011}. It uses the predictability of Watson-Crick base pairing (A pairs with T, C pairs with G) of the nucleotides of DNA to design reactions. When the nucleotides of two strands of DNA base pair with each other, the complex will have a certain free energy. By introducing another strand which will pair stronger in the complex (give a lower free energy), the original strand can be displaced, as seen in \fref{strand_displacement}.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{figures/strand_displacement.tikz}
+\caption{Strand displacement reaction where strand 1 base pairs at a lower free energy with strand 2, and displaces strand 3. The arrow denotes the strands 3' end.}
+\label{strand_displacement}
+\end{figure}
+
+The reaction in \fref{strand_displacement} can be simplified by leaving out the specific bases, and instead naming each base pairing region. The same reaction as in \fref{strand_displacement} can be seen in its simplified version in \fref{strand_displacement_simple}.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{figures/strand_displacement_simple.tikz}
+\caption{Simplified view of the reaction from \fref{strand_displacement}. The sequence of nucleotides is replaced with a sequence name. The asterix on the sequence name denotes that it is the reverse complement of the normal sequence (a$^*$ is the reverse complement of a).}
+\label{strand_displacement_simple}
+\end{figure}
+
+The result of the reaction in \fref{strand_displacement_simple}, is that the strand $bc$ is only single-stranded when displaced by the strand $ab$. The reaction can then be seen as a YES gate with input $ab$ and outout $bc$. Why this is useful in molecular computing is not immediately apparent, but the strand displacement technique can be extended to larger reactions. A more interesting application is the AND gate seen in \fref{strand_displacement_and}.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{figures/and_gate_dna.tikz}
+\caption{An AND gate made with strand displacement. After two strand displacements by the input strands $a^*b^*c^*$ and $bcdf$, the ouput strand $def$ is released and can react in further strand displacement reactions with other logic gates, or activate enzymes and fluorescence signals. Without either of the input strands, the output will not be displaced. Adapted from \cite{Zhang2011}.}
+\label{strand_displacement_and}
+\end{figure}
+
+The actual concentrations of each of the strand species when reacting, can be predicted by the free energy of each complex \cite{Zhang}, but the time it takes for the reaction to take place is harder to predict. It has been shown that the reaction speed is exponentially dependent on the toehold length for short toeholds. A toehold, for example, is the single stranded region of the strand 2 + strand 3 complex in \fref{strand_displacement}. To do time analysis of larger strand displacement networks, software like Visual DSD \cite{Lakin2011} can be used.

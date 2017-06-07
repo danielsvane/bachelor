@@ -1,0 +1,11 @@
+% !TEX root = ../main.tex
+
+Since it was not possible to transcribe the RNA needed for testing the RNA translator, it is not possible to conclude anything from the results. The experiment was almost identical to the original article, and there is nothing to suggest that the strand displacement shouldn't have worked using RNA instead of DNA \cite{Picuri2009}. The original article even uses RNA as the input for the DNA translators.
+
+The simulations of the neural network did show some promising results. It was possible to create multiple perceptrons of varying input size, and train them to different truth tables (\cref{2_and,2_or,3_and,3_1_or,3_2_or}). The system requires no input from the user after having defined the desired truth table.
+
+The perceptron in this experiment is still only a stripped down version of the networks in the original article \cite{Qian2011}, as it was not possible to apply the dual-rail logic needed for avoiding negative weights. It was not possible to translate the input sequences using Nupack either. Furthermore, the perceptrons trained in this experiment, could have been made much simpler by the logic gate system the authors of the original article designed recently \cite{Thubagere2017}. The only novel thing that came out of this experiment was the simplified training algorithm for the perceptrons without dual-rail logic.
+
+There is also the problem of applying the simulations to in vitro reactions. The original paper found some general guidelines for adjusting the concentrations that seemed to work for some networks, but it can't be expected that the sequences and concentrations found in the simulation will always work in vitro. In the original paper, they also express concern for moving to in vivo.
+
+Still, the preliminary work done in this experiment could in theory be used to create a generic method for designing RNA/DNA detection kits. With some more work, the training algorithm and input translation could be combined, and tested in vitro.

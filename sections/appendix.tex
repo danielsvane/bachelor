@@ -1,14 +1,28 @@
 % !TEX root = ../main.tex
-\section{Appendix}
+\begin{figure}
+\begin{subfigure}[b]{.49\columnwidth}
+  \centering
+  \includegraphics[width=\linewidth]{images/short_annealing_concentration.png}
+  \caption{Equilibrium concentration of the short translator strands 1 and 2.}
+\end{subfigure}
+\hfill
+\begin{subfigure}[b]{.49\columnwidth}
+  \centering
+  \includegraphics[width=\linewidth]{images/long_annealing_concentration.png}
+  \caption{Equilibrium concentration of the long translator strands 6 and 7.}
+\end{subfigure}
+\caption{Nupack analysis of the equilibrium concentrations of the first subunit of the short and long translator.}
+\label{annealing_concentration}
+\end{figure}
 
-\begin{figure}[H]
+\begin{figure}
 \centering
 \includegraphics[width=\columnwidth]{images/oligo_concentrations.png}
 \caption{Concentrations of the dissolved DNA oligos ordered from IDT.}
 \label{oligo_concentrations}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}
 \centering
 \includegraphics[width=\columnwidth]{images/translator_transcription_concentration.png}
 \caption{Concentrations of the short translator RNA sequences.}
@@ -144,7 +158,7 @@ Urea & 5.4 M              \\
 \label{denaturing_buffer}
 \end{table}
 
-\begin{lstlisting}[float,floatplacement=h,caption=Nupack code for the short translator, label=codeshort]
+\begin{lstlisting}[float,caption=Nupack code for the short translator, label=codeshort]
 structure state1 = ......................
 structure state2 = ............((((((((((+............))))))))))
 structure state3 = .............((((((((((+............))))))))))
@@ -165,7 +179,7 @@ prevent = AAAA, CCCC, GGGG, UUUU, KKKKKK, MMMMMM, RRRRRR, SSSSSS, WWWWWW, YYYYYY
 \end{lstlisting}
 
 
-\begin{lstlisting}[float,floatplacement=h, caption=Nupack code for the long translator, label=codelong]
+\begin{lstlisting}[float, caption=Nupack code for the long translator, label=codelong]
 structure state1 = ................................
 structure state2 = ......................((((((((((((((((((((+............))))))))))))))))))))
 structure state3 = ............((((((((((((((((((((+......................))))))))))))))))))))

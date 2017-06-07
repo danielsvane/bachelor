@@ -1,0 +1,38 @@
+% !TEX root = ../main.tex
+
+\begin{tikzpicture}
+
+\def\strandc(#1, #2, #3, #4){
+  \begin{scope}[shift={(#1,#2)}]
+    \draw[-|](0, 0) -- node[below] {#3} (2, 0) node[above] {Strand 1};
+    \draw[->](2, 0) -- node[below] {#4} (4, 0);
+  \end{scope}
+}
+
+\def\stranda(#1, #2, #3, #4){
+  \begin{scope}[shift={(#1,#2)}]
+    \draw[-|](0, 0) -- node[below] {#3} (2, 0) node[above] {Strand 2};
+    \draw[->](2, 0) -- node[below] {#4} (4, 0);
+  \end{scope}
+}
+
+\def\strandb(#1, #2, #3, #4){
+  \begin{scope}[shift={(#1,#2)}]
+    \draw[<-](0, 0) -- node[above] {#3} (2, 0) node[below] {Strand 3};
+    \draw[|-](2, 0) -- node[above] {#4} (4, 0);
+  \end{scope}
+}
+
+\strandc(-8, -0.5, G A C T, A T T C);
+
+\stranda(0, 0, A T T C, G A C C);
+\strandb(-2, -1, C T G A, T A A G);
+
+\strandc(-8, -4, G A C T, A T T C);
+\strandb(-8, -5, C T G A, T A A G);
+
+\stranda(-1, -4.5, A T T C, G A C C);
+
+\draw[->, line width=2](-2, -2) -- (-2, -3);
+
+\end{tikzpicture}

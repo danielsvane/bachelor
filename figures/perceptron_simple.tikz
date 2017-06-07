@@ -3,10 +3,10 @@
 
 \tikzstyle{box} = [rectangle, draw, fill=white]
 
-\node (a) at (0, 0);
-\node (b) at (-2, 1);
-\node (c) at (-2, -1);
-\node (d) at (2, 0);
+\coordinate (a) at (0, 0);
+\coordinate (b) at (-2, 1);
+\coordinate (c) at (-2, -1);
+\coordinate (d) at (2, 0);
 
 \draw (b) -- node[near start, above] {$w_1$} (a);
 \node[left] at (b) {$x_1$};

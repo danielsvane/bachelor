@@ -1,71 +1,313 @@
 \relax 
 \providecommand{\transparent@use}[1]{}
-\citation{Lippmann}
-\citation{ZhaoYanling}
-\citation{ZhaoYanling}
-\citation{Qian}
-\citation{Qian2011}
 \providecommand \oddpage@label [2]{}
 \select@language{english}
 \@writefile{toc}{\select@language{english}}
 \@writefile{lof}{\select@language{english}}
 \@writefile{lot}{\select@language{english}}
-\@writefile{toc}{\contentsline {section}{\numberline {0.1}Neural networks}{1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {0.1.1}In silico neural networks}{1}}
-\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Diagram of the artificial perceptron.\relax }}{1}}
-\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
-\newlabel{perceptron}{{1}{1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {0.1.2}In vitro perceptron}{1}}
-\newlabel{perceptron_simple_a}{{2a}{2}}
-\newlabel{sub@perceptron_simple_a}{{a}{2}}
-\newlabel{perceptron_simple_b}{{2b}{2}}
-\newlabel{sub@perceptron_simple_b}{{b}{2}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces \subref  {perceptron_simple_a} Simple representation of a 2-input perceptron. \subref  {perceptron_simple_a} Weights and thresholds on a perceptron that implements the 2-input AND gate.\relax }}{2}}
-\newlabel{perceptron_simple}{{2}{2}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces The back on forth reactions of the seesaw gate.\relax }}{2}}
-\newlabel{seesaw}{{3}{2}}
-\@writefile{toc}{\contentsline {subsubsection}{Thresholding}{2}}
-\newlabel{seesaw_thresholding_reaction}{{4a}{3}}
-\newlabel{sub@seesaw_thresholding_reaction}{{a}{3}}
-\newlabel{seesaw_thresholding_analysis}{{4b}{3}}
-\newlabel{sub@seesaw_thresholding_analysis}{{b}{3}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces \subref  {seesaw_thresholding_reaction} Reaction of an input strand with a threshold gate. The product has no free toehold domain, and can't undergo reverse reaction. The waste has no toehold, and can't parcitipate in further reactions. \subref  {seesaw_thresholding_analysis} Time analysis of the concentration of input strand (5 nM start concentration). A threshold concentration higher than the input (red) will bind all input strand. A lower concentration (blue), will allow the input strand to participate in further displacement reactions.\relax }}{3}}
-\@writefile{toc}{\contentsline {subsubsection}{Integration}{3}}
-\@writefile{toc}{\contentsline {subsubsection}{Weighting}{3}}
+\citation{Peng2016}
+\citation{Seelig2006}
+\citation{Engelen2016}
 \citation{Qian2011}
-\citation{Qian2011}
-\newlabel{seesaw_integration_reaction}{{5a}{4}}
-\newlabel{sub@seesaw_integration_reaction}{{a}{4}}
-\newlabel{seesaw_integration_time}{{5b}{4}}
-\newlabel{sub@seesaw_integration_time}{{b}{4}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces \subref  {seesaw_integration_reaction} Reaction of 2 input strands with an integration gate. The input strands have the same right recognition sequence $S_2$, and will both displace the top strand of the integration gate, releasing the output. \subref  {seesaw_integration_time} Time analysis of the concentration of the output strand. The concentration of the integration gate is 20 nM. The first input of 15 nM increases the output strand concentration, compared to the second input of 5 nM. When both strands are added the concentration of output increases further.\relax }}{4}}
-\newlabel{seesaw_integration}{{5}{4}}
-\@writefile{toc}{\contentsline {subsubsection}{Neuron}{4}}
-\@writefile{toc}{\contentsline {subsubsection}{Training}{4}}
 \citation{Picuri2009}
-\newlabel{seesaw_weighting_reaction}{{6a}{5}}
-\newlabel{sub@seesaw_weighting_reaction}{{a}{5}}
-\newlabel{seesaw_weighting_analysis}{{6b}{5}}
-\newlabel{sub@seesaw_weighting_analysis}{{b}{5}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces \subref  {seesaw_weighting_reaction} Reaction of an input strand with a gate and fuel. The input displaces the output strand from the gate, and the fuel blocks the reverse reaction, pushing the equilibrium towards the free output. \subref  {seesaw_weighting_analysis} Time analysis of the concentration of the output strand. Input and gate concentration is initially 1 nM. When the fuel concentration is low (blue), the output concentration doesn't reach the initial gate concentration. When the fuel concentration is high (red), the output concentration is pushed closer towards its maximum concentration.\relax }}{5}}
-\newlabel{seesaw_weighting}{{6}{5}}
-\newlabel{codetraining}{{1}{5}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {1}Pseudocode for the seesaw perceptron training algorithm}{5}}
+\citation{Picuri2009}
+\@writefile{toc}{\contentsline {chapter}{\numberline {1}Introduction}{2}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\citation{Zhang2011}
+\@writefile{toc}{\contentsline {chapter}{\numberline {2}Theory}{4}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {section}{\numberline {2.1}Strand displacement}{4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces Strand displacement reaction where strand 1 base pairs at a lower free energy with strand 2, and displaces strand 3. The arrow denotes the strands 3' end.\relax }}{4}}
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{strand_displacement}{{2.1}{4}}
+\newlabel{strand_displacement@cref}{{[figure][1][2]2.1}{4}}
+\citation{Zhang2011}
+\citation{Zhang2011}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.2}{\ignorespaces Simplified view of the reaction from Figure~\ref  {strand_displacement}. The sequence of nucleotides is replaced with a sequence name. The asterix on the sequence name denotes that it is the reverse complement of the normal sequence (a$^*$ is the reverse complement of a).\relax }}{5}}
+\newlabel{strand_displacement_simple}{{2.2}{5}}
+\newlabel{strand_displacement_simple@cref}{{[figure][2][2]2.2}{5}}
+\citation{Zhang}
+\citation{Lakin2011}
+\citation{Tu1996}
+\citation{Lippmann}
+\citation{ZhaoYanling}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.3}{\ignorespaces An AND gate made with strand displacement. After two strand displacements by the input strands $a^*b^*c^*$ and $bcdf$, the ouput strand $def$ is released and can react in further strand displacement reactions with other logic gates, or activate enzymes and fluorescence signals. Without either of the input strands, the output will not be displaced. Adapted from \cite  {Zhang2011}.\relax }}{6}}
+\newlabel{strand_displacement_and}{{2.3}{6}}
+\newlabel{strand_displacement_and@cref}{{[figure][3][2]2.3}{6}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.2}Neural networks}{6}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.1}In silico neural networks}{6}}
+\citation{ZhaoYanling}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.4}{\ignorespaces Diagram of the artificial perceptron.\relax }}{7}}
+\newlabel{perceptron}{{2.4}{7}}
+\newlabel{perceptron@cref}{{[figure][4][2]2.4}{7}}
+\newlabel{perceptron_simple_a}{{2.5a}{7}}
+\newlabel{perceptron_simple_a@cref}{{[subfigure][1][2,5]2.5a}{7}}
+\newlabel{sub@perceptron_simple_a}{{a}{7}}
+\newlabel{sub@perceptron_simple_a@cref}{{[subfigure][1][2,5]2.5a}{7}}
+\newlabel{perceptron_simple_b}{{2.5b}{7}}
+\newlabel{perceptron_simple_b@cref}{{[subfigure][2][2,5]2.5b}{7}}
+\newlabel{sub@perceptron_simple_b}{{b}{7}}
+\newlabel{sub@perceptron_simple_b@cref}{{[subfigure][2][2,5]2.5b}{7}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.5}{\ignorespaces \subref  {perceptron_simple_a} Simple representation of a 2-input perceptron. \subref  {perceptron_simple_a} Weights and thresholds on a perceptron that implements the 2-input AND gate.\relax }}{7}}
+\newlabel{perceptron_simple}{{2.5}{7}}
+\newlabel{perceptron_simple@cref}{{[figure][5][2]2.5}{7}}
+\citation{Qian}
+\citation{Qian2011}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.2}In vitro perceptron}{8}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.6}{\ignorespaces The back on forth reactions of the seesaw gate.\relax }}{8}}
+\newlabel{seesaw}{{2.6}{8}}
+\newlabel{seesaw@cref}{{[figure][6][2]2.6}{8}}
+\@writefile{toc}{\contentsline {subsubsection}{Thresholding}{8}}
+\citation{ZhaoYanling}
+\newlabel{seesaw_thresholding_reaction}{{2.7a}{9}}
+\newlabel{seesaw_thresholding_reaction@cref}{{[subfigure][1][2,7]2.7a}{9}}
+\newlabel{sub@seesaw_thresholding_reaction}{{a}{9}}
+\newlabel{sub@seesaw_thresholding_reaction@cref}{{[subfigure][1][2,7]2.7a}{9}}
+\newlabel{seesaw_thresholding_analysis}{{2.7b}{9}}
+\newlabel{seesaw_thresholding_analysis@cref}{{[subfigure][2][2,7]2.7b}{9}}
+\newlabel{sub@seesaw_thresholding_analysis}{{b}{9}}
+\newlabel{sub@seesaw_thresholding_analysis@cref}{{[subfigure][2][2,7]2.7b}{9}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.7}{\ignorespaces \subref  {seesaw_thresholding_reaction} Reaction of an input strand with a threshold gate. The product has no free toehold domain, and can't undergo reverse reaction. The waste has no toehold, and can't parcitipate in further reactions. \subref  {seesaw_thresholding_analysis} Time analysis of the concentration of input strand (5 nM start concentration). A threshold concentration higher than the input (red) will bind all input strand. A lower concentration (blue), will allow the input strand to participate in further displacement reactions.\relax }}{9}}
+\@writefile{toc}{\contentsline {subsubsection}{Integration}{9}}
+\@writefile{toc}{\contentsline {subsubsection}{Weighting}{9}}
+\citation{Qian2011}
+\newlabel{seesaw_integration_reaction}{{2.8a}{10}}
+\newlabel{seesaw_integration_reaction@cref}{{[subfigure][1][2,8]2.8a}{10}}
+\newlabel{sub@seesaw_integration_reaction}{{a}{10}}
+\newlabel{sub@seesaw_integration_reaction@cref}{{[subfigure][1][2,8]2.8a}{10}}
+\newlabel{seesaw_integration_time}{{2.8b}{10}}
+\newlabel{seesaw_integration_time@cref}{{[subfigure][2][2,8]2.8b}{10}}
+\newlabel{sub@seesaw_integration_time}{{b}{10}}
+\newlabel{sub@seesaw_integration_time@cref}{{[subfigure][2][2,8]2.8b}{10}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.8}{\ignorespaces \subref  {seesaw_integration_reaction} Reaction of 2 input strands with an integration gate. The input strands have the same right recognition sequence $S_2$, and will both displace the top strand of the integration gate, releasing the output. \subref  {seesaw_integration_time} Time analysis of the concentration of the output strand. The concentration of the integration gate is 20 nM. The first input of 15 nM increases the output strand concentration, compared to the second input of 5 nM. When both strands are added the concentration of output increases further.\relax }}{10}}
+\newlabel{seesaw_integration}{{2.8}{10}}
+\newlabel{seesaw_integration@cref}{{[figure][8][2]2.8}{10}}
+\@writefile{toc}{\contentsline {subsubsection}{Neuron}{10}}
+\citation{Qian2011}
+\newlabel{seesaw_weighting_reaction}{{2.9a}{11}}
+\newlabel{seesaw_weighting_reaction@cref}{{[subfigure][1][2,9]2.9a}{11}}
+\newlabel{sub@seesaw_weighting_reaction}{{a}{11}}
+\newlabel{sub@seesaw_weighting_reaction@cref}{{[subfigure][1][2,9]2.9a}{11}}
+\newlabel{seesaw_weighting_analysis}{{2.9b}{11}}
+\newlabel{seesaw_weighting_analysis@cref}{{[subfigure][2][2,9]2.9b}{11}}
+\newlabel{sub@seesaw_weighting_analysis}{{b}{11}}
+\newlabel{sub@seesaw_weighting_analysis@cref}{{[subfigure][2][2,9]2.9b}{11}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.9}{\ignorespaces \subref  {seesaw_weighting_reaction} Reaction of an input strand with a gate and fuel. The input displaces the output strand from the gate, and the fuel blocks the reverse reaction, pushing the equilibrium towards the free output. \subref  {seesaw_weighting_analysis} Time analysis of the concentration of the output strand. Input and gate concentration is initially 1 nM. When the fuel concentration is low (blue), the output concentration doesn't reach the initial gate concentration. When the fuel concentration is high (red), the output concentration is pushed closer towards its maximum concentration.\relax }}{11}}
+\newlabel{seesaw_weighting}{{2.9}{11}}
+\newlabel{seesaw_weighting@cref}{{[figure][9][2]2.9}{11}}
+\newlabel{codetraining}{{2.1}{11}}
+\newlabel{codetraining@cref}{{[listing][1][2]2.1}{11}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {2.1}Pseudocode for the seesaw perceptron training algorithm}{11}}
+\@writefile{toc}{\contentsline {subsubsection}{Training}{11}}
+\citation{Picuri2009}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.10}{\ignorespaces Schematic of a 2-input neuron implemented with seesaw gates. The neuron has an input gate for each input, which makes sure that the input is higher than a given threshold before the input is registered. The gate and fuel concentrations in each input gate affects the weight of the input before it is sent to the integration gate. The integration gate collects the right recognition sequence from the input gates for the threshold gate. The threshold gate activates if the sum of the weighted inputs is larger than the threshold concentration of the treshold gate.\relax }}{12}}
+\newlabel{seesaw_neuron}{{2.10}{12}}
+\newlabel{seesaw_neuron@cref}{{[figure][10][2]2.10}{12}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.3}Input translation}{12}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.11}{\ignorespaces The strands and concentrations of the units of a seesaw gate can be represented to simplify larger diagrams.\relax }}{13}}
+\newlabel{seesaw_gate_simple}{{2.11}{13}}
+\newlabel{seesaw_gate_simple@cref}{{[figure][11][2]2.11}{13}}
+\@writefile{lot}{\contentsline {table}{\numberline {2.1}{\ignorespaces Truth table for an AND gate.\relax }}{13}}
+\newlabel{and_table}{{2.1}{13}}
+\newlabel{and_table@cref}{{[table][1][2]2.1}{13}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.12}{\ignorespaces The seesaw neuron from Figure~\ref  {seesaw_neuron} shown schematically.\relax }}{14}}
+\newlabel{seesaw_neuron_schematic}{{2.12}{14}}
+\newlabel{seesaw_neuron_schematic@cref}{{[figure][12][2]2.12}{14}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.13}{\ignorespaces Translation of arbitrary input sequences into the syntax required for the seesaw neural network. The input strand $ab$ displaces $bS_1T$ from the first half-translator. $bS_1T$ can then displace $S_1TS_2$ from the second half translator. This process successfully translates the input $ab$ into $S_1TS_2$, which can then be used for input in a neural network (see Figure~\ref  {seesaw_neuron}).\relax }}{14}}
+\newlabel{translator}{{2.13}{14}}
+\newlabel{translator@cref}{{[figure][13][2]2.13}{14}}
+\citation{dsdmanual}
+\@writefile{toc}{\contentsline {chapter}{\numberline {3}Method}{15}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {section}{\numberline {3.1}Perceptron simulation}{15}}
+\newlabel{dsd_subunits}{{3.1}{15}}
+\newlabel{dsd_subunits@cref}{{[listing][1][3]3.1}{15}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {3.1}Visual DSD definition of the seesaw gate subunits.}{15}}
+\citation{neuralcircuit}
+\citation{neuralcompiler}
+\citation{Thubagere2017}
+\newlabel{dsd_and_gate}{{3.2}{16}}
+\newlabel{dsd_and_gate@cref}{{[listing][2][3]3.2}{16}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {3.2}Code for a seesaw neuron in Visual DSD}{16}}
+\citation{Picuri2009}
+\citation{Milligan1987}
+\citation{Milligan1987}
+\citation{nupackorder}
+\@writefile{toc}{\contentsline {section}{\numberline {3.2}Translation}{17}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.1}Design}{17}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces Sequence naming of the short translator sequences (see table \ref  {rna_strands}).\relax }}{17}}
+\newlabel{translator_short_subunits}{{3.1}{17}}
+\newlabel{translator_short_subunits@cref}{{[figure][1][3]3.1}{17}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces Sequence naming of the long translator sequences (see table \ref  {rna_strands}).\relax }}{17}}
+\newlabel{translator_long_subunits}{{3.2}{17}}
+\newlabel{translator_long_subunits@cref}{{[figure][2][3]3.2}{17}}
+\citation{nanodropimport}
+\@writefile{lot}{\contentsline {table}{\numberline {3.1}{\ignorespaces Sequences and names of the DNA strands used for transcription.\relax }}{18}}
+\newlabel{dna_strands}{{3.1}{18}}
+\newlabel{dna_strands@cref}{{[table][1][3]3.1}{18}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.2}{\ignorespaces Sequences and names of the transcribed RNA strands.\relax }}{18}}
+\newlabel{rna_strands}{{3.2}{18}}
+\newlabel{rna_strands@cref}{{[table][2][3]3.2}{18}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces DNA template from RNA sequence for the T7 RNA polymerase.\relax }}{18}}
+\newlabel{rna_to_dna_process}{{3.3}{18}}
+\newlabel{rna_to_dna_process@cref}{{[figure][3][3]3.3}{18}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.2}Transcription}{18}}
+\newlabel{promoter_annealing_gel}{{3.4a}{19}}
+\newlabel{promoter_annealing_gel@cref}{{[subfigure][1][3,4]3.4a}{19}}
+\newlabel{sub@promoter_annealing_gel}{{a}{19}}
+\newlabel{sub@promoter_annealing_gel@cref}{{[subfigure][1][3,4]3.4a}{19}}
+\newlabel{translator_annealing_2}{{3.4b}{19}}
+\newlabel{translator_annealing_2@cref}{{[subfigure][2][3,4]3.4b}{19}}
+\newlabel{sub@translator_annealing_2}{{b}{19}}
+\newlabel{sub@translator_annealing_2@cref}{{[subfigure][2][3,4]3.4b}{19}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.4}{\ignorespaces \subref  {promoter_annealing_gel} Typhoon scan of SYBR Gold stained native PAGE gel, with the annealed templates and promoter strands. The lanes are labelled by which strands are annealed (see table \ref  {dna_strands}). \subref  {translator_annealing_2} The annealed oligos together with controls and a 10 nt ladder. The lanes are labelled with the oligo names given in Table~\ref  {dna_strands}. The plus symbol denotes which strands are annealed.\relax }}{19}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.3}{\ignorespaces Mixing of compounds for the first transcription done on the templates for both the short and long translater.\relax }}{20}}
+\newlabel{transcription1}{{3.3}{20}}
+\newlabel{transcription1@cref}{{[table][3][3]3.3}{20}}
+\citation{precipitationprotocol}
+\newlabel{transcription_1}{{3.5a}{21}}
+\newlabel{transcription_1@cref}{{[subfigure][1][3,5]3.5a}{21}}
+\newlabel{sub@transcription_1}{{a}{21}}
+\newlabel{sub@transcription_1@cref}{{[subfigure][1][3,5]3.5a}{21}}
+\newlabel{transcription_2}{{3.5b}{21}}
+\newlabel{transcription_2@cref}{{[subfigure][2][3,5]3.5b}{21}}
+\newlabel{sub@transcription_2}{{b}{21}}
+\newlabel{sub@transcription_2@cref}{{[subfigure][2][3,5]3.5b}{21}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.5}{\ignorespaces \subref  {transcription_1} Typhoon scan of SYBR Gold stained native PAGE gel, with the transcribed RNA strands in lanes 1-10, and controls in 11 and 12. The lanes are labelled by which strands are annealed (see Table~\ref  {rna_strands}). The asterix refers to the DNA strands in Table~\ref  {dna_strands}. \subref  {transcription_2} The same gel after further staining in SYBR Gold.\relax }}{21}}
+\citation{Thubagere2017}
+\newlabel{translator_transcription_3}{{3.6a}{22}}
+\newlabel{translator_transcription_3@cref}{{[subfigure][1][3,6]3.6a}{22}}
+\newlabel{sub@translator_transcription_3}{{a}{22}}
+\newlabel{sub@translator_transcription_3@cref}{{[subfigure][1][3,6]3.6a}{22}}
+\newlabel{translator_transcription_purified}{{3.6b}{22}}
+\newlabel{translator_transcription_purified@cref}{{[subfigure][2][3,6]3.6b}{22}}
+\newlabel{sub@translator_transcription_purified}{{b}{22}}
+\newlabel{sub@translator_transcription_purified@cref}{{[subfigure][2][3,6]3.6b}{22}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.6}{\ignorespaces \subref  {translator_transcription_3} The transcribed short translator sequences and a 10 nt ladder. The lanes are labelled with the oligo names given in Table~\ref  {rna_strands}. \subref  {translator_transcription_purified} The purified short translator RNA oligos.\relax }}{22}}
+\citation{nebtranscription}
+\newlabel{transcription_annealed_nostain}{{3.7a}{23}}
+\newlabel{transcription_annealed_nostain@cref}{{[subfigure][1][3,7]3.7a}{23}}
+\newlabel{sub@transcription_annealed_nostain}{{a}{23}}
+\newlabel{sub@transcription_annealed_nostain@cref}{{[subfigure][1][3,7]3.7a}{23}}
+\newlabel{transcription_annealed_stain}{{3.7b}{23}}
+\newlabel{transcription_annealed_stain@cref}{{[subfigure][2][3,7]3.7b}{23}}
+\newlabel{sub@transcription_annealed_stain}{{b}{23}}
+\newlabel{sub@transcription_annealed_stain@cref}{{[subfigure][2][3,7]3.7b}{23}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.7}{\ignorespaces The annealed short translator subunits and reporter, with the single strands as controls, and a 10 nt ladder.\relax }}{23}}
+\newlabel{transcription_annealed}{{3.7}{23}}
+\newlabel{transcription_annealed@cref}{{[figure][7][3]3.7}{23}}
+\newlabel{translator_transcription_long_1}{{3.8a}{24}}
+\newlabel{translator_transcription_long_1@cref}{{[subfigure][1][3,8]3.8a}{24}}
+\newlabel{sub@translator_transcription_long_1}{{a}{24}}
+\newlabel{sub@translator_transcription_long_1@cref}{{[subfigure][1][3,8]3.8a}{24}}
+\newlabel{translator_transcription_long_2}{{3.8b}{24}}
+\newlabel{translator_transcription_long_2@cref}{{[subfigure][2][3,8]3.8b}{24}}
+\newlabel{sub@translator_transcription_long_2}{{b}{24}}
+\newlabel{sub@translator_transcription_long_2@cref}{{[subfigure][2][3,8]3.8b}{24}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.8}{\ignorespaces \subref  {translator_transcription_long_1} Transcription of the long translator sequences with a 10 nt ladder. \subref  {translator_transcription_long_2} Transcription of the long translator sequences with a 10 nt ladder, using an adapted protocol.\relax }}{24}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.4}{\ignorespaces Mixing of compounds based on the transcription protocol from NEB, for the second transcription of the long translator.\relax }}{25}}
+\newlabel{transcription2}{{3.4}{25}}
+\newlabel{transcription2@cref}{{[table][4][3]3.4}{25}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.5}{\ignorespaces Mixing of compounds for the PCR reaction on the long translator sequences.\relax }}{25}}
+\newlabel{pcr}{{3.5}{25}}
+\newlabel{pcr@cref}{{[table][5][3]3.5}{25}}
+\newlabel{translator_pcr_long_1}{{3.9a}{26}}
+\newlabel{translator_pcr_long_1@cref}{{[subfigure][1][3,9]3.9a}{26}}
+\newlabel{sub@translator_pcr_long_1}{{a}{26}}
+\newlabel{sub@translator_pcr_long_1@cref}{{[subfigure][1][3,9]3.9a}{26}}
+\newlabel{translator_transcription_long_ds_1}{{3.9b}{26}}
+\newlabel{translator_transcription_long_ds_1@cref}{{[subfigure][2][3,9]3.9b}{26}}
+\newlabel{sub@translator_transcription_long_ds_1}{{b}{26}}
+\newlabel{sub@translator_transcription_long_ds_1@cref}{{[subfigure][2][3,9]3.9b}{26}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.9}{\ignorespaces \subref  {translator_pcr_long_1} PCR product of the long translator sequences. \subref  {translator_transcription_long_ds_1} Transcription of the double-stranded long translator sequences.\relax }}{26}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {4}Results}{27}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {section}{\numberline {4.1}2-input AND}{28}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces Simulation results of the trained 2-input AND gate. The network is trained to activate when both of the inputs are active. The correct output was obtained after 21 iterations of the training algorithm, with a weight of 1.9 for all inputs, and a threshold of 10.\relax }}{28}}
+\newlabel{2_and}{{4.1}{28}}
+\newlabel{2_and@cref}{{[figure][1][4]4.1}{28}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.2}2-input OR}{29}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces Simulation results of the trained 2-input OR gate. The network is trained to activate when one of the inputs is active. The correct output was obtained after 22 iterations of the training algorithm, with a weight of 2.1 for all inputs, and a threshold of 10.\relax }}{29}}
+\newlabel{2_or}{{4.2}{29}}
+\newlabel{2_or@cref}{{[figure][2][4]4.2}{29}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.3}3-input AND}{30}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces Simulation results of the trained 3-input AND gate. The network is trained to activate when all of the inputs are active. The correct output was obtained after 14 iterations of the training algorithm, with a weight of 1.2 for all inputs, and a threshold of 10.\relax }}{30}}
+\newlabel{3_and}{{4.3}{30}}
+\newlabel{3_and@cref}{{[figure][3][4]4.3}{30}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.4}3-input 1-OR}{31}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces Simulation results of the trained 3-input 1-OR gate. The network is trained to activate when at least 1 of the inputs is active. The correct output was obtained after 16 iterations of the training algorithm, with a weight of 1.3 for all inputs, and a threshold of 10.\relax }}{31}}
+\newlabel{3_1_or}{{4.4}{31}}
+\newlabel{3_1_or@cref}{{[figure][4][4]4.4}{31}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.5}3-input 2-OR}{32}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.5}{\ignorespaces Simulation results of the trained 3-input 2-OR gate. The network is trained to activate when at least 2 of the inputs is active. The correct output was obtained after 15 iterations of the training algorithm, with a weight of 1.4 for all inputs, and a threshold of 10.\relax }}{32}}
+\newlabel{3_2_or}{{4.5}{32}}
+\newlabel{3_2_or@cref}{{[figure][5][4]4.5}{32}}
+\citation{Picuri2009}
+\citation{Qian2011}
+\citation{Thubagere2017}
 \bibstyle{unsrt}
 \bibdata{references}
-\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Schematic of a 2-input neuron implemented with seesaw gates. The neuron has an input gate for each input, which makes sure that the input is higher than a give threshold before the input is registered. The gate and fuel concentrations in each input gate affects the weight of the input before it is sent to the integration gate. The integration gate collects the right recognition sequence from the input gates for the threshold gate. The threshold gate activates if the sum of the weighted inputs is larger than the threshold concentration of the treshold gate.\relax }}{6}}
-\newlabel{seesaw_neuron}{{7}{6}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {0.1.3}Input translation}{6}}
-\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces The strands and concentrations of the units of a seesaw gate can be represented schematically to simplify larger diagrams.\relax }}{7}}
-\newlabel{seesaw_gate_simple}{{8}{7}}
-\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Truth table for an AND gate.\relax }}{7}}
-\newlabel{and_table}{{1}{7}}
-\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces The seesaw neuron from Figure~\ref  {seesaw_neuron} shown schematically.\relax }}{7}}
-\newlabel{seesaw_neuron_schematic}{{9}{7}}
-\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Translation of arbitrary input sequences into the syntax required for the seesaw neural network. The input strand $ab$ displaces $bS_1T$ from the first half-translator. $bS_1T$ can then displace $S_1TS_2$ from the second half translator. This process successfully translates the input $ab$ into $S_1TS_2$, which can then be used for input in a neural network (see Figure~\ref  {seesaw_neuron}).\relax }}{8}}
-\newlabel{translator}{{10}{8}}
-\bibcite{Lippmann}{1}
-\bibcite{ZhaoYanling}{2}
-\bibcite{Qian}{3}
+\@writefile{toc}{\contentsline {chapter}{\numberline {5}Conclusion}{33}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\bibcite{Peng2016}{1}
+\bibcite{Seelig2006}{2}
+\bibcite{Engelen2016}{3}
 \bibcite{Qian2011}{4}
 \bibcite{Picuri2009}{5}
+\bibcite{Zhang2011}{6}
+\bibcite{Zhang}{7}
+\bibcite{Lakin2011}{8}
+\bibcite{Tu1996}{9}
+\bibcite{Lippmann}{10}
+\bibcite{ZhaoYanling}{11}
+\bibcite{Qian}{12}
+\bibcite{dsdmanual}{13}
+\bibcite{neuralcircuit}{14}
+\bibcite{neuralcompiler}{15}
+\bibcite{Thubagere2017}{16}
+\bibcite{Milligan1987}{17}
+\bibcite{nupackorder}{18}
+\bibcite{nanodropimport}{19}
+\bibcite{precipitationprotocol}{20}
+\bibcite{nebtranscription}{21}
+\@writefile{toc}{\contentsline {chapter}{\numberline {A}Appendix}{36}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{lof}{\contentsline {figure}{\numberline {A.1}{\ignorespaces Nupack analysis of the equilibrium concentrations of the first subunit of the short and long translator.\relax }}{36}}
+\newlabel{annealing_concentration}{{A.1}{36}}
+\newlabel{annealing_concentration@cref}{{[figure][1][2147483647,1]A.1}{36}}
+\@writefile{lof}{\contentsline {figure}{\numberline {A.2}{\ignorespaces Concentrations of the dissolved DNA oligos ordered from IDT.\relax }}{37}}
+\newlabel{oligo_concentrations}{{A.2}{37}}
+\newlabel{oligo_concentrations@cref}{{[figure][2][2147483647,1]A.2}{37}}
+\@writefile{lof}{\contentsline {figure}{\numberline {A.3}{\ignorespaces Concentrations of the short translator RNA sequences.\relax }}{37}}
+\newlabel{translator_transcription_concentration}{{A.3}{37}}
+\newlabel{translator_transcription_concentration@cref}{{[figure][3][2147483647,1]A.3}{37}}
+\@writefile{lof}{\contentsline {figure}{\numberline {A.4}{\ignorespaces Secondary structures of the DNA sequences for the short translator and the T7 promoter sequence.\relax }}{38}}
+\newlabel{short_secondary_structures}{{A.4}{38}}
+\newlabel{short_secondary_structures@cref}{{[figure][4][2147483647,1]A.4}{38}}
+\@writefile{lot}{\contentsline {table}{\numberline {A.1}{\ignorespaces Contents of 1X TE buffer.\relax }}{38}}
+\newlabel{te_buffer}{{A.1}{38}}
+\newlabel{te_buffer@cref}{{[table][1][2147483647,1]A.1}{38}}
+\@writefile{lot}{\contentsline {table}{\numberline {A.2}{\ignorespaces Contents of 1X annealing buffer.\relax }}{38}}
+\newlabel{annealing_buffer}{{A.2}{38}}
+\newlabel{annealing_buffer@cref}{{[table][2][2147483647,1]A.2}{38}}
+\@writefile{lof}{\contentsline {figure}{\numberline {A.5}{\ignorespaces Secondary structures of the RNA sequences for the long translator.\relax }}{39}}
+\newlabel{long_secondary_structures}{{A.5}{39}}
+\newlabel{long_secondary_structures@cref}{{[figure][5][2147483647,1]A.5}{39}}
+\@writefile{lot}{\contentsline {table}{\numberline {A.3}{\ignorespaces Contents of native loading buffer.\relax }}{39}}
+\newlabel{native_buffer}{{A.3}{39}}
+\newlabel{native_buffer@cref}{{[table][3][2147483647,1]A.3}{39}}
+\@writefile{lot}{\contentsline {table}{\numberline {A.4}{\ignorespaces Contents of denaturing loading buffer.\relax }}{39}}
+\newlabel{denaturing_buffer}{{A.4}{39}}
+\newlabel{denaturing_buffer@cref}{{[table][4][2147483647,1]A.4}{39}}
+\newlabel{codeshort}{{A.1}{40}}
+\newlabel{codeshort@cref}{{[listing][1][2147483647,1]A.1}{40}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {A.1}Nupack code for the short translator}{40}}
+\newlabel{codelong}{{A.2}{40}}
+\newlabel{codelong@cref}{{[listing][2][2147483647,1]A.2}{40}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {A.2}Nupack code for the long translator}{40}}

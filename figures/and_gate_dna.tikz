@@ -1,0 +1,105 @@
+\begin{tikzpicture}
+
+
+\def\strandtwo(#1,#2){
+  \begin{scope}[shift={(#1,#2)}]
+    \draw[<-](4,0.3) -- node[above] {d} (5.9,0.3);
+    \node[label=above:{e}] at (6,1) {};
+    \draw plot [smooth, tension=1] coordinates {(5.9, 0.3) (5.9, 0.4) (5.7, 0.7) (6, 1) (6.3, 0.7) (6.1, 0.4) (6.1, 0.3)};
+    \draw(6.1,0.3) -- node[above] {f} (8,0.3);
+  \end{scope}
+}
+
+\def\strandone(#1,#2){
+  \begin{scope}[shift={(#1,#2)}]
+    \draw[<-](0,0.3) -- node[above] {a} (1,0.3);
+    \draw(1,0.3) -- node[above] {b} (3,0.3);
+    \draw(3,0.3) -- node[above] {c} (4,0.3);
+  \end{scope}
+}
+
+\def\outputstrand(#1,#2){
+  \begin{scope}[shift={(#1,#2)}]
+    \draw[<-](0,0.3) -- node[above] {d} (1,0.3);
+    \draw(1,0.3) -- node[above] {e} (3,0.3);
+    \draw(3,0.3) -- node[above] {f} (4,0.3);
+  \end{scope}
+}
+
+\def\strandthree(#1,#2){
+  \begin{scope}[shift={(#1,#2)}]
+    \draw(1,0) -- node[below] {b*} (3,0);
+    \draw(3,0) -- node[below] {c*} (4,0);
+    \draw(4,0) -- node[below] {d*} (6,0);
+    \draw[->](6,0) -- node[below] {f*} (8,0);
+  \end{scope}
+}
+
+\def\inputstrand(#1,#2){
+  \begin{scope}[shift={(#1,#2)}]
+    \draw[](0,0.3) -- node[below] {a*} (1,0.3);
+    \draw(1,0.3) -- node[below] {b*} (3,0.3);
+    \draw[->](3,0.3) -- node[below] {c*} (4,0.3);
+  \end{scope}
+}
+
+\def\inputstrandtwo(#1,#2){
+  \begin{scope}[shift={(#1,#2)}]
+    \draw[<-](1,0) -- node[above] {b} (3,0);
+    \draw(3,0) -- node[above] {c} (4,0);
+    \draw(4,0) -- node[above] {d} (6,0);
+    \draw[](6,0) -- node[above] {f} (8,0);
+  \end{scope}
+}
+
+\def\reactionarrow(#1,#2){
+  \begin{scope}[shift={(#1,#2)}]
+    \draw[->](7, -1) -- (7, -3);
+    \draw[->](7, -1) to [out=-90, in=0] (6, -2);
+    \draw[->](8, -2) to [out=180, in=90] (7, -3);
+  \end{scope}
+}
+
+\def\reactionarrowtwo(#1,#2){
+  \begin{scope}[shift={(#1,#2)}]
+    \draw[->](7, -1) -- (7, -3);
+    \draw[->](7, -1) to [out=-90, in=0] (6, -2);
+  \end{scope}
+}
+
+\strandone(0,0.5)
+\strandtwo(0,0.5)
+\strandthree(0,0.5)
+
+\node at (9,0.7) {+};
+
+\inputstrand(10,0.4)
+
+\reactionarrow(0,0)
+
+\begin{scope}[transform canvas={scale=0.7}]
+  \strandone(3,-3)
+  \inputstrand(3,-3.3)
+  \inputstrandtwo(12,-2.8)
+\end{scope}
+
+
+\strandtwo(-2,-5)
+\strandthree(-2,-5)
+
+\node at (7,-5) {+};
+
+\inputstrandtwo(7,-5)
+
+\reactionarrowtwo(0,-5.5)
+
+
+\begin{scope}[transform canvas={scale=0.7}]
+  \strandthree(-1,-10.9)
+  \inputstrandtwo(-1,-10.6)
+\end{scope}
+
+
+\outputstrand(5,-10)
+
+\end{tikzpicture}

@@ -12,6 +12,8 @@
 \usepackage{svg}
 \usepackage{subcaption}
 \usepackage{listings}
+\usepackage[parfill]{parskip}
+\usepackage{cleveref}
 
 \usetikzlibrary{shapes,arrows,calc}
 
@@ -22,10 +24,12 @@
 \newcommand{\tref}[1]{\tablename~\ref{#1}}
 \newcommand{\fref}[1]{\figurename~\ref{#1}}
 \newcommand{\eref}[1]{\equationname~\eqref{#1}}
-\newcommand{\lref}[1]{Code~\ref{#1}}
+\newcommand{\lref}[1]{\lstlistingname~\ref{#1}}
+\renewcommand{\lstlistingname}{Code}
 
 \lstset{
    breaklines=true,
    frame=single,
-   basicstyle=\small\ttfamily
+   basicstyle=\small\ttfamily,
+   captionpos=b
  }
