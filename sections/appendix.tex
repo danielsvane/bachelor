@@ -1,5 +1,5 @@
 % !TEX root = ../main.tex
-\begin{figure}
+\begin{figure}[h]
 \begin{subfigure}[b]{.49\columnwidth}
   \centering
   \includegraphics[width=\linewidth]{images/short_annealing_concentration.png}
@@ -15,14 +15,14 @@
 \label{annealing_concentration}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[h]
 \centering
 \includegraphics[width=\columnwidth]{images/oligo_concentrations.png}
 \caption{Concentrations of the dissolved DNA oligos ordered from IDT.}
 \label{oligo_concentrations}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[h]
 \centering
 \includegraphics[width=\columnwidth]{images/translator_transcription_concentration.png}
 \caption{Concentrations of the short translator RNA sequences.}
@@ -30,7 +30,7 @@
 \end{figure}
 
 
-\begin{figure}
+\begin{figure}[h]
 \begin{subfigure}{.32\columnwidth}
   \centering
   \includegraphics[width=\linewidth]{images/0_analysis.png}
@@ -65,7 +65,7 @@
 \label{short_secondary_structures}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[h]
 \begin{subfigure}{.32\columnwidth}
   \centering
   \includegraphics[width=\linewidth]{images/long_rna_secondarystructure_6.png}
@@ -95,7 +95,7 @@
 \label{long_secondary_structures}
 \end{figure}
 
-\begin{table}
+\begin{table}[h]
 \centering
 \begin{tabular}{ll}
   \hline
@@ -110,7 +110,7 @@ Nuclease-free water &               \\
 \label{te_buffer}
 \end{table}
 
-\begin{table}
+\begin{table}[h]
 \centering
 \begin{tabular}{ll}
   \hline
@@ -126,7 +126,7 @@ Nuclease-free water &               \\
 \label{annealing_buffer}
 \end{table}
 
-\begin{table}
+\begin{table}[h]
 \centering
 \begin{tabular}{ll}
   \hline
@@ -142,7 +142,7 @@ Nuclease-free water &               \\
 \label{native_buffer}
 \end{table}
 
-\begin{table}
+\begin{table}[h]
 \centering
 \begin{tabular}{ll}
   \hline
@@ -158,7 +158,7 @@ Urea & 5.4 M              \\
 \label{denaturing_buffer}
 \end{table}
 
-\begin{lstlisting}[float,caption=Nupack code for the short translator, label=codeshort]
+\begin{lstlisting}[float,floatplacement=h,caption=Nupack code for the short translator, label=codeshort]
 structure state1 = ......................
 structure state2 = ............((((((((((+............))))))))))
 structure state3 = .............((((((((((+............))))))))))
@@ -179,7 +179,7 @@ prevent = AAAA, CCCC, GGGG, UUUU, KKKKKK, MMMMMM, RRRRRR, SSSSSS, WWWWWW, YYYYYY
 \end{lstlisting}
 
 
-\begin{lstlisting}[float, caption=Nupack code for the long translator, label=codelong]
+\begin{lstlisting}[float,floatplacement=h, caption=Nupack code for the long translator, label=codelong]
 structure state1 = ................................
 structure state2 = ......................((((((((((((((((((((+............))))))))))))))))))))
 structure state3 = ............((((((((((((((((((((+......................))))))))))))))))))))

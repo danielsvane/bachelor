@@ -14,6 +14,7 @@
 \usepackage{listings}
 \usepackage[parfill]{parskip}
 \usepackage{cleveref}
+\usepackage[compact, nobottomtitles*]{titlesec}
 
 \usetikzlibrary{shapes,arrows,calc}
 
@@ -33,3 +34,23 @@
    basicstyle=\small\ttfamily,
    captionpos=b
  }
+
+ \makeatletter
+\def\@makechapterhead#1{%
+  \vspace*{50\p@}%
+  {\parindent \z@ \raggedright \normalfont
+    \ifnum \c@secnumdepth >\m@ne
+      \if@mainmatter
+        %\huge\bfseries \@chapapp\space \thechapter
+        \Huge\bfseries \thechapter.\space%
+        %\par\nobreak
+        %\vskip 20\p@
+      \fi
+    \fi
+    \interlinepenalty\@M
+    \Huge \bfseries #1\par\nobreak
+    \vskip 40\p@
+  }}
+\makeatother
+
+ \widowpenalties 1 10000

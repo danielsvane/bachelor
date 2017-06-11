@@ -1,26 +1,28 @@
 \select@language {english}
 \contentsline {chapter}{\numberline {1}Introduction}{2}
-\contentsline {chapter}{\numberline {2}Theory}{4}
-\contentsline {section}{\numberline {2.1}Strand displacement}{4}
+\contentsline {chapter}{\numberline {2}Theory}{3}
+\contentsline {section}{\numberline {2.1}Strand displacement}{3}
 \contentsline {section}{\numberline {2.2}Neural networks}{6}
 \contentsline {subsection}{\numberline {2.2.1}In silico neural networks}{6}
-\contentsline {subsection}{\numberline {2.2.2}In vitro perceptron}{8}
+\contentsline {subsection}{\numberline {2.2.2}In vitro perceptron}{7}
 \contentsline {subsubsection}{Thresholding}{8}
-\contentsline {subsubsection}{Integration}{9}
+\contentsline {subsubsection}{Integration}{8}
 \contentsline {subsubsection}{Weighting}{9}
 \contentsline {subsubsection}{Neuron}{10}
 \contentsline {subsubsection}{Training}{11}
 \contentsline {subsection}{\numberline {2.2.3}Input translation}{12}
-\contentsline {chapter}{\numberline {3}Method}{15}
-\contentsline {section}{\numberline {3.1}Perceptron simulation}{15}
-\contentsline {section}{\numberline {3.2}Translation}{17}
-\contentsline {subsection}{\numberline {3.2.1}Design}{17}
-\contentsline {subsection}{\numberline {3.2.2}Transcription}{18}
-\contentsline {chapter}{\numberline {4}Results}{27}
-\contentsline {section}{\numberline {4.1}2-input AND}{28}
-\contentsline {section}{\numberline {4.2}2-input OR}{29}
-\contentsline {section}{\numberline {4.3}3-input AND}{30}
-\contentsline {section}{\numberline {4.4}3-input 1-OR}{31}
-\contentsline {section}{\numberline {4.5}3-input 2-OR}{32}
-\contentsline {chapter}{\numberline {5}Conclusion}{33}
-\contentsline {chapter}{\numberline {A}Appendix}{36}
+\contentsline {chapter}{\numberline {3}Method}{14}
+\contentsline {section}{\numberline {3.1}Perceptron simulation}{14}
+\contentsline {section}{\numberline {3.2}Translation}{16}
+\contentsline {subsection}{\numberline {3.2.1}Design}{16}
+\contentsline {subsection}{\numberline {3.2.2}Transcription}{17}
+\contentsline {chapter}{\numberline {4}Results}{23}
+\contentsline {section}{\numberline {4.1}Seesaw perceptron}{23}
+\contentsline {subsection}{\numberline {4.1.1}2-input AND}{24}
+\contentsline {subsection}{\numberline {4.1.2}2-input OR}{25}
+\contentsline {subsection}{\numberline {4.1.3}3-input AND}{26}
+\contentsline {subsection}{\numberline {4.1.4}3-input 1-OR}{27}
+\contentsline {subsection}{\numberline {4.1.5}3-input 2-OR}{28}
+\contentsline {section}{\numberline {4.2}Translation}{29}
+\contentsline {chapter}{\numberline {5}Conclusion}{34}
+\contentsline {chapter}{\numberline {A}Appendix}{37}

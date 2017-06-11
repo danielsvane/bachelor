@@ -25,7 +25,7 @@ The representation can be simplified to the type shown in \fref{perceptron_simpl
     \caption{}
     \label{perceptron_simple_b}
   \end{subfigure}
-  \caption{\subref{perceptron_simple_a} Simple representation of a 2-input perceptron. \subref{perceptron_simple_a} Weights and thresholds on a perceptron that implements the 2-input AND gate.}
+  \caption{\subref{perceptron_simple_a} Simple representation of a 2-input perceptron. \subref{perceptron_simple_b} Weights and thresholds on a perceptron that implements the 2-input AND gate.}
   \label{perceptron_simple}
 \end{figure}
 
@@ -88,7 +88,7 @@ In the natural neuron, the neuron will activate when its inputs exceeds a thresh
 \end{figure}
 
 \subsubsection{Integration}
-The input to the neuron have to be collected before thresholding, as they don't have the same left recognition sequence. This is done through an integrating gate, which will collect all inputs with the same right recognition sequence, and release a common signal which can be thresholded. The integration gate is seen in \fref{seesaw_integration_reaction}.
+If the seesaw neuron have multiple inputs, they will have to be "collected" before thresholding, as they don't have the same left recognition sequence (see \fref{seesaw}). This is done through an integrating gate, which will collect all inputs with the same right recognition sequence, and release a common signal which can be thresholded. The integration gate is seen in \fref{seesaw_integration_reaction}.
 
 \begin{figure}[h]
 \begin{subfigure}[t]{.49\textwidth}
@@ -127,14 +127,14 @@ The weight is decided by the concentration of output of an input gate and its fu
 \label{seesaw_weighting}
 \end{figure}
 
-A problem with this approach to weighting, is that the inputs can only contribute positively to the sum. In silico neural networks can use negative weights to simulate inhibitory synaptic connections, and is needed to implement many kind of boolean functions \cite{ZhaoYanling}. The in vitro network can't have negative concentrations of input sequences, so other approaches have to be considered. The problem can be solved using dual-rail logic, where each input is replaced by two inputs. The details of the dual-rail logic circuits is not a part of this project, and thus the networks will be limited to simple AND and OR circuits.
+A problem with this approach to weighting, is that the inputs can only contribute positively to the sum. In silico neural networks can use negative weights to simulate inhibitory synaptic connections, and is needed to implement many kind of boolean functions \cite{ZhaoYanling}. The in vitro network can't have negative concentrations of input sequences, so other approaches have to be considered. The problem can be solved using dual-rail logic \cite{Qian2011}, where each input is replaced by two inputs. The details of the dual-rail logic circuits is not a part of this project, and thus the networks will be limited to simple AND and OR circuits, since the NOT operation requires negative weights, and the XOR operation is not linearly separable \cite{ZhaoYanling}.
 
 \subsubsection{Neuron}
-By combining the discussed functional elements of the seesaw gate, a neuron can be created using strand displacement reactions, as depicted in \fref{seesaw_neuron}.
+By combining the discussed functional elements of the seesaw gate, a "neuron" can be created using strand displacement reactions, as depicted in \fref{seesaw_neuron}.
 
 \begin{figure}[h]
 \includegraphics[width=\textwidth]{figures/seesaw_neuron.tikz}
-\caption{Schematic of a 2-input neuron implemented with seesaw gates. The neuron has an input gate for each input, which makes sure that the input is higher than a given threshold before the input is registered. The gate and fuel concentrations in each input gate affects the weight of the input before it is sent to the integration gate. The integration gate collects the right recognition sequence from the input gates for the threshold gate. The threshold gate activates if the sum of the weighted inputs is larger than the threshold concentration of the treshold gate.}
+\caption{Schematic of a 2-input neuron implemented with seesaw gates. The neuron has an input gate for each input, which makes sure that the input concentration is higher than a given threshold before the input is registered. The gate and fuel concentrations in each input gate affects the weight of the input before it is sent to the integration gate. The integration gate collects the right recognition sequence from the input gates for the threshold gate. The threshold gate activates if the sum of the weighted inputs is larger than the threshold concentration of the treshold gate.}
 \label{seesaw_neuron}
 \end{figure}
 
@@ -167,7 +167,7 @@ The recommendations from the original paper \cite{Qian2011} is that each fuel st
 The representation from \fref{seesaw_neuron_schematic} can further be simplified to the original perceptron shown in \fref{perceptron}. The seesaw neuron thus successfully implements all the required functionality of the artificial neuron, except for negative weights.
 
 \subsubsection{Training}
-The training algorithm typically used for digital perceptrons is based on the ability of the neurons to have negative weights and thresholds. A modified algorithm is presented in the original paper \cite{Qian2011}, which works for dual rail circuits. For the circuits in this report without dual rail logic, the algorithm can be seen in \lref{codetraining}.
+The training algorithm typically used for digital perceptrons is based on the ability of the neurons to have negative weights and thresholds \cite{Gallant1990}. A modified algorithm is presented in the original paper \cite{Qian2011}, which works for dual rail circuits. For the circuits in this report without dual rail logic, the algorithm can be seen in \lref{codetraining}.
 
 \begin{lstlisting}[float,floatplacement=h,caption=Pseudocode for the seesaw perceptron training algorithm, label=codetraining]
 initialize all weights to 0 and threshold to 10
@@ -180,9 +180,7 @@ while training is incomplete
     increase the weights
 \end{lstlisting}
 
-This process will keep increasing the weights until the output of the network matches the desired output. Without negative weights this will only work for AND and OR logic.
-
-The input sets are taken from the truth table that the circuit should realize. If the circuit for example should realize the simple AND gate (see \tref{and_table}), the network is activated with the input rows from the truth table, and tested whether the output equals (or is very close) to the output in the truth table.
+The algorithm in \lref{codetraining} will keep increasing the weights until the output of the network matches the desired output. The input sets are taken from the truth table that the circuit should realize. If the circuit for example should realize the simple AND gate (see \tref{and_table}), the network is activated with the input rows from the truth table, and tested whether the output equals (or is very close) to the output in the truth table.
 
 \begin{table}[h]
 \centering

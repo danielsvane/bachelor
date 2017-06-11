@@ -14,45 +14,45 @@ Warning--empty year in Lippmann
 Warning--empty year in ZhaoYanling
 Warning--empty journal in Qian
 Warning--empty year in Qian
-You've used 21 entries,
+You've used 22 entries,
             1791 wiz_defined-function locations,
-            561 strings with 6454 characters,
-and the built_in function-call counts, 3964 in all, are:
-= -- 324
-> -- 159
+            568 strings with 6575 characters,
+and the built_in function-call counts, 4188 in all, are:
+= -- 347
+> -- 163
 < -- 1
-+ -- 63
-- -- 42
-* -- 265
-:= -- 574
-add.period$ -- 47
-call.type$ -- 21
-change.case$ -- 14
++ -- 65
+- -- 43
+* -- 284
+:= -- 608
+add.period$ -- 50
+call.type$ -- 22
+change.case$ -- 15
 chr.to.int$ -- 0
-cite$ -- 28
-duplicate$ -- 169
-empty$ -- 445
-format.name$ -- 42
-if$ -- 882
+cite$ -- 29
+duplicate$ -- 178
+empty$ -- 469
+format.name$ -- 43
+if$ -- 930
 int.to.chr$ -- 0
-int.to.str$ -- 21
-missing$ -- 14
-newline$ -- 91
-num.names$ -- 14
-pop$ -- 97
+int.to.str$ -- 22
+missing$ -- 15
+newline$ -- 96
+num.names$ -- 15
+pop$ -- 98
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 100
+skip$ -- 103
 stack$ -- 0
-substring$ -- 279
-swap$ -- 28
+substring$ -- 304
+swap$ -- 29
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 7
-while$ -- 33
-width$ -- 23
-write$ -- 179
+while$ -- 36
+width$ -- 24
+write$ -- 190
 (There was 1 error message)

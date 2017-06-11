@@ -63,6 +63,11 @@ Richard~P Lippmann.
 Lulu Qian and Erik Winfree.
 \newblock {A Simple DNA Gate Motif for Synthesizing Large-Scale Circuits}.
 
+\bibitem{Gallant1990}
+S.I. Gallant.
+\newblock {Perceptron-based learning algorithms}.
+\newblock {\em IEEE Transactions on Neural Networks}, 1(2):179--191, jun 1990.
+
 \bibitem{dsdmanual}
 http://dsd.azurewebsites.net/beta/manual-beta.pdf.
 
