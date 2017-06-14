@@ -1,6 +1,6 @@
 % !TEX root = ../main.tex
 
-\begin{tikzpicture}[baseline=-100pt]
+\begin{tikzpicture}[baseline=-110pt]
 
 \def\inputstrand(#1,#2){
   \begin{scope}[shift={(#1,#2)}]

@@ -1,6 +1,7 @@
 % !TEX root = ../main.tex
 
 \usepackage[english]{babel}
+\usepackage{varioref}
 \usepackage{chemfig}
 \usepackage{circuitikz}
 \usepackage{tikz}
@@ -14,7 +15,7 @@
 \usepackage{subcaption}
 \usepackage{listings}
 \usepackage[parfill]{parskip}
-\usepackage{cleveref}
+\usepackage[noabbrev,capitalize]{cleveref}
 \usepackage[compact, nobottomtitles*]{titlesec}
 
 \usetikzlibrary{shapes,arrows,calc}
@@ -23,11 +24,12 @@
 \captionsetup{subrefformat=bold}
 
 % For easier referring like \fref, \tref, \eref
-\newcommand{\tref}[1]{\tablename~\ref{#1}}
-\newcommand{\fref}[1]{\figurename~\ref{#1}}
-\newcommand{\eref}[1]{\equationname~\eqref{#1}}
-\newcommand{\lref}[1]{\lstlistingname~\ref{#1}}
+\newcommand{\tref}[1]{\vref{#1}}
+\newcommand{\fref}[1]{\vref{#1}}
+\newcommand{\eref}[1]{\vref{#1}}
+\newcommand{\lref}[1]{\vref{#1}}
 \renewcommand{\lstlistingname}{Code}
+\crefname{listing}{Code}{Code}
 
 \lstset{
    breaklines=true,

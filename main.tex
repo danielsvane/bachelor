@@ -9,31 +9,36 @@
 
   \maketitle
 
-  % \begin{abstract}
-  % Empty
-  % \end{abstract}
+  \begin{abstract}
+  The purpose of this project is to investigate a previously designed method of creating strand displacement neural networks, and combine them with RNA translation, for possible future use in general biosensors and molecular computers. The strand displacement neural network is created using a DNA motif called the seesaw gate. The seesaw gate requires some specific domains to function, so to use arbitrary sequences as input to the network, the sequences have to be translated. This report first goes through the theory of neural networks and strand displacement reactions, and later applies it for recreating the seesaw neural network. It is successfully shown that simple neural networks (perceptrons) can be trained to realize specific logic operations based on their truth tables, but with some limitations. The RNA translator was intended to be transcribed from a DNA template, and the displacement reactions tested using a fluorescent reporter. It was not possible to transcribe the RNA strands, so no succesful RNA translation is shown in this report.
+  \end{abstract}
+
+
+  \tableofcontents
+
+  \chapter{Introduction}
+  \input{sections/introduction.tex}
   %
-  % \tableofcontents
-  %
-  % \chapter{Introduction}
-  % \input{sections/introduction.tex}
-  % %
-  % %\input{sections/logic_gates.tex}
-  % \chapter{Theory}
-  % \input{sections/strand_displacement.tex}
-  % \input{sections/neural_networks.tex}
+  %\input{sections/logic_gates.tex}
+
+
+  \chapter{Theory}
+  \input{sections/strand_displacement.tex}
+  \input{sections/neural_networks.tex}
   \chapter{Method}
   \input{sections/method.tex}
-  % \chapter{Results}
-  % \input{sections/results.tex}
-  % \chapter{Conclusion}
-  % \input{sections/conclusion.tex}
-  %
-  % \bibliographystyle{unsrt}
-  % \bibliography{references}
-  %
-  % \appendix
-  % \chapter{Appendix}
-  % \input{sections/appendix.tex}
+  \chapter{Results and discussion}
+  \input{sections/results.tex}
+
+
+  \chapter{Conclusion}
+  \input{sections/conclusion.tex}
+
+  \bibliographystyle{unsrt}
+  \bibliography{references}
+
+  \appendix
+  \chapter{Appendix}
+  \input{sections/appendix.tex}
 
 \end{document}

@@ -8,10 +8,12 @@
 \coordinate (c) at (-2, -1);
 \coordinate (d) at (2, 0);
 
-\draw (b) -- node[near start, above] {$1$} (a);
+\draw (b) -- (a);
+\node [box] at ($(b)!0.25!(a)$) {$1$};
 \node[left] at (b) {$1$};
 
-\draw (c) -- node[near start, above] {$1$} (a);
+\draw (c) -- (a);
+\node [box] at ($(c)!0.25!(a)$) {$1$};
 \node[left] at (c) {$1$};
 
 \draw (a) -- (d);

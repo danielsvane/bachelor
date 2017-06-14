@@ -1,0 +1,105 @@
+\begin{thebibliography}{10}
+
+\bibitem{Peng2016}
+Yong Peng and Carlo~M Croce.
+\newblock {The role of MicroRNAs in human cancer}.
+\newblock {\em Signal Transduction and Targeted Therapy}, 1:15004, jan 2016.
+
+\bibitem{Seelig2006}
+Georg Seelig, David Soloveichik, David~Yu Zhang, and Erik Winfree.
+\newblock {Enzyme-Free Nucleic Acid Logic Circuits}.
+\newblock {\em Science}, 314(5805):1585--1588, 2006.
+
+\bibitem{Engelen2016}
+W~Engelen, B~M~G Janssen, and M~Merkx.
+\newblock {DNA-based control of protein activity.}
+\newblock {\em Chemical communications (Cambridge, England)},
+  52(18):3598--3610, 2016.
+
+\bibitem{Qian2011}
+Lulu Qian, Erik Winfree, and Jehoshua Bruck.
+\newblock {Neural network computation with DNA strand displacement cascades}.
+\newblock {\em Nature}, 475, 2011.
+
+\bibitem{Picuri2009}
+John~M. Picuri, Brian~M. Frezza, and M.~Reza Ghadiri.
+\newblock {Universal translators for nucleic acid diagnosis}.
+\newblock {\em Journal of the American Chemical Society}, 131(26):9368--9377,
+  2009.
+
+\bibitem{Zhang2011}
+David~Yu Zhang and Georg Seelig.
+\newblock {Dynamic DNA nanotechnology using strand-displacement reactions.}
+\newblock {\em Nature chemistry}, 3(2):103--113, 2011.
+
+\bibitem{Zhang}
+David~Yu Zhang and Erik Winfree.
+\newblock {Control of DNA Strand Displacement Kinetics Using Toehold Exchange}.
+
+\bibitem{Lakin2011}
+Matthew~R Lakin, Simon Youssef, Filippo Polo, Stephen Emmott, and Andrew
+  Phillips.
+\newblock {Visual DSD: a design and analysis tool for DNA strand displacement
+  systems}.
+\newblock {\em BIOINFORMATICS APPLICATIONS NOTE}, 27(22):3211--321310, 2011.
+
+\bibitem{Tu1996}
+Jack~V. Tu.
+\newblock {Advantages and disadvantages of using artificial neural networks
+  versus logistic regression for predicting medical outcomes}.
+\newblock {\em Journal of Clinical Epidemiology}, 49(11):1225--1231, nov 1996.
+
+\bibitem{Lippmann}
+Richard~P Lippmann.
+\newblock {An Introduction' to Computing with Neural Nets}.
+
+\bibitem{ZhaoYanling}
+{Zhao Yanling}, {Deng Bimin}, and {Wang Zhanrong}.
+\newblock {Analysis and study of perceptron to solve XOR problem}.
+\newblock In {\em The 2nd International Workshop on Autonomous Decentralized
+  System, 2002.}, pages 168--173. IEEE Comput. Soc.
+
+\bibitem{Qian}
+Lulu Qian and Erik Winfree.
+\newblock {A Simple DNA Gate Motif for Synthesizing Large-Scale Circuits}.
+
+\bibitem{Gallant1990}
+S.I. Gallant.
+\newblock {Perceptron-based learning algorithms}.
+\newblock {\em IEEE Transactions on Neural Networks}, 1(2):179--191, jun 1990.
+
+\bibitem{dsdmanual}
+http://dsd.azurewebsites.net/beta/manual-beta.pdf.
+
+\bibitem{neuralcompiler}
+https://github.com/danielsvane/neuralnetworkcompiler.
+
+\bibitem{Zadeh2011}
+Joseph~N. Zadeh, Conrad~D. Steenberg, Justin~S. Bois, Brian~R. Wolfe,
+  Marshall~B. Pierce, Asif~R. Khan, Robert~M. Dirks, and Niles~A. Pierce.
+\newblock {NUPACK: Analysis and design of nucleic acid systems}.
+\newblock {\em Journal of Computational Chemistry}, 32(1):170--173, jan 2011.
+
+\bibitem{Milligan1987}
+John~F. Milligan, Duncan~R. Groebe, Gary~W. Witherell, and Olke~C. Uhlenbeck.
+\newblock {Oligoribonucleotide synthesis using T7 RNA polymerase and synthetic
+  DNA templates}.
+\newblock {\em Nucleic Acids Research}, 15(21):8783--8798, 1987.
+
+\bibitem{nupackorder}
+http://nupackorder.herokuapp.com/.
+
+\bibitem{nanodropimport}
+http://nanodropimport.herokuapp.com/.
+
+\bibitem{nebtranscription}
+https://www.neb.com/protocols/2015/03/09/protocol-for-standard-rna-synthesis.
+
+\bibitem{Thubagere2017}
+Anupama~J. Thubagere, Chris Thachuk, Joseph Berleant, Robert~F. Johnson,
+  Diana~A. Ardelean, Kevin~M. Cherry, and Lulu Qian.
+\newblock {Compiler-aided systematic construction of large-scale DNA strand
+  displacement circuits using unpurified components}.
+\newblock {\em Nature Communications}, 8:14373, 2017.
+
+\end{thebibliography}

@@ -1,6 +1,6 @@
 % !TEX root = ../main.tex
 
-\begin{tikzpicture}[baseline=-80pt]
+\begin{tikzpicture}[baseline=-90pt]
 
 \draw[-|](0, 0) -- node[above] {$S_1$} (2, 0);
 \draw[-|](2, 0) -- node[above] {$T$} (3, 0);

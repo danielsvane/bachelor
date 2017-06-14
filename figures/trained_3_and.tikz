@@ -9,13 +9,16 @@
 \coordinate (d) at (2, 0);
 \coordinate (e) at (-2, 0);
 
-\draw (b) -- node[near start, above] {$1.2$} (a);
+\draw (b) -- (a);
+\node [box] at ($(b)!0.25!(a)$) {$1.2$};
 \node[left] at (b) {Input 1};
 
-\draw (c) -- node[near start, above] {$1.2$} (a);
+\draw (c) -- (a);
+\node [box] at ($(c)!0.25!(a)$) {$1.2$};
 \node[left] at (c) {Input 3};
 
-\draw (e) -- node[near start, above] {$1.2$} (a);
+\draw (e) -- (a);
+\node [box] at ($(e)!0.25!(a)$) {$1.2$};
 \node[left] at (e) {Input 2};
 
 \draw (a) -- (d);

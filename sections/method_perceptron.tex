@@ -1,7 +1,7 @@
 % !TEX root = ../main.tex
 \section{Perceptron simulation}
 
-To simulate a perceptron with strand displacement reactions, the Visual DSD software was used to implement each of the subunits of a seesaw neuron discussed in the theory section. The syntax of the four subunits required to create a perceptron can be seen in \lref{dsd_subunits} (refer to the Visual DSD manual for the syntax \cite{dsdmanual}).
+To simulate a perceptron with strand displacement reactions, the Visual DSD software was used to implement each of the subunits of a seesaw neuron discussed in the theory section. The syntax of the four subunits required to create a perceptron can be seen in \lref{dsd_subunits} (refer to the Visual DSD manual for the syntax \cite{dsdmanual}). Each of the subunits can be called with the desired left and right recognition sequences, when combining them for larger units. Note that each of the recognition sequences (S1 for example) is split into three (S1L, S1, S1R). This is needed to implement the threshold gate, which has a short part of the left recognition sequence (\fref{seesaw_thresholding_reaction}). The actual perceptron can be pieced together by combining the subunits from \lref{dsd_subunits}. The 2-input AND using seesaw gates seen in \fref{seesaw_neuron}, can be written in Visual DSD as seen in \lref{dsd_and_gate}.
 
 \begin{lstlisting}[float, label=dsd_subunits, caption=Visual DSD definition of the seesaw gate subunits.]
   def signal(N, S1L, S1, S1R, S2L, S2, S2R) = N * <S1L^ S1 S1R^ T^ S2L^ S2 S2R^>
@@ -9,10 +9,6 @@ To simulate a perceptron with strand displacement reactions, the Visual DSD soft
   def gate(N, S2L, S2, S2R, S3L, S3, S3R) = N * {T^*}[S2L^ S2 S2R^ T^]<S3L^ S3 S3R^>
   def fuel(N, S1L, S1, S1R) = N * <S1L^ S1 S1R^ T^ Sf>
 \end{lstlisting}
-
-Each of the subunits can be called with the desired left and right recognition sequences, when combining them for larger units. Note that each of the recognition sequences (S1 for example) is split into three (S1L, S1, S1R). This is needed to implement the threshold gate, which has a short part of the left recognition sequence (\fref{seesaw_thresholding_reaction}).
-
-The actual perceptron can be pieced together by combining the subunits from \lref{dsd_subunits}. The 2-input AND using seesaw gates seen in \fref{seesaw_neuron}, can be written in Visual DSD as seen in \lref{dsd_and_gate}.
 
 \begin{lstlisting}[float, label=dsd_and_gate, caption=Code for a seesaw neuron in Visual DSD]
   (
@@ -35,12 +31,12 @@ The actual perceptron can be pieced together by combining the subunits from \lre
   )
 \end{lstlisting}
 
-To abstract from the Visual DSD syntax, a transpiler was created in Javascript which can generate the needed Visual DSD code for perceptrons of variable input size. The transpiler can take a truth table defined as an array, and generates the needed Visual DSD code to create a perceptron of required input size.
+To abstract from the Visual DSD syntax, a transpiler was created in Javascript which can generate the needed Visual DSD code for perceptrons of variable input size. The transpiler can take a truth table defined as an array, and generates the needed Visual DSD code to create a perceptron of required input size. For further details, the source code is available on Github for running locally on a Windows machine \cite{neuralcompiler}.
 
-To train the perceptron, the initial idea was to simply train a software perceptron to a given truth table, and use the found weights and thresholds in the seesaw perceptron. This idea proved too naive, as the weights and thresholds from a software perceptron did not produce the same outputs in a seesaw perceptron. The solution was to generate the Visual DSD code, run it through the command-line version of the Visual DSD software, and simulate the output concentration of the perceptron. This output could then be compared to the expected output from the truthtable, and the weights adjusted using the algorithm discussed in the theory section.
+The training algorithm generates the Visual DSD code for the seesaw neuron, runs it through the command-line version of the Visual DSD software, and simulates the output concentration of the perceptron. This output can then be compared to the expected output from the truth table, and the weights adjusted using the algorithm discussed in the theory section.
 
-It was not possible to create a web application with a user friendly interface for designing the perceptron, as was done with the software training \cite{neuralcircuit}. The command-line version of the Visual DSD software preferably needs to be run on a Windows machine, for which no free hosting could be found in time. The code is still available on Github for running locally on Windows machines \cite{neuralcompiler}.
+% It was not possible to create a web application with a user friendly interface for designing the perceptron, as was done with the software training \cite{neuralcircuit}. The command-line version of the Visual DSD software preferably needs to be run on a Windows machine, for which no free hosting could be found in time. The code is still available on Github for running locally on Windows machines \cite{neuralcompiler}.
 
-The initial idea was to get the sequences used in reactions directly from the Visual DSD simulation. A limitation of the command-line version of Visual DSD however, is that it can not output the sequences. It should still be possible to circumvent this, by using a pregenerated list of sequences to pick from, like it was done in \cite{Thubagere2017}.
+% The initial idea was to get the sequences used in reactions directly from the Visual DSD simulation. A limitation of the command-line version of Visual DSD however, is that it can not output the sequences. It should still be possible to circumvent this, by using a pregenerated list of sequences to pick from, like it was done in \cite{Thubagere2017}.
 
-To translate the sequences from Visual DSD into the desired sequences, Nupack could be used for the design. The command-line version of Nupack needs to be run on Linux, and since the Visual DSD code needs to be run on Windows, no solution was found in time for this project.
+% To translate the sequences from Visual DSD into the desired sequences, Nupack could be used for the design. The command-line version of Nupack needs to be run on Linux, and since the Visual DSD code needs to be run on Windows, no solution was found in time for this project.

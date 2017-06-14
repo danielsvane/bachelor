@@ -19,13 +19,15 @@ The reaction in \fref{strand_displacement} can be simplified by leaving out the 
 \label{strand_displacement_simple}
 \end{figure}
 
+The free domain $a^*$ in \fref{strand_displacement_simple} is known as a toehold \cite{Zhang}. The toehold serves the purpose of catalyzing the reaction by giving the strand $ab$ a place to initialize displacement. The displacement reaction speed has been shown to be expontentially related to the toehold sequence length.
+
 The result of the reaction in \fref{strand_displacement_simple}, is that the strand $bc$ is only single-stranded when displaced by the strand $ab$. The reaction can then be seen as a YES gate with input $ab$ and outout $bc$. Why this is useful in molecular computing is not immediately apparent, but the strand displacement technique can be extended to larger reactions. A more interesting application is the AND gate seen in \fref{strand_displacement_and}.
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=\textwidth]{figures/and_gate_dna.tikz}
-\caption{An AND gate made with strand displacement. After two strand displacements by the input strands $a^*b^*c^*$ and $bcdf$, the ouput strand $def$ is released and can react in further strand displacement reactions with other logic gates, or activate enzymes and fluorescence signals. Without either of the input strands, the output will not be displaced. Adapted from \cite{Zhang2011}.}
+\caption{An AND gate made with strand displacement. After two strand displacements by the input strands $a^*b^*c^*$ and $bcdf$, the ouput strand $def$ is released and can react in further strand displacement reactions with other logic gates, or activate enzymes and fluorescence signals. Without either of the input strands, the output will not be displaced. Adapted from Zhang et al 2011 \cite{Zhang2011}.}
 \label{strand_displacement_and}
 \end{figure}
 
-The actual concentrations of each of the strand species when reacting, can be predicted by the free energy of each complex \cite{Zhang}, but the time it takes for the reaction to take place is harder to predict. It has been shown that the reaction speed is exponentially dependent on the toehold length for short toeholds \cite{Zhang}. A toehold, for example, is the single stranded region of the strand 2 + strand 3 complex in \fref{strand_displacement}. To do time analysis of larger strand displacement networks, software like Visual DSD \cite{Lakin2011} can be used.
+The actual concentrations of each of the strand species when reacting, can be predicted by the free energy of each complex \cite{Zhang}, but the time it takes for the reaction to take place is harder to predict. To do time analysis of larger strand displacement networks, software like Visual DSD \cite{Lakin2011} can be used.
